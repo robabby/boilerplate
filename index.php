@@ -44,7 +44,7 @@
     <div class="span5">
       <div class="well">
         <h3>The Problem</h3>
-        <p>This is a boilerplate consisting of everything I have ever wanted or needed when building a modern website.  Consisting of fused frameworks, custom fonts, PHP mailer scripts, oh, and a starter Sencha Touch app.  Essentially just about everything you would ever want to fastrack the start of your next project!</p>
+        <p>You have an idea for an App, Widget, Slider, Website, whatever! You sit down to start coding it up, and you realize all of the things you need are in different places.  Not to mention you may have to compleetly draft a whole other website just to get your idea off the ground. By the time you compile your folder system and start coding your next big thing, your exhausted, or worse te idea is lost!</p>
       </div><!-- .well -->
     </div><!-- .span6 -->
     <div class="span5 offset2 textalign-right">
