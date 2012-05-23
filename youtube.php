@@ -11,9 +11,13 @@
   <?php include('./assets/inc/head.inc.php'); ?>
   <style>
   body {
-    padding-top: 25px;
+    padding-top: 0px;
   }
   #youtube header {display: none;}
+  #youtube .container-fluid {
+    background-color:#333;
+  }
+  #youtube .container {margin-bottom:50px;}
   #youtube .container * {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -26,10 +30,8 @@
     position:relative; 
     width: 940px; 
     height: 500px; 
-    margin:0 auto 20px;
+    margin:0px auto;
     border:10px solid #121212;
-    border-radius:5px;
-    box-shadow:0px 0px 20px 5px rgba(0, 0, 0, .75);
   }
   #player {
     position: relative;
@@ -74,9 +76,17 @@
     bottom:-10px;
     width:205px;
     height:25px;
-    background-color:#ccc;
+    border-top:1px solid #CCC;
     margin-bottom:10px;
     line-height:25px;
+    background: #f6f8f9; /* Old browsers */
+    background: -moz-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f8f9), color-stop(50%,#e5ebee), color-stop(51%,#d7dee3), color-stop(100%,#f5f7f9)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* IE10+ */
+    background: linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
   }
   </style>
   <script type="text/javascript" src="http://swfobject.googlecode.com/svn/trunk/swfobject/swfobject.js"></script>
@@ -120,23 +130,31 @@
 <!-- ## HEADER & NAV ## -->
 
 <!-- #### MAIN CONTENT GOES HERE #### -->
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <div id="playerContainer">
         <object id="player"></object>
     </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
     <div class="well">
       <div id="videos2"></div>
       <script 
           type="text/javascript" 
-          src="http://gdata.youtube.com/feeds/users/stat30fbliss/uploads?alt=json-in-script&callback=showMyVideos2&max-results=30">
+          src="http://gdata.youtube.com/feeds/users/stat30fbliss/uploads?alt=json-in-script&callback=showMyVideos2&max-results=32">
       </script>
     </div><!-- .well -->
   </div><!-- .row -->
 </div><!-- .container -->
 <!-- #### MAIN CONTENT GOES HERE #### -->
 
+<!-- ## FOOTER ## -->
 <?php include('./assets/inc/footer.inc.php'); ?>
+<!-- ## FOOTER ## -->
+
 </body>
 </html>
 <?php
