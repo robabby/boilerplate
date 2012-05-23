@@ -4,15 +4,9 @@
       <button id="toggle" class="btn primary">&nbsp;&nbsp;Menu&nbsp;&nbsp;</button>
       <button class="btn primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
       <ul class="dropdown-menu">
-        <li><a href="outer_space.php">Outer Space</a></li>
-        <li><a href="youtube.php">YouTube API</a></li>
-        <li><a href="map.php">Google Map</a></li>
-        <li><a href="error.php">Error Page</a></li>
-        <li><a href="/mobile/">Mobile</a></li>
-        <li class="divider"></li>
-        <li><a href="sandbox.php">Sandbox</a></li>
-        <li class="divider"></li>
         <li><a data-toggle="modal" href="#contact">Feedback</a></li>
+        <li><a href="/mobile/">Mobile</a></li>
+        <li><a href="sandbox.php">Sandbox</a></li>
         <li><a href="index.php">Home</a></li>
       </ul>
     </div>
