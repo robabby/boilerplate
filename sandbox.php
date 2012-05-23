@@ -28,10 +28,16 @@
     <div class="row">
       <div class="span7">
         <div class="well">
+          <h1>Sandbox</h1>
         </div><!-- .well -->
       </div><!-- .span8 -->
       <div class="span5">
         <div class="well">
+          <ul class="nav nav-tabs nav-stacked">
+            <li><a href="/map.php" title="">Google Maps API</a></li>
+            <li><a href="/youtube.php" title="">YouTube API</a></li>
+            <li><a href="/outer_space.php" title="">Outer Space Concept</a></li>
+          </ul>
         </div><!-- .well -->
       </div><!-- .span4 -->
     </div><!-- .row -->

@@ -50,7 +50,7 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
    Links
    ========================================================================== */
 
-a { color: #00e; text-decoration:none; }
+a { color:#333; text-decoration:none; }
 a:visited { /*color: #551a8b;*/ }
 a:hover { color: #06e; }
 a:focus { outline: thin dotted; }

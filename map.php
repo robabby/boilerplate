@@ -40,7 +40,7 @@
 <!-- ## HEADER & NAV ## -->
 
 <!-- #### MAIN CONTENT GOES HERE #### -->
-<div id="map_canvas" style="width:100%; height:100%"></div>
+<div id="map_canvas" style="width:100%; height:100%; margin-top:50px;"></div>
 <!-- #### MAIN CONTENT GOES HERE #### -->
 
 <?php include('./assets/inc/footer.inc.php'); ?>
