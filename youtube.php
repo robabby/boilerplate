@@ -31,19 +31,27 @@
   ul.videos {
     display:block;
     position:relative;
-    padding:0 0 0 20px;
+    margin-bottom: 10px;
+    padding-left : 10px;
+    margin-left: 0px;
+    list-style: none;
   }
   ul.videos li {
+    display:block;
     float: left;
-    width: 180px;
-    margin-bottom: 1em;
+    width: 185px;
+    padding:10px;
+    margin: 5px 10px;
+    background-color:#fff;
+    border:1px solid #ccc;
+    text-align:center;
   }
-  ul.videos
-  {
-    margin-bottom: 1em;
-    padding-left : 10px;
-    margin-left: 0em;
-    list-style: none;
+  ul.videos li:hover {
+    cursor:pointer;
+  }
+  ul.videos li img {
+    display:block;
+    max-width:100%;
   }
   </style>
   <script type="text/javascript" src="http://swfobject.googlecode.com/svn/trunk/swfobject/swfobject.js"></script>
@@ -61,12 +69,12 @@
     var html = ['<ul class="videos">'];
     for (var i = 0; i < entries.length; i++) {
       var entry = entries[i];
-      var title = entry.title.$t.substr(0, 20);
+      var title = entry.title.$t.substr(0, 30);
       var thumbnailUrl = entries[i].media$group.media$thumbnail[0].url;
       var playerUrl = entries[i].media$group.media$content[0].url;
       html.push('<li onclick="loadVideo(\'', playerUrl, '\', true)">',
-                '<span class="titlec">', title, '...</span><br /><img src="', 
-                thumbnailUrl, '" width="175" height="97"/>', '</span></li>');
+                '<img src="', 
+                thumbnailUrl, '" />', '<span class="titlec">', title, '</span></li>');
     }
     html.push('</ul><br style="clear: left;"/>');
     document.getElementById('videos2').innerHTML = html.join('');

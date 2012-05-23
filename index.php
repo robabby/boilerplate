@@ -11,6 +11,12 @@
   <?php include('./assets/inc/head.inc.php'); ?>
   <style>
   a {color:#06E;}
+  dl dt {
+    margin:7px 0;
+  }
+  dd {
+    margin:7px 0 7px 10px;
+  }
   </style>
 </head>
 <body id="home">
@@ -54,6 +60,21 @@
       <p>Given the nature of what I enjoy working with, this boilerplate is a bit more advanced than your average HTML/CSS boilerplate.  I started with <a href="#" title="">HTML5 Boilerplate</a>, and converted the standard style.css to a reset.css.  From there I added in <a href="#" title="">Twitter Bootstrap</a>,  offering me all of the rapid development tools I may want to draft quick concepts.  As well as a CSS grid framework and JavaScript plugins. A quick inspection of the files will show you that I have turned as many portions of the code into PHP includes as I could, thus reducing the amount of code-bloat present in the HTML documents and making them simpler and easier to navigate.</p>
 
       <p>I have also added in my own custom style.css which I use to overwrite some of the standard styles apparent in Bootstrap, and giving the site a more custom look and feel than the overworked Bootstrap theme.  From there I added in a nice selection of custom fonts. You can view a full list of what is available over on <a href="#" title="">GitHub</a>, as well as form the respository for yourself.</p>
+      <hr />
+      <h3>What's in the Box</h3>
+      <dl>
+        <dt>Frameworks</dt>
+          <dd><a href="#" title="">HTML5 Boilerplate</a></dd>
+          <dd><a href="#" title="">Twitter Bootstrap</a></dd>
+        <dt>Fonts</dt>
+          <dd>Bebas Neue</dd>
+          <dd>Big Noodle</dd>
+          <dd>Code</dd>
+          <dd>Quicksand</dd>
+          <dd>Sansation</dd>
+          <dd>Swiss</dd>
+          <dd>Trade Gothic</dd>
+      </dl>
     </div><!-- .span12 -->
   </div><!-- .row -->
   <hr />
