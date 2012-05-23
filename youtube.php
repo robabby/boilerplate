@@ -10,13 +10,23 @@
 <head>
   <?php include('./assets/inc/head.inc.php'); ?>
   <style>
+  body {
+    padding-top: 25px;
+  }
   #youtube header {display: none;}
+  #youtube .container * {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
   #playerContainer {
     display:block;
     position:relative; 
-    width: 640px; 
-    height: 390px; 
-    margin:0 auto;
+    width: 940px; 
+    height: 500px; 
+    margin:0 auto 20px;
     border:10px solid #121212;
     border-radius:5px;
     box-shadow:0px 0px 20px 5px rgba(0, 0, 0, .75);
@@ -32,26 +42,41 @@
     display:block;
     position:relative;
     margin-bottom: 10px;
-    padding-left : 10px;
+    padding-left : 7px;
     margin-left: 0px;
     list-style: none;
   }
   ul.videos li {
     display:block;
+    position:relative;
     float: left;
     width: 185px;
-    padding:10px;
+    padding:10px 10px 25px;
     margin: 5px 10px;
     background-color:#fff;
     border:1px solid #ccc;
     text-align:center;
+    color:#333;
   }
   ul.videos li:hover {
     cursor:pointer;
+    box-shadow:0px 3px 10px 0px rgba(0, 0, 0, .5);
   }
   ul.videos li img {
     display:block;
     max-width:100%;
+    margin-bottom:10px;
+  }
+  ul.videos li span {
+    display:block;
+    position:absolute;
+    left:0px;
+    bottom:-10px;
+    width:205px;
+    height:25px;
+    background-color:#ccc;
+    margin-bottom:10px;
+    line-height:25px;
   }
   </style>
   <script type="text/javascript" src="http://swfobject.googlecode.com/svn/trunk/swfobject/swfobject.js"></script>
@@ -59,7 +84,7 @@
   function loadVideo(playerUrl, autoplay) {
     swfobject.embedSWF(
         playerUrl + '&rel=1&border=0&fs=1&autoplay=' + 
-        (autoplay?1:0), 'player', '640', '390', '9.0.0', false, 
+        (autoplay?1:0), 'player', '940', '500', '9.0.0', false, 
         false, {allowfullscreen: 'true'});
   }
 
@@ -97,11 +122,9 @@
 <!-- #### MAIN CONTENT GOES HERE #### -->
 <div class="container">
   <div class="row">
-    <div class="hero-unit">
-      <div id="playerContainer">
-          <object id="player"></object>
-      </div>
-    </div><!-- .hero-unit -->
+    <div id="playerContainer">
+        <object id="player"></object>
+    </div>
     <div class="well">
       <div id="videos2"></div>
       <script 
