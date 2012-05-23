@@ -42,12 +42,16 @@
   <hr />
   <div class="row">
     <div class="span5">
-      <h3>Welcome</h3>
-      <p>This is a boilerplate consisting of everything I have ever wanted or needed when building a modern website.  Consisting of fused frameworks, custom fonts, PHP mailer scripts, oh, and a starter Sencha Touch app.  Essentially just about everything you would ever want to fastrack the start of your next project!</p>
+      <div class="well">
+        <h3>The Problem</h3>
+        <p>This is a boilerplate consisting of everything I have ever wanted or needed when building a modern website.  Consisting of fused frameworks, custom fonts, PHP mailer scripts, oh, and a starter Sencha Touch app.  Essentially just about everything you would ever want to fastrack the start of your next project!</p>
+      </div><!-- .well -->
     </div><!-- .span6 -->
     <div class="span5 offset2 textalign-right">
-      <h3>So...what?</h3>
-      <p>More often than not, when I go to 'sketch' out an idea in code, I find that getting my environement and workbench set up would take longer than actually getting my idea out of my head.  By the time I had my HTML sheet built and was ready to start coding, I was exhausted from the set-up process.</p>
+      <div class="well">
+        <h3>The Solution</h3>
+        <p>More often than not, when I go to 'sketch' out an idea in code, I find that getting my environement and workbench set up would take longer than actually getting my idea out of my head.  By the time I had my HTML sheet built and was ready to start coding, I was exhausted from the set-up process.</p>
+      </div><!-- .well -->
     </div><!-- .span6 -->
   </div><!-- .row -->
   <hr />
