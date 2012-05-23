@@ -5,10 +5,8 @@
 	$berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
 	$ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
 
-	if ($iphone || $android || $palmpre || $ipod || $berry == true) 
-	{ 
-	header('Location: http://design.web2carz.com/mobile/');
-	//OR
-	echo "<script>window.location='http://design.web2carz.com/mobile/'</script>";
+	if ($iphone || $android || $palmpre || $ipod || $berry == true) { 
+		header('Location: http://boilerplate.rawdesigns.net/mobile/');
+		echo "<script>window.location='http://boilerplate.rawdesigns.net/mobile/'</script>";
 	}
 ?>
