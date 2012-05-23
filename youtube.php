@@ -16,6 +16,8 @@
   #youtube header {display: none;}
   #youtube .container-fluid {
     background-color:#333;
+    margin-bottom:20px;
+    overflow: hidden;
   }
   #youtube .container {margin-bottom:50px;}
   #youtube .container * {
@@ -31,7 +33,7 @@
     width: 940px; 
     height: 500px; 
     margin:0px auto;
-    border:10px solid #121212;
+    box-shadow:0px 0px 50px 8px rgba(0, 0, 0, 1);
   }
   #player {
     position: relative;

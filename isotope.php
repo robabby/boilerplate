@@ -20,7 +20,6 @@ li { list-style: none;}
 .isotope-item {
   z-index: 2;
 }
-
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
@@ -36,7 +35,6 @@ li { list-style: none;}
        -o-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
-
 .isotope {
   -webkit-transition-property: height, width;
      -moz-transition-property: height, width;
@@ -44,7 +42,6 @@ li { list-style: none;}
        -o-transition-property: height, width;
           transition-property: height, width;
 }
-
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
      -moz-transition-property:    -moz-transform, opacity;
@@ -67,8 +64,6 @@ li { list-style: none;}
 
 /* End: Recommended Isotope styles */
 
-
-
 /* disable CSS transitions for containers with infinite scrolling*/
 .isotope.infinite-scrolling {
   -webkit-transition: none;
@@ -85,13 +80,11 @@ html,
 body {
   height: 100%;
 }
-
 #container {
   border: 1px solid #666;
   padding: 5px;
   margin-bottom: 20px;
 }
-
 .element {
   width: 110px;
   height: 110px;
@@ -117,12 +110,10 @@ body {
 .element.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
 .element.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
 
-
 .element * {
   position: absolute;
   margin: 0;
 }
-
 .element .symbol {
   left: 0.2em;
   top: 0.4em;
@@ -133,39 +124,31 @@ body {
 .element.large .symbol {
   font-size: 4.5em;
 }
-
 .element.fake .symbol {
   color: #000;
 }
-
 .element .name {
   left: 0.5em;
   bottom: 10px;
   font-size: 1.05em;
 }
-
 .element .weight {
   font-size: 0.9em;
   left: 0.5em;
   bottom: 0.5em;
 }
-
 .element .number {
-  font-size: 1.25em;
+  font-size: 21px;
   font-weight: bold;
   color: hsla(0,0%,0%,.5);
-  right: 0.5em;
+  right: 10px;
   top: 0.5em;
 }
-
 .variable-sizes .element.width2 { width: 230px; }
-
 .variable-sizes .element.height2 { height: 230px; }
-
 .variable-sizes .element.width2.height2 {
   font-size: 2.0em;
 }
-
 .element.large,
 .variable-sizes .element.large,
 .variable-sizes .element.large.width2.height2 {
@@ -174,18 +157,15 @@ body {
   height: 350px;
   z-index: 100;
 }
-
 .clickable .element:hover {
   cursor: pointer;
 }
-
 .clickable .element:hover h3 {
   text-shadow:
     0 0 10px white,
     0 0 10px white
   ;
 }
-
 .clickable .element:hover h2 {
   color: white;
 }
@@ -195,30 +175,24 @@ body {
 #options {
   padding-bottom: 1.0em;
 }
-
 #options h3 {
   margin-bottom: 0.2em;
   font-size: 15px;
 }
-
 #options h4 { 
   font-weight: bold;
 }
-
 #options ul {
   margin: 0;
   list-style: none;
 }
-
 #options ul ul {
   margin-left: 1.5em;
 }
-
 #options li {
   float: left;
   margin-bottom: 0.2em;
 }
-
 #options li a {
   display: block;
   padding: 0.4em 0.5em;
@@ -232,11 +206,9 @@ body {
   background-image:      -o-linear-gradient( top, hsla( 0, 0%, 100%, 0.5 ), hsla( 0, 0%, 100%, 0.0 ) );
   background-image:         linear-gradient( top, hsla( 0, 0%, 100%, 0.5 ), hsla( 0, 0%, 100%, 0.0 ) );
 }
-
 #options li a:hover {
   background-color: #5BF;
 }
-
 #options li a:active {
   background-color: #39D;
   -webkit-box-shadow: inset 0 2px 8px hsla( 0, 0%, 0%, 0.6 );
@@ -244,21 +216,17 @@ body {
        -o-box-shadow: inset 0 2px 8px hsla( 0, 0%, 0%, 0.6 );
           box-shadow: inset 0 2px 8px hsla( 0, 0%, 0%, 0.6 );
 }
-
 #options li a {
   border-left:  1px solid hsla( 0, 0%, 100%, 0.3 );
   border-right: 1px solid hsla( 0, 0%,   0%, 0.2 );
 }
-
 #options li:first-child a {
   border-radius: 7px 0 0 7px;
   border-left: none;
 }
-
 #options li:last-child a {
   border-radius: 0 7px 7px 0;
 }
-
 #options li a.selected {
   background-color: #13F;
   text-shadow: none;
@@ -272,12 +240,10 @@ body {
   float: left;
   margin-right: 10px;
 }
-
 #options .option-combo ul {
   margin-right: 20px;
   display: inline-block;
 }
-
 #options .option-combo h2,
 #options .option-combo h4 {
   line-height: 34px;
@@ -295,31 +261,25 @@ body {
   margin: 5px;
   float: left;
 }
- 
 .color-shape.round {
   -webkit-border-radius: 35px;
      -moz-border-radius: 35px;
           border-radius: 35px;
 }
- 
 .color-shape.big.round {
   -webkit-border-radius: 75px;
      -moz-border-radius: 75px;
           border-radius: 75px;
 }
- 
 .color-shape.red { background: red; }
 .color-shape.blue { background: blue; }
 .color-shape.yellow { background: yellow; }
- 
 .color-shape.wide, .color-shape.big { width: 150px; }
 .color-shape.tall, .color-shape.big { height: 150px; }
-
 .color-shape a {
   display: block;
   height: 100%;
 }
-
 .color-shape a:hover {
   background: white;
   background: hsla( 0, 0%, 100%, 0.5 );
@@ -340,13 +300,11 @@ body {
        -o-transition: background-color 0.8s;
           transition: background-color 0.8s;
 }
-
 #sites h2 img {
   display: inline-block;
   margin-right: 0.4em;
   vertical-align: bottom;
 }
-
 #sites h2.loading {
   background: white;
   color: #222;
@@ -360,38 +318,31 @@ body {
 #sites ul {
   margin: 0;
 }
-
 .super-list .example {
   list-style: none;
   float: left;
   width: 230px;
   margin: 5px;
 }
-
 .super-list .example a,
 .super-list .example b,
 .super-list .example img {
   display: block;
 }
-
 .super-list .example img { width: 100%; }
-
 .super-list .example a {
   background: #1F1E1D;
 }
-
 .super-list .example a:hover {
   background: white;
   color: #111;
 }
-
 .super-list .example b { 
   font-weight: bold;
   line-height: 1.3em;
   padding: 3px;
   padding-top: 8px;
 }
-
 .super-list .link {
   float: left;
   position: relative;
@@ -400,12 +351,10 @@ body {
   font-weight: 300;
   margin: 5px;
 }
-
 .super-list .link {
   width: 230px;
   height: 110px;
 }
-
 .super-list .link a {
   display: block;
   padding: 10px;
@@ -417,7 +366,6 @@ body {
      -moz-border-radius: 14px;
           border-radius: 14px;
 }
-
 .super-list .link a:before {
   content: '➔';
   font-size: 70px;
@@ -430,7 +378,6 @@ body {
        -o-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-
 .super-list .link.away a:before {
   top: 25px;
   left: 0px;
@@ -440,17 +387,16 @@ body {
        -o-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-
 .super-list .link a:hover {
   background: #E58;
   color: white;
 }
-
 .super-list .feature .name {
   bottom: auto;
   top: 140px;
   left: 18px;
-  font-size: 20px;
+  font-size: 21px;
+  line-height:1;
 }
 
 /**** BIG Graph ****/
@@ -460,7 +406,6 @@ body {
   height: 600px;
   margin: 20px auto;
 }
-
 .big-graph .project {
   width: 45px;
   height: 45px;
@@ -556,26 +501,26 @@ body {
     <div class="option-combo">
       <h2>Filter:</h2>
       <ul id="filter" class="option-set clearfix" data-option-key="filter">
-        <li><a href="#show-all" data-option-value="*" class="selected">show all</a></li>
-        <li><a href="#elements" data-option-value=".element:not(.feature)">elements</a></li>
-        <li><a href="#features" data-option-value=".feature">features</a></li>
-        <li><a href="#examples" data-option-value=".example">examples</a></li>
+        <li><a href="#show-all" data-option-value="*" class="selected">Show All</a></li>
+        <li><a href="#elements" data-option-value=".element:not(.feature)">Facebook</a></li>
+        <li><a href="#features" data-option-value=".feature">Twitter</a></li>
+        <li><a href="#examples" data-option-value=".example">Instagram</a></li>
       </ul>
     </div>
     <div class="option-combo">
       <h2>Sort:</h2>
       <ul id="sort" class="option-set clearfix" data-option-key="sortBy">
-        <li><a href="#mixed" data-option-value="number" class="selected">mixed</a></li>
-        <li><a href="#original" data-option-value="original-order">original</a></li>
-        <li><a href="#alphabetical" data-option-value="alphabetical">alphabetical</a></li>
+        <li><a href="#mixed" data-option-value="number" class="selected">Feed</a></li>
+        <li><a href="#original" data-option-value="original-order">Recent</a></li>
+        <li><a href="#alphabetical" data-option-value="alphabetical">Popular</a></li>
       </ul>
     </div>
     <div class="option-combo">
       <h2>Layout: </h2>
       <ul id="layouts" class="option-set clearfix" data-option-key="layoutMode">
-        <li><a href="#masonry" data-option-value="masonry" class="selected">masonry</a></li>
-        <li><a href="#fitRows" data-option-value="fitRows">fitRows</a></li>
-        <li><a href="#straightDown" data-option-value="straightDown">straightDown</a></li>
+        <li><a href="#masonry" data-option-value="masonry" class="selected">Smart Wall</a></li>
+        <li><a href="#fitRows" data-option-value="fitRows">Horizontal</a></li>
+        <li><a href="#straightDown" data-option-value="straightDown">Vertical</a></li>
       </ul>
     </div>
   </section>
