@@ -7,7 +7,7 @@
 
 	if ($iphone || $android || $palmpre || $ipod || $berry == true) 
 	{ 
-	header('Location: http://design.web2carz.com/mobile/');
+	header('Location: http://boilerplate.rawdesigns.net/mobile/');
 	//OR
 	echo "<script>window.location='http://design.web2carz.com/mobile/'</script>";
 	}
