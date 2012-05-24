@@ -1,7 +1,5 @@
 <?php 
   $path2root = "";
-  ob_start();
-  try {
   include('./assets/inc/title.inc.php'); 
   include('./assets/inc/user_agent.php');
   require_once("./assets/inc/connection.inc.php");
@@ -38,8 +36,6 @@
   } else {
     $mainImage = $row['filename'];
   }
-  // get the dimensions of the main image
-  $imageSize = getimagesize("$path2root/images/".$mainImage); 
 ?>
 <!doctype html>
 <html>
@@ -47,7 +43,7 @@
   <?php include('./assets/inc/head.inc.php'); ?>
 </head>
 <body id="blank">
-  
+
 <!-- ## CONTACT MODAL ## -->
 <?php include('./assets/inc/contactModal.inc.php'); ?>
 <!-- ## CONTACT MODAL ## -->
@@ -58,7 +54,44 @@
 
 <!-- #### MAIN CONTENT GOES HERE #### -->
 
+<div class="container">
+  <div class="hero-unit">
+    <h1>Scan Folder Conents</h1>
+        
+          <h3>All Files</h3>
+          
+          <table class="table table-bordered table-striped">
+            <th>Filename</th>
+            <th>View File</th>
+        <?php 
+          $files = new DirectoryIterator('./uploads/');
+          foreach ($files as $file) { ?>
+            <tr>
+              <td><?php echo $file ?></td>
+              <td><a class="btn" href="/uploads/<?php echo $file ?>">View File</a></td>
+            </tr>
+        <?php } ?>
+      </table>
 
+
+      <h3>Images Only</h3>
+      
+      <table class="table table-bordered table-striped">
+            <th>Filename</th>
+            <th>View File</th>
+        <?php 
+          $files = new RecursiveIteratorIterator(new RecursiveDirectoryIterator('./uploads/'));
+          $images = new RegexIterator($files, '/\.(?:jpg|png|gif)$/i');
+          foreach ($images as $file) { ?>
+            <tr>
+              <td><?php  echo $file->getRealPath(); ?></td>
+              <td><a class="btn" href="/uploads/<?php echo $file ?>">View File</a></td>
+            </tr>
+        <?php } ?>
+      </table>
+
+  </div>
+</div><!-- .container -->
 
 <!-- #### MAIN CONTENT GOES HERE #### -->
 
@@ -68,10 +101,3 @@
 
 </body>
 </html>
-<?php
-  } catch (exception $e) {
-    ob_end_clean();
-    header('Location: error.php');
-  }
-  ob_end_flush();
-?>
