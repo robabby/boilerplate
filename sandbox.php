@@ -29,12 +29,24 @@
       <div class="span5">
         <div class="well">
           <ul class="nav nav-tabs nav-stacked">
+            <li class="nav-header">
+              APIs
+            </li>
             <li><a href="/map.php" title="">Google Maps API</a></li>
             <li><a href="/youtube.php" title="">YouTube API</a></li>
             <li><a href="/get_tweets.php" title="">Twitter API</a></li>
+            <li class="nav-header">
+              Websites
+            </li>
             <li><a href="/isotope.php" title="">Isotope Site</a></li>
             <li><a href="/outer_space.php" title="">Outer Space Concept</a></li>
+            <li class="nav-header">
+              Mobile
+            </li>
             <li><a href="/mobile/" title="">Sencha Touch App</a></li>
+            <li class="nav-header">
+              File Handling
+            </li>
             <li><a href="drag_drop.php" title="">HTML5 Drag &amp; Drop</a></li>
             <li><a href="scan_dir.php" title="">View Folder</a></li>
           </ul>
