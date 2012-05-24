@@ -35,7 +35,7 @@
   <div class="row">
     <div class="span12">
       <div class="hero-unit">
-        <h1>Web Development Boilerplate</h1>
+        <h1>BoilerStrap Framework</h1>
         <h2>Everything you will ever need to build amazing websites!</h2>
       </div><!-- .hero-unit -->
     </div><!-- .span12 -->
@@ -51,7 +51,7 @@
     <div class="span5 offset2 textalign-right">
       <div class="well">
         <h3>The Solution</h3>
-        <p>More often than not, when I go to 'sketch' out an idea in code, I find that getting my environement and workbench set up would take longer than actually getting my idea out of my head.  By the time I had my HTML sheet built and was ready to start coding, I was exhausted from the set-up process.</p>
+        <p>Obviously, I needed a way to more quickly build the ideas I was nurturing.  A place where folders were organized, and everything I could possibly want or need when starting a new idea would be right at my fingertips.  Thus, 'BoilerStrap' was born.  Built on a solid foundation, and customized to remove all distractiopn from the document, but give you access to every resource you would ever want or need.</p>
       </div><!-- .well -->
     </div><!-- .span6 -->
   </div><!-- .row -->
