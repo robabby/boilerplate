@@ -4,6 +4,7 @@
   try {
   include('./assets/inc/title.inc.php'); 
   include('./assets/inc/user_agent.php');
+  include('./assets/ops/sendemail_contact.php');
   require_once("./assets/inc/connection.inc.php");
 ?>
 <!doctype html>

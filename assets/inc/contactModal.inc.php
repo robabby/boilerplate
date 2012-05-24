@@ -5,23 +5,23 @@
   </div>
   <div class="modal-body">
     <img class="pull-right" src="/images/logo_home.png" />
-    <form>
+    <form name="msg" action="/assets/ops/sendemail.php" method="post">
       <p>
         <label>Name</label>
-        <input type="text" class="span4" placeholder="Name">
+        <input type="text" name="from" id="from" class="span4" placeholder="Name">
       </p>
       <p>
         <label>Email</label>
-        <input type="text" class="span4" placeholder="Email">
+        <input type="text" name="email" id="email" class="span4" placeholder="Email">
       </p>
       <p>
         <label>Message</label>
-        <textarea type="text" class="span4" placeholder="Send me a message!"></textarea>
+        <textarea type="text" name="comments" id="comments" class="span4" placeholder="Send me a message!"></textarea>
       </p>
   </div>
   <div class="modal-footer">
     <button type="submit" class="btn btn-inverse">Submit</button>
     <a href="#" data-dismiss="modal" class="btn">Cancel</a>
   </div>
-    </form>
+  </form>
 </div>

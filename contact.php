@@ -3,6 +3,7 @@
   ob_start();
   try {
   include('./assets/inc/title.inc.php'); 
+
 ?>
 <!doctype html>
 <html>

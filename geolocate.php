@@ -166,13 +166,13 @@
         </tr>
       </table>
     </form>
-    <form name="msg" action="/assets/ops/sendemailp.php" method="post">
+    <form name="msg" action="/assets/ops/sendemail.php" method="post">
       <table cellpadding"10">
         <tr>
           <td>
             Your email (for reply):
             <br />
-            <input type="email" name="from" required/>
+            <input type="email" name="from" required />
           </td>
           <td>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
