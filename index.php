@@ -17,6 +17,7 @@
   dd {
     margin:7px 0 7px 10px;
   }
+  .fonts .bebasNeue {  }
   </style>
 </head>
 <body id="home">
@@ -70,14 +71,14 @@
         <dt>Frameworks</dt>
           <dd><a href="#" title="">HTML5 Boilerplate</a></dd>
           <dd><a href="#" title="">Twitter Bootstrap</a></dd>
-        <dt>Fonts</dt>
-          <dd>Bebas Neue</dd>
-          <dd>Big Noodle</dd>
-          <dd>Code</dd>
-          <dd>Quicksand</dd>
-          <dd>Sansation</dd>
-          <dd>Swiss</dd>
-          <dd>Trade Gothic</dd>
+        <dt class="fonts">Fonts</dt>
+          <dd class="bebasNeue">Bebas Neue</dd>
+          <dd class="bigNoodle">Big Noodle</dd>
+          <dd class="code">Code</dd>
+          <dd class="quicksand">Quicksand</dd>
+          <dd class="sansation">Sansation</dd>
+          <dd class="swiss">Swiss</dd>
+          <dd class="tradegothic">Trade Gothic</dd>
       </dl>
     </div><!-- .span12 -->
   </div><!-- .row -->
