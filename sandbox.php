@@ -36,8 +36,9 @@
           <ul class="nav nav-tabs nav-stacked">
             <li><a href="/map.php" title="">Google Maps API</a></li>
             <li><a href="/youtube.php" title="">YouTube API</a></li>
-            <li><a href="/outer_space.php" title="">Outer Space Concept</a></li>
             <li><a href="/isotope.php" title="">Isotope Site</a></li>
+            <li><a href="/outer_space.php" title="">Outer Space Concept</a></li>
+            <li><a href="/mobile/" title="">Sencha Touch App</a></li>
           </ul>
         </div><!-- .well -->
       </div><!-- .span4 -->
