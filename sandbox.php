@@ -39,6 +39,8 @@
             <li><a href="/isotope.php" title="">Isotope Site</a></li>
             <li><a href="/outer_space.php" title="">Outer Space Concept</a></li>
             <li><a href="/mobile/" title="">Sencha Touch App</a></li>
+            <li><a href="drag_drop.php" title="">HTML5 Drag &amp; Drop</a></li>
+            <li><a href="scan_dir.php" title="">View Folder</a></li>
           </ul>
         </div><!-- .well -->
       </div><!-- .span4 -->

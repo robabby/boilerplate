@@ -4,6 +4,7 @@
   try {
   include('./assets/inc/title.inc.php'); 
   include('./assets/inc/user_agent.php');
+  require_once("$path2root/includes/connection.inc.php");
 ?>
 <!doctype html>
 <html>
@@ -65,6 +66,7 @@
       <p>Given the nature of what I enjoy working with, this boilerplate is a bit more advanced than your average HTML/CSS boilerplate.  I started with <a href="#" title="">HTML5 Boilerplate</a>, and converted the standard style.css to a reset.css.  From there I added in <a href="#" title="">Twitter Bootstrap</a>,  offering me all of the rapid development tools I may want to draft quick concepts.  As well as a CSS grid framework and JavaScript plugins. A quick inspection of the files will show you that I have turned as many portions of the code into PHP includes as I could, thus reducing the amount of code-bloat present in the HTML documents and making them simpler and easier to navigate.</p>
 
       <p>I have also added in my own custom style.css which I use to overwrite some of the standard styles apparent in Bootstrap, and giving the site a more custom look and feel than the overworked Bootstrap theme.  From there I added in a nice selection of custom fonts. You can view a full list of what is available over on <a href="#" title="">GitHub</a>, as well as form the respository for yourself.</p>
+      <!--
       <hr />
       <h3>What's in the Box</h3>
       <dl>
@@ -80,6 +82,7 @@
           <dd class="swiss">Swiss</dd>
           <dd class="tradegothic">Trade Gothic</dd>
       </dl>
+      -->
     </div><!-- .span12 -->
   </div><!-- .row -->
   <hr />
