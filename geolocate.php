@@ -73,7 +73,7 @@
     }
     document.getElementById("header").innerHTML = "Base location needs to be set!";
   }
-  var xmarker = "images/6.png";
+  var xmarker = "images/3.png";
   function makemap(mylat,mylong) {
     var marker;
       blatlng = new google.maps.LatLng(mylat,mylong);
