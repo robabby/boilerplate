@@ -20,7 +20,7 @@
   <script type="text/javascript">
     function initialize() {
       var myOptions = {
-        center: new google.maps.LatLng(-34.397, 150.644),
+        center: new google.maps.LatLng(42.1722, -87.7972),
         zoom: 8,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
