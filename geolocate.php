@@ -151,6 +151,7 @@
     <div id="place"></div>
   </div>
   <div class="well">
+    <h2>Send your location to a friend!</h2>
     <form name="coutput">
       <table>
         <tr>

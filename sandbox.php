@@ -23,7 +23,12 @@
     <div class="row">
       <div class="span7">
         <div class="well">
-          <h1>Sandbox</h1>
+          <div class="row-fluid">
+            <img class="pull-right" src="/images/calvin_sandbox.jpg" />
+            <h1>Sandbox</h1>
+            <p>Remember how much we all used to have playing in the sandbox as a kid?  No? Well I do, and I had a blast!  This page is herby dedicated to all of the fun, new interesting Sand Castles that I love to build from time to time.</p>
+            <p>Thispage will contain just a little bit of everything that I may or may not be working on at any given point in time.  Hopefully you have aas much fun using these elements, as I have had building them!</p>
+          </div>
         </div><!-- .well -->
       </div><!-- .span8 -->
       <div class="span5">
