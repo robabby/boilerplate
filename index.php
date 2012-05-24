@@ -4,7 +4,7 @@
   try {
   include('./assets/inc/title.inc.php'); 
   include('./assets/inc/user_agent.php');
-  require_once("$path2root/includes/connection.inc.php");
+  require_once("./assets/inc/connection.inc.php");
 ?>
 <!doctype html>
 <html>
