@@ -127,7 +127,7 @@
   #place {
     display:block;
     margin:0 auto;
-    width:800px;
+    width:880px;
     height:400px;
     border:10px solid #fff;
     box-shadow:0px 0px 10px 1px rgba(0, 0, 0, .75);
@@ -147,7 +147,7 @@
 <!-- #### MAIN CONTENT GOES HERE #### -->
 
 <div class="container">
-  <div class="hero-unit">
+  <div class="well">
     <div id="place"></div>
   </div>
   <div class="well">
