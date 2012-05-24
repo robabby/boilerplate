@@ -5,12 +5,7 @@
   include('./assets/inc/title.inc.php'); 
 ?>
 <!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html>
 <head>
   <?php include('./assets/inc/head.inc.php'); ?>
 </head>
@@ -36,6 +31,7 @@
           <ul class="nav nav-tabs nav-stacked">
             <li><a href="/map.php" title="">Google Maps API</a></li>
             <li><a href="/youtube.php" title="">YouTube API</a></li>
+            <li><a href="/get_tweets.php" title="">Twitter API</a></li>
             <li><a href="/isotope.php" title="">Isotope Site</a></li>
             <li><a href="/outer_space.php" title="">Outer Space Concept</a></li>
             <li><a href="/mobile/" title="">Sencha Touch App</a></li>
