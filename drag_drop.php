@@ -49,6 +49,8 @@ pre {
   color:#fff;
   font-size:13px;
   line-height:120%;
+  background-image:url('/images/grey3.jpg');
+  box-shadow:inset 0px 0px 10px 1px rgba(0, 0, 0, .75);
 }
 #progress p {
   display: block;
@@ -110,6 +112,7 @@ pre {
 <div class="container">
   <div class="row">
     <div class="hero-unit">
+      <a class="btn btn-large btn-inverse pull-right" href="scan_dir.php" title="">View Uploaded Files</a>
       <h1>HTML5 File Drag &amp; Drop</h1>
 
       <form id="upload" action="/assets/ops/upload.php" method="POST" enctype="multipart/form-data">

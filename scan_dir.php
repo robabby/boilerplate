@@ -56,39 +56,39 @@
 
 <div class="container">
   <div class="hero-unit">
+    <a class="btn btn-large btn-inverse pull-right" href="drag_drop.php" title="">Upload More Files</a>
     <h1>Scan Folder Conents</h1>
         
-          <h3>All Files</h3>
+    <h3>All Files</h3>
           
-          <table class="table table-bordered table-striped">
-            <th>Filename</th>
-            <th>View File</th>
-        <?php 
-          $files = new DirectoryIterator('./uploads/');
-          foreach ($files as $file) { ?>
-            <tr>
-              <td><?php echo $file ?></td>
-              <td><a class="btn" href="/uploads/<?php echo $file ?>">View File</a></td>
-            </tr>
-        <?php } ?>
-      </table>
+    <table class="table table-bordered table-striped">
+      <th>Filename</th>
+      <th>View File</th>
+      <?php 
+        $files = new DirectoryIterator('./uploads/');
+        foreach ($files as $file) { ?>
+          <tr>
+            <td><?php echo $file ?></td>
+            <td><a class="btn" href="/uploads/<?php echo $file ?>">View File</a></td>
+          </tr>
+      <?php } ?>
+    </table>
 
-
-      <h3>Images Only</h3>
+    <h3>Images Only</h3>
       
-      <table class="table table-bordered table-striped">
-            <th>Filename</th>
-            <th>View File</th>
-        <?php 
-          $files = new RecursiveIteratorIterator(new RecursiveDirectoryIterator('./uploads/'));
-          $images = new RegexIterator($files, '/\.(?:jpg|png|gif)$/i');
-          foreach ($images as $file) { ?>
-            <tr>
-              <td><?php  echo $file->getRealPath(); ?></td>
-              <td><a class="btn" href="/uploads/<?php echo $file ?>">View File</a></td>
-            </tr>
-        <?php } ?>
-      </table>
+    <table class="table table-bordered table-striped">
+          <th>Filename</th>
+          <th>View File</th>
+      <?php 
+        $files = new RecursiveIteratorIterator(new RecursiveDirectoryIterator('./uploads/'));
+        $images = new RegexIterator($files, '/\.(?:jpg|png|gif)$/i');
+        foreach ($images as $file) { ?>
+          <tr>
+            <td><?php  echo $file->getRealPath(); ?></td>
+            <td><a class="btn" href="/uploads/<?php echo $file ?>">View File</a></td>
+          </tr>
+      <?php } ?>
+    </table>
 
   </div>
 </div><!-- .container -->
