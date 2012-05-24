@@ -6,40 +6,66 @@
   include('./assets/inc/user_agent.php');
   require_once("./assets/inc/connection.inc.php");
 
-  function GetTweets($user) // Recipe 58
-  {
-     // Recipe 58 Get Tweets
-     //
-     // This recipe returns the most recent 20 tweets of a Twitter
-     // user. The argument required is:
-     //
-     //    $user: Twitter username
-     //
-     // Upon success the recipe returns a two element array, the
-     // first of which contains the number of tweets returned, and
-     // the second is an array of the tweets. On failure a single
-     // element array is returned with the value FALSE.
-
-     date_default_timezone_set('utc');
-     $url  = "http://twitter.com/statuses/user_timeline/$user.xml";
-     $file = @file_get_contents($url);
-     if (!strlen($file)) return array(FALSE);
-     
-     $xml  = @simplexml_load_string($file);
-     if ($xml == FALSE) return array(FALSE);
-     
-     $tweets = array();
-
-     foreach ($xml->status as $tweet)
-     {
-        $timestamp = strtotime($tweet->created_at);
-        $tweets[] = "(" . date("M jS, g:ia", $timestamp) . ") " .
-           $tweet->text;
-     }
-
-     return array(count($tweets), $tweets);
+  // My Code
+  $url = 'https://twitter.com/statuses/user_timeline/stat30fbliss.xml';
+  $feed = simplexml_load_file($url, 'SimpleXMLIterator');
+  $filtered = new LimitIterator($feed->status);
+  
+  /**
+   * Replace links in text with html links
+   *
+   * @param  string $text
+   * @return string
+   */
+  function auto_link_text($text) {
+    $pattern  = '#\b(([\w-]+://?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/)))#';
+    return preg_replace_callback($pattern, 'auto_link_text_callback', $text);
   }
 
+  function auto_link_text_callback($matches) {
+      $max_url_length = 50;
+      $max_depth_if_over_length = 2;
+      $ellipsis = '&hellip;';
+
+      $url_full = $matches[0];
+      $url_short = '';
+
+      if (strlen($url_full) > $max_url_length) {
+          $parts = parse_url($url_full);
+          $url_short = $parts['scheme'] . '://' . preg_replace('/^www\./', '', $parts['host']) . '/';
+
+          $path_components = explode('/', trim($parts['path'], '/'));
+          foreach ($path_components as $dir) {
+              $url_string_components[] = $dir . '/';
+          }
+
+          if (!empty($parts['query'])) {
+              $url_string_components[] = '?' . $parts['query'];
+          }
+
+          if (!empty($parts['fragment'])) {
+              $url_string_components[] = '#' . $parts['fragment'];
+          }
+
+          for ($k = 0; $k < count($url_string_components); $k++) {
+              $curr_component = $url_string_components[$k];
+              if ($k >= $max_depth_if_over_length || strlen($url_short) + strlen($curr_component) > $max_url_length) {
+                  if ($k == 0 && strlen($url_short) < $max_url_length) {
+                      // Always show a portion of first directory
+                      $url_short .= substr($curr_component, 0, $max_url_length - strlen($url_short));
+                  }
+                  $url_short .= $ellipsis;
+                  break;
+              }
+              $url_short .= $curr_component;
+          }
+
+      } else {
+          $url_short = $url_full;
+      }
+
+      return "<a rel=\"nofollow\" href=\"$url_full\">$url_short</a>";
+  }
 ?>
 <!doctype html>
 <html>
@@ -69,18 +95,33 @@
 
 <div class="container">
   <div class="hero-unit">
-    <?php // Recipe 58: Get Tweets
+    
 
+    <?php 
+      foreach ($filtered as $status) { ?>
+      <div class="well">
+        <span class="label pull-right"><?php echo $status->created_at; ?></span>
+        <h2><a href="article.php?rss_url=<?php echo $status->link; ?>"><?php echo $status->title; ?></a></h2>
+        <p class="description"><?php echo $status->text; ?></p>
+        <div class="clear"></div>
+        <a class="link btn btn-large pull-right" href="article.php?rss_url=<?php echo $status->link; ?>">Read More</a>
+        <br />
+        <span class="label label-info"><?php echo $status->pubDate; ?></span>
+      </div><!-- .well -->
+    <?php } ?>
+
+    <?php // Recipe 58: Get Tweets
+    /*
     $user   = 'stat30fbliss';
     $result = GetTweets($user);
 
-    echo "<h1>Viewing $user:</h1>";
+    echo "<h2>Viewing <a href='http://twitter.com/$user' title='$user on Twitter'>$user</a>:</h2>";
 
     if (!$result[0]) echo 'Failed';
     else
        for ($j = 0 ; $j < $result[0] ; ++$j)
           echo "<div class='well'>" . $result[1][$j] . "</div>";
-
+    */
     ?>
   </div>
 </div><!-- .container -->
