@@ -32,8 +32,8 @@
             <li class="nav-header">
               APIs
             </li>
-            <li><a href="/map.php" title="">Google Maps API Intro</a></li>
-            <li><a href="/geolocate.php" title="">Google Maps Geolocate</a></li>
+            <li><a href="/map.php" title="">Google Map</a></li>
+            <li><a href="/geolocate.php" title="">Geolocate</a></li>
             <li><a href="/youtube.php" title="">YouTube API</a></li>
             <li><a href="/get_tweets.php" title="">Twitter API</a></li>
             <li class="nav-header">
