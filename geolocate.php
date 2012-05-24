@@ -175,7 +175,7 @@
             <input type="email" name="from" required/>
           </td>
           <td>
-            &nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </td>
           <td>
             To email:
@@ -191,7 +191,7 @@
         Body of message (you may change it) <br/>
         <TEXTAREA NAME="body" COLS=40 ROWS=5>My geolocation is at the address given in the subject line.</TEXTAREA>
       </p>
-     <input class="btn btn-primary" type="submit" value="SEND" />
+     <input class="btn btn-primary btn-large" type="submit" value="Send" />
     </form>
   </div><!-- .well -->
 </div><!-- .container -->
