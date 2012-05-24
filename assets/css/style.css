@@ -289,7 +289,7 @@ header nav ul li a {
   -o-transition: background .25s ease-in-out;
   transition: background .25s ease-in-out;
 }
-header nav ul li a:hover {
+header nav ul li a:hover, header nav ul li.active a {
   color:#333;
   text-decoration:none;
   text-shadow: 0px 1px 0px #777;
@@ -303,9 +303,9 @@ header nav ul li a:hover {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#383838',GradientType=0 ); /* IE6-9 */
 }
 header nav ul li.active a {
+  width:188px;
   border-left:none;
   border-right:none;
-  width:235px;
 }
 header nav ul li.last a {
   border-right:1px solid #ccc;
