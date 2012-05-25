@@ -59,6 +59,9 @@
     margin:0 10px 15px 0;
     background-color:#fff;
   }
+  #blog .post p {
+    font-size:14px;
+  }
   </style>
 </head>
 <body id="blog">
@@ -77,25 +80,31 @@
 <!-- #### MAIN CONTENT GOES HERE #### -->
 
 <div class="container">
-  <dv class="row">
+  <div class="row">
+
+    <div class="span8">
+      <?php while ($list = mysql_fetch_assoc($result)) { ?>
+        <div class="well post">
+          <div class="row-fluid">
+            <span class="label pull-right"><?php echo $list['created']; ?></span>
+            <h2><a href="post.php?article_id=<?php echo $list['article_id']; ?>"><?php echo $list['title']; ?></a></h2>
+            <a class="thumbnail pull-left" href="post.php?article_id=<?php echo $list['article_id']; ?>">
+              <img src="http://placehold.it/250x115" alt="" />
+            </a>
+            <p><?php echo substr($list['article'], 0, 340); ?>...</p>
+            <p>
+              <a class="btn btn-large pull-right" href="post.php?article_id=<?php echo $list['article_id']; ?>">Read Article &raquo;</a>
+            </p>
+          </div><!--/row-->
+        </div><!-- #well -->
+      <?php } // end while  ?>
+    </div>
     
-    <?php while ($list = mysql_fetch_assoc($result)) { ?>
-    <div class="span12">
-      <div class="well post">
-        <div class="row-fluid">
-          <span class="label pull-right"><?php echo $list['created']; ?></span>
-          <h2><a href="post.php?article_id=<?php echo $list['article_id']; ?>"><?php echo $list['title']; ?></a></h2>
-          <a class="thumbnail pull-left" href="post.php?article_id=<?php echo $list['article_id']; ?>">
-            <img src="http://placehold.it/250x115" alt="" />
-          </a>
-          <p><?php echo substr($list['article'], 0, 340); ?>...</p>
-          <p>
-            <a class="btn btn-large pull-right" href="post.php?article_id=<?php echo $list['article_id']; ?>">Read Article &raquo;</a>
-          </p>
-        </div><!--/row-->
-      </div><!-- #well -->
-    </div><!--/span-->
-    <?php } // end while  ?>
+    <div class="span4">
+      <div class="well">
+        
+      </div>
+    </div>
 
   </div><!-- .row-fluid -->
 

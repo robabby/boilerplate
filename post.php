@@ -42,7 +42,7 @@
 <!-- #### MAIN CONTENT GOES HERE #### -->
 
 <div class="container">
-  <div class="row-fluid">
+  <div class="row">
       
     <?php 
     if (isset($error)) {
@@ -77,10 +77,7 @@
         
         <p><?php } if ($row) { echo convertToParas($row['article']); } ?></p>
 
-        <br />
-
-      <p><a class="btn" href="
-        <?php
+      <p><a class="btn" href="<?php
         // check that browser supports $_SERVER variables
         if (isset($_SERVER['HTTP_REFERER']) && isset($_SERVER['HTTP_HOST'])) {
           $url = parse_url($_SERVER['HTTP_REFERER']);
