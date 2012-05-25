@@ -156,13 +156,13 @@
       <table>
         <tr>
           <td>
-      Latitude: <input type="text" name="lat"> 
+            Latitude: <input type="text" name="lat"> 
           </td>
           <td>
-      Longitude: <input type="text" name="lon"> 
+            Longitude: <input type="text" name="lon"> 
           </td>
           <td>
-      Accuracy (meters): <input type="text" name="acc">
+            Accuracy (meters): <input type="text" name="acc">
           </td>
         </tr>
       </table>

@@ -55,6 +55,13 @@
             </li>
             <li><a href="drag_drop.php" title="">HTML5 Drag &amp; Drop</a></li>
             <li><a href="scan_dir.php" title="">View Folder</a></li>
+            <li class="nav-header">
+              Blog &amp; CMS
+            </li>
+            <li><a href="/blog/new_post.php" title="">New Post</a></li>
+            <li><a href="/blog/blog_list.php" title="">Article Manager</a></li>
+            <li><a href="/blog/add_image.php" title="">Attach Image</a></li>
+            <li><a href="/blog/delete_post.php" title="">Delete Post</a></li>
           </ul>
         </div><!-- .well -->
       </div><!-- .span4 -->

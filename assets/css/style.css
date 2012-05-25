@@ -43,7 +43,7 @@ html, body {
   min-width:980px;
 }
 body {
-  padding-top:75px;
+  padding:75px 0;
 }
 
 h1, h2, h3 {
