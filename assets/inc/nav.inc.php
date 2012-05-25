@@ -4,15 +4,15 @@
     <nav>
       <ul>
         <li <?php if ($currentPage == 'index.php') {
-          echo 'class="active"';} ?>><a href="index.php">Home</a></li>
+          echo 'class="active"';} ?>><a href="<?php echo $path2root ?>/index.php">Home</a></li>
         <li <?php if ($currentPage == 'about.php') {
-          echo 'class="active"';} ?>><a href="about.php">About</a></li>
+          echo 'class="active"';} ?>><a href="<?php echo $path2root ?>/about.php">About</a></li>
         <li <?php if ($currentPage == 'sandbox.php') {
-          echo 'class="active"';} ?>><a href="sandbox.php">Sandbox</a></li>
+          echo 'class="active"';} ?>><a href="<?php echo $path2root ?>/sandbox.php">Sandbox</a></li>
         <li <?php if ($currentPage == 'blog.php') {
-          echo 'class="active"';} ?>><a href="blog.php">Blog</a></li>
+          echo 'class="active"';} ?>><a href="<?php echo $path2root ?>/blog.php">Blog</a></li>
         <li class="last <?php if ($currentPage == 'contact.php') {
-          echo 'active';} ?>"><a href="contact.php">Contact</a></li>
+          echo 'active';} ?>"><a href="<?php echo $path2root ?>/contact.php">Contact</a></li>
       </ul>
     </nav>
   </header>
