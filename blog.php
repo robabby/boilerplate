@@ -62,6 +62,9 @@
   #blog .post p {
     font-size:14px;
   }
+  #blog .post .btn {
+    width:95%;
+  }
   </style>
 </head>
 <body id="blog">
@@ -89,9 +92,9 @@
             <span class="label pull-right"><?php echo $list['created']; ?></span>
             <h2><a href="post.php?article_id=<?php echo $list['article_id']; ?>"><?php echo $list['title']; ?></a></h2>
             <a class="thumbnail pull-left" href="post.php?article_id=<?php echo $list['article_id']; ?>">
-              <img src="http://placehold.it/250x115" alt="" />
+              <img src="http://placehold.it/250x150" alt="" />
             </a>
-            <p><?php echo substr($list['article'], 0, 340); ?>...</p>
+            <p><?php echo substr($list['article'], 0, 375); ?>...</p>
             <p>
               <a class="btn btn-large pull-right" href="post.php?article_id=<?php echo $list['article_id']; ?>">Read Article &raquo;</a>
             </p>
@@ -99,10 +102,10 @@
         </div><!-- #well -->
       <?php } // end while  ?>
     </div>
-    
+
     <div class="span4">
       <div class="well">
-        
+
       </div>
     </div>
 
