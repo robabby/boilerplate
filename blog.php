@@ -15,7 +15,7 @@
   $numrows = $r[0];
 
   // number of rows to show per page
-  $rowsperpage = 6;
+  $rowsperpage = 8;
   // find out total pages
   $totalpages = ceil($numrows / $rowsperpage);
 
@@ -57,6 +57,12 @@
     background-image:url('/images/fabric_plaid.png'); 
     border-radius:0;
   }
+  #blog .post h2 {
+    text-shadow:0px 1px 5px rgba(0, 0, 0, .25);
+  }
+  #blog .post .label {
+    box-shadow:0px 1px 5px rgba(0, 0, 0, .25);
+  }
   #blog .post .thumbnail {
     display:block;
     margin:0 10px 15px 0;
@@ -92,7 +98,7 @@
         <div class="span6">
         <div class="well post">
           <div class="row-fluid">
-            <span class="label pull-right"><?php echo $list['created']; ?></span>
+            <span class="label label-inverse pull-right"><?php echo $list['created']; ?></span>
             <h2><a href="post.php?article_id=<?php echo $list['article_id']; ?>"><?php echo $list['title']; ?></a></h2>
             <a class="thumbnail pull-left" href="post.php?article_id=<?php echo $list['article_id']; ?>">
               <img src="http://placehold.it/125x125" alt="" />
@@ -109,9 +115,9 @@
   </div><!-- .row-fluid -->
 
   <!-- Start Pagination -->
-      <div class="row-fluid">
-        <div class="span9">
-          <div class="pagination-centered">
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="pagination-centered">
 
 <?php
 /******  build the pagination links ******/
