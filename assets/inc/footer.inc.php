@@ -1,7 +1,7 @@
   <footer>
     <h1><a id="toggle" href="#">&lt;RD&gt;</a></h1>
     <div class="btn-group dropup">
-      <button id="toggle" class="btn primary">&nbsp;&nbsp;Menu&nbsp;&nbsp;</button>
+      <button id="toggle" class="btn primary">&nbsp;&nbsp;&nbsp;&nbsp;Menu&nbsp;&nbsp;&nbsp;&nbsp;</button>
       <button class="btn primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
       <ul class="dropdown-menu">
         <li><a data-toggle="modal" href="#contact">Feedback</a></li>

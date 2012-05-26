@@ -15,7 +15,7 @@
   $numrows = $r[0];
 
   // number of rows to show per page
-  $rowsperpage = 5;
+  $rowsperpage = 6;
   // find out total pages
   $totalpages = ceil($numrows / $rowsperpage);
 
