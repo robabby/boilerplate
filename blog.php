@@ -6,7 +6,7 @@
   include("$path2root/assets/inc/user_agent.php");
   require_once("$path2root/assets/inc/connection.inc.php");
   // database connection info
-  $conn = mysql_connect('localhost','rawdesigns','Forever#23') or trigger_error("SQL", E_USER_ERROR);
+  $conn = mysql_connect('localhost','root','') or trigger_error("SQL", E_USER_ERROR);
   $db = mysql_select_db('rawdesigns',$conn) or trigger_error("SQL", E_USER_ERROR);
   // find out how many rows are in the table 
   $sql = "SELECT COUNT(*) FROM blog";
@@ -51,8 +51,11 @@
 <head>
   <?php include("$path2root/assets/inc/head.inc.php"); ?>
   <style>
+  #blog {
+  }
   #blog .post {
-    background-image:url('/images/fabric_plaid.png');
+    background-image:url('/images/fabric_plaid.png'); 
+    border-radius:0;
   }
   #blog .post .thumbnail {
     display:block;
@@ -63,7 +66,7 @@
     font-size:14px;
   }
   #blog .post .btn {
-    width:95%;
+    width:93.5%;
   }
   </style>
 </head>
@@ -85,29 +88,23 @@
 <div class="container">
   <div class="row">
 
-    <div class="span8">
       <?php while ($list = mysql_fetch_assoc($result)) { ?>
+        <div class="span6">
         <div class="well post">
           <div class="row-fluid">
             <span class="label pull-right"><?php echo $list['created']; ?></span>
             <h2><a href="post.php?article_id=<?php echo $list['article_id']; ?>"><?php echo $list['title']; ?></a></h2>
             <a class="thumbnail pull-left" href="post.php?article_id=<?php echo $list['article_id']; ?>">
-              <img src="http://placehold.it/250x150" alt="" />
+              <img src="http://placehold.it/125x125" alt="" />
             </a>
-            <p><?php echo substr($list['article'], 0, 375); ?>...</p>
+            <p><?php echo substr($list['article'], 0, 275); ?>...</p>
             <p>
               <a class="btn btn-large pull-right" href="post.php?article_id=<?php echo $list['article_id']; ?>">Read Article &raquo;</a>
             </p>
           </div><!--/row-->
         </div><!-- #well -->
+        </div>
       <?php } // end while  ?>
-    </div>
-
-    <div class="span4">
-      <div class="well">
-
-      </div>
-    </div>
 
   </div><!-- .row-fluid -->
 

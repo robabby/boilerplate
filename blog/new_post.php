@@ -8,7 +8,7 @@
 
   // Set Up DB Connection
   if (isset($_POST['insert'])) {
-    require_once("$path2root/includes/connection.inc.php");
+    require_once("$path2root/assets/inc/connection.inc.php");
     // initialize flag
     $OK = false;
     // create database connection
