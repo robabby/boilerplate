@@ -167,7 +167,7 @@
         </tr>
       </table>
     </form>
-    <form name="msg" action="/assets/ops/sendemail.php" method="post">
+    <form name="msg" action="/assets/ops/send_geo_email.php" method="post">
       <table cellpadding"10">
         <tr>
           <td>
