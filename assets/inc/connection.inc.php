@@ -4,11 +4,11 @@ function dbConnect($usertype, $connectionType = 'mysqli') {
   $host = 'localhost';  
   $db = 'rawdesigns';
   if ($usertype  == 'read') {
-	$user = 'root';
-	$pwd = '';
+	$user = 'rawdesigns';
+	$pwd = 'Forever#23';
   } elseif ($usertype == 'write') {
-  	$user = 'root';
-	$pwd = '';
+  	$user = 'rawdesigns';
+	$pwd = 'Forever#23';
   } else {
 	exit('Unrecognized connection type');
   }

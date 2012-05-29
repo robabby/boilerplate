@@ -1,11 +1,12 @@
 <?php 
-  $path2root = "";
+  $path2root = ".";
   ob_start();
   try {
-  include('./assets/inc/title.inc.php'); 
-  include('./assets/inc/user_agent.php');
-  require_once("./assets/inc/connection.inc.php");
+  include("$path2root/assets/inc/title.inc.php"); 
+  include("$path2root/assets/inc/user_agent.php");
+  require_once("$path2root/assets/inc/connection.inc.php");
   // database connection info
+  //$conn = mysql_connect('rawdesigns.db.7625389.hostedresource.com','rawdesigns','Forever#23') or trigger_error("SQL", E_USER_ERROR);
   $conn = mysql_connect('localhost','root','') or trigger_error("SQL", E_USER_ERROR);
   $db = mysql_select_db('rawdesigns',$conn) or trigger_error("SQL", E_USER_ERROR);
   $sql = "SELECT title, article, created, article_id FROM blog ORDER BY created DESC LIMIT 1";
@@ -14,7 +15,7 @@
 <!doctype html>
 <html>
 <head>
-  <?php include('./assets/inc/head.inc.php'); ?>
+  <?php include("$path2root/assets/inc/head.inc.php"); ?>
   <style>
   #home .hero-unit {
     padding-bottom:30px;
@@ -40,11 +41,11 @@
 </head>
 <body id="home">
 <!-- ## CONTACT MODAL ## -->
-<?php include('./assets/inc/contactModal.inc.php'); ?>
+<?php include("$path2root/assets/inc/contactModal.inc.php"); ?>
 <!-- ## CONTACT MODAL ## -->
 
 <!-- ## HEADER & NAV ## -->
-<?php include('./assets/inc/nav.inc.php'); ?>
+<?php include("$path2root/assets/inc/nav.inc.php"); ?>
 <!-- ## HEADER & NAV ## -->
 
 <!-- #### MAIN CONTENT GOES HERE #### -->
@@ -86,7 +87,7 @@
 <!-- #### MAIN CONTENT GOES HERE #### -->
 
 <!-- ## FOOTER ## -->
-<?php include('./assets/inc/footer.inc.php'); ?>
+<?php include("$path2root/assets/inc/footer.inc.php"); ?>
 <!-- ## FOOTER ## -->
 
 </body>

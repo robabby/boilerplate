@@ -5,7 +5,7 @@
   </div>
   <div class="modal-body">
     <img class="pull-right" src="/images/logo_home.png" />
-    <form name="msg" action="/assets/ops/sendemail.php" method="post">
+    <form name="msg" action="<?php echo $path2root ?>/assets/ops/sendmail.php" method="post">
       <p>
         <label>Name</label>
         <input type="text" name="from" id="from" class="span4" placeholder="Name">

@@ -1,5 +1,5 @@
 <?php 
-  $path2root = "";
+  $path2root = ".";
   ob_start();
   try {
   include("$path2root/assets/inc/title.inc.php"); 

@@ -1,5 +1,5 @@
 <?php 
-  $path2root = "";
+  $path2root = ".";
   ob_start();
   try {
   include("$path2root/assets/inc/title.inc.php"); 
@@ -31,7 +31,7 @@
     <h1>Thank You!</h1>
       <p>I will be sure to get back to you shortly.</p>
       <br />
-      <p><a class="btn btn-primary btn-large" href="index.php">Back to Home &raquo;</a></p>
+      <p><a class="btn btn-inverse btn-large" href="index.php">Back to Home &raquo;</a></p>
   </div>
 </div><!-- .container -->
 
