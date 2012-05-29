@@ -89,7 +89,7 @@
         } else {
         // otherwise, send to main page
         echo 'blog.php';
-        } ?>"><i class="icon-chevron-left"></i>&nbsp;Back to the blog</a></p>
+        } ?>"><i class="icon-chevron-left"></i>&nbsp;Back</a></p>
 
     </div><!--#hero-unit-->
   </div><!-- #span -->

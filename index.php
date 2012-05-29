@@ -53,7 +53,7 @@
 <div class="container">
   <div class="row-fluid">
     <div class="hero-unit">
-      <h1>RawDesigns<small><b>.</b>net</small></h1>
+      <h1>RawDesigns<small>.net</small></h1>
     </div><!-- .hero-unit -->
   </div><!-- .row -->
   <div class="row">
