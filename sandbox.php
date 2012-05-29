@@ -35,10 +35,6 @@
         <div class="well">
           <ul class="nav nav-tabs nav-stacked">
             <li class="nav-header">
-              JavaScript
-            </li>
-            <li><a href="/javascript.php" title="">Practice Page</a></li>
-            <li class="nav-header">
               APIs
             </li>
             <li><a href="/map.php" title="">Google Map</a></li>
