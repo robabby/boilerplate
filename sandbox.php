@@ -37,7 +37,7 @@
             <li class="nav-header">
               JavaScript
             </li>
-            <li><a href="/javascript.php" title="">Demo Page</a></li>
+            <li><a href="/javascript.php" title="">Practice Page</a></li>
             <li class="nav-header">
               APIs
             </li>

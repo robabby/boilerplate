@@ -61,6 +61,11 @@ p {
 .clearfix {
   clear: both;
 }
+.thumbnail {
+  display:block;
+  margin:0 10px 0 0;
+  background-color:#fff;
+}
 
 
 /* ==|== Modal Styles ================================================================================================================ */
