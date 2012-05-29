@@ -63,11 +63,6 @@
   #blog .post .label {
     box-shadow:0px 1px 5px rgba(0, 0, 0, .25);
   }
-  #blog .post .thumbnail {
-    display:block;
-    margin:0 10px 15px 0;
-    background-color:#fff;
-  }
   #blog .post p {
     font-size:14px;
   }
@@ -104,6 +99,7 @@
               <img src="http://placehold.it/125x125" alt="" />
             </a>
             <p><?php echo substr($list['article'], 0, 275); ?>...</p>
+            <br />
             <p>
               <a class="btn btn-large pull-right" href="post.php?article_id=<?php echo $list['article_id']; ?>">Read Article &raquo;</a>
             </p>
