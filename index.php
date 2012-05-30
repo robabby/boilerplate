@@ -59,10 +59,12 @@
   <div class="row">
     <div class="span4">
       <div class="well">
+        <h2>Hello</h2>
       </div><!-- .well -->
     </div><!-- .span -->
     <div class="span4">
       <div class="well">
+        <h2>What's on your mind?</h2>
       </div><!-- .well -->
     </div><!-- .span -->
     <div class="span4">
@@ -75,7 +77,10 @@
           </a>
           <p><?php echo substr($list['article'], 0, 275); ?>...</p>
           <p>
-            <a class="btn btn-large pull-right" href="post.php?article_id=<?php echo $list['article_id']; ?>">Read Article &raquo;</a>
+            <a class="btn btn-large btn-info" href="post.php?article_id=<?php echo $list['article_id']; ?>">Read Article &raquo;</a>
+            <br />
+            <br />
+            <a class="btn btn-large btn-inverse" href="blog.php">Read Blog &raquo;</a>
           </p>
         </div>
       <?php } // end while  ?>

@@ -330,6 +330,7 @@ header nav ul li.last a {
 footer {
   display:block;
   position:fixed;
+  min-width:980px;
   width:100%;
   height:auto;
   bottom:0px;
@@ -434,7 +435,7 @@ footer .btn-group .btn:first-child {
 footer #drawer {
   display:none;
   width:100%;
-  height:300px;
+  height:auto;
   box-shadow:inset 0px 5px 10px 1px rgba(0, 0, 0, .5);
 }
 
@@ -443,6 +444,9 @@ footer #drawer .well {
   background-image:url('/images/fabric_plaid.png');
 }
 
+footer .copy {
+  text-align:center;
+}
 
 /* ===================================================================================================================================
    SANDBOX ###########################################################################################################################

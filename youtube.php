@@ -110,7 +110,7 @@
       var thumbnailUrl = entries[i].media$group.media$thumbnail[0].url;
       var playerUrl = entries[i].media$group.media$content[0].url;
       html.push('<li onclick="loadVideo(\'', playerUrl, '\', true)">',
-                '<img src="', 
+                '<img onClick="moveWin()" src="', 
                 thumbnailUrl, '" />', '<span class="titlec">', title, '</span></li>');
     }
     html.push('</ul><br style="clear: left;"/>');
@@ -118,6 +118,10 @@
     if (entries.length > 0) {
       loadVideo(entries[0].media$group.media$content[0].url, false);
     }
+  }
+
+  function moveWin()  {
+    document.moveTo(0,0);
   }
   </script>
 </head>

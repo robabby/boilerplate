@@ -1,5 +1,5 @@
   <footer>
-    <h1><a id="toggle" href="#">&lt;RD&gt;</a></h1>
+    <h1><a id="toggle" href="#" onClick="return false">&lt;RD&gt;</a></h1>
     <div class="btn-group dropup">
       <button id="toggle" class="btn primary">&nbsp;&nbsp;&nbsp;&nbsp;Menu&nbsp;&nbsp;&nbsp;&nbsp;</button>
       <button class="btn primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>

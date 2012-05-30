@@ -24,8 +24,8 @@
   <div class="row">
     <div class="span12">
       <div class="hero-unit">
-        <h1>BoilerStrap Framework</h1>
-        <h2>Everything you will ever need to build amazing websites!</h2>
+        <h1>Development + Design</h1>
+        <h2>And everything in between</h2>
       </div><!-- .hero-unit -->
     </div><!-- .span12 -->
   </div><!-- .row -->

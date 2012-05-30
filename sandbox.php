@@ -8,6 +8,13 @@
 <html>
 <head>
   <?php include('./assets/inc/head.inc.php'); ?>
+  <style>
+  #sandbox .hero-unit img {
+    margin:0 0 0 15px;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, .6);
+  }
+  hr {margin:5px 0 18px;}
+  </style>
 </head>
 <body id="sandbox">
 
@@ -21,50 +28,105 @@
 
   <div role="main" id="container" class="container">
     <div class="row">
-      <div class="span7">
-        <div class="well">
+      <div class="span12">
+        <div class="hero-unit">
           <div class="row-fluid">
             <img class="pull-right" src="/images/calvin_sandbox.jpg" />
-            <h1>Sandbox</h1>
-            <p>Remember how much we all used to have playing in the sandbox as a kid?  No? Well I do, and I had a blast!  This page is herby dedicated to all of the fun, new interesting Sand Castles that I love to build from time to time.</p>
-            <p>Thispage will contain just a little bit of everything that I may or may not be working on at any given point in time.  Hopefully you have aas much fun using these elements, as I have had building them!</p>
+            <h1>The Sandbox</h1>
+            <p>Remember how much fun we all used to have playing in the sandbox as a kid?  No? Well I do, and I had a blast!  This page is herby dedicated to all of the fun, new interesting Sand Castles that I love to build from time to time.</p>
+            <p>Please keep in mind that these are experiments only.  Do not expect anything to be completely finished, or perfect.  Once a project is finished, I will publish it to GitHub for you to grab a copy of the .zip file.</p>
+            <p>Cheers!</p>
           </div>
-        </div><!-- .well -->
+        </div><!-- .hero-unit -->
       </div><!-- .span8 -->
-      <div class="span5">
+    </div><!-- .row -->
+    <div class="row">
+      <div class="span12">
+        <h2>APIs <small>Google, YouTube, Twitter, &amp; etc.</small></h2>
+        <hr />
+      </div><!-- .span -->
+
+      <div class="span3">
         <div class="well">
-          <ul class="nav nav-tabs nav-stacked">
-            <li class="nav-header">
-              APIs
-            </li>
-            <li><a href="/map.php" title="">Google Map</a></li>
-            <li><a href="/geolocate.php" title="">Geolocate</a></li>
-            <li><a href="/youtube.php" title="">YouTube API</a></li>
-            <li><a href="/get_tweets.php" title="">Twitter API</a></li>
-            <li class="nav-header">
-              Websites
-            </li>
-            <li><a href="/isotope.php" title="">Isotope Site</a></li>
-            <li><a href="/outer_space.php" title="">Outer Space Concept</a></li>
-            <li class="nav-header">
-              Mobile
-            </li>
-            <li><a href="/mobile/" title="">Sencha Touch App</a></li>
-            <li class="nav-header">
-              File Handling
-            </li>
-            <li><a href="drag_drop.php" title="">HTML5 Drag &amp; Drop</a></li>
-            <li><a href="scan_dir.php" title="">View Folder</a></li>
-            <li class="nav-header">
-              Blog &amp; CMS
-            </li>
-            <li><a href="/blog/new_post.php" title="">New Post</a></li>
-            <li><a href="/blog/blog_list.php" title="">Article Manager</a></li>
-            <li><a href="/blog/add_image.php" title="">Attach Image</a></li>
-            <li><a href="/blog/delete_post.php" title="">Delete Post</a></li>
-          </ul>
-        </div><!-- .well -->
-      </div><!-- .span4 -->
+          <a href="/map.php" title="">Google Map</a>
+        </div><!-- span -->
+      </div><!-- .well -->
+      <div class="span3">
+        <div class="well">
+          <a href="/geolocate.php" title="">Geolocate</a>
+        </div><!-- span -->
+      </div><!-- .well -->
+      <div class="span3">
+        <div class="well">
+          <a href="/youtube.php" title="">YouTube API</a>
+        </div><!-- span -->
+      </div><!-- .well -->
+      <div class="span3">
+        <div class="well">
+          <a href="/get_tweets.php" title="">Twitter API</a>
+        </div><!-- span -->
+      </div><!-- .well -->
+
+
+      <div class="span12">
+        <h2>Websites <small>Layouts and concepts</small></h2>
+        <hr />
+      </div><!-- .span -->
+
+      <div class="span3">
+        <div class="well">
+          <a href="/isotope.php" title="">Isotope Site</a>
+        </div><!-- span -->
+      </div><!-- .well -->
+      <div class="span3">
+        <div class="well">
+          <a href="/outer_space.php" title="">Outer Space Concept</a>
+        </div><!-- span -->
+      </div><!-- .well -->
+
+      <div class="span12">
+        <h2>Mobile <small>Featuring both responsive CSS or JavaScript frameworks</small></h2>
+        <hr />
+      </div><!-- .span -->
+
+      <div class="span3">
+        <div class="well">
+          <a href="/mobile/" title="">Sencha Touch App</a>
+        </div><!-- span -->
+      </div><!-- .well -->
+
+      <div class="span12">
+        <h2>File Handling <small>Demos that utilize the power of PHP, AJAX or MySQL</small></h2>
+        <hr />
+      </div><!-- .span -->
+
+      <div class="span3">
+        <div class="well">
+          <a href="drag_drop.php" title="">HTML5 Drag &amp; Drop</a>
+        </div><!-- span -->
+      </div><!-- .well -->
+      <div class="span3">
+        <div class="well">
+          <a href="scan_dir.php" title="">View Folder</a>
+        </div><!-- span -->
+      </div><!-- .well -->
+
+      <div class="span12">
+        <h2>Blog &amp; CMS <small>A lightweight CMS I am working on for small Blogs</small></h2>
+        <hr />
+      </div><!-- .span -->
+
+      <div class="span3">
+        <div class="well">
+          <a href="/blog/blog_list.php" title="">Article Manager</a>
+        </div><!-- span -->
+      </div><!-- .well -->
+      <div class="span3">
+        <div class="well">
+          <a href="/blog/new_post.php" title="">New Post</a>
+        </div><!-- span -->
+      </div><!-- .well -->
+
     </div><!-- .row -->
   </div><!-- #container -->
 
