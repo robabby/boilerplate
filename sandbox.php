@@ -74,7 +74,7 @@
       </div><!-- .span -->
 
       <div class="span3">
-        <div class="well">
+        <div class="well" rel="rgb">
           <a href="/isotope.php" title="">Isotope Site</a>
         </div><!-- span -->
       </div><!-- .well -->
@@ -131,63 +131,6 @@
   </div><!-- #container -->
 
   <?php include('./assets/inc/footer.inc.php'); ?>
-  <script>
-  // Wrap code in an self-executing anonymous function and 
-  // pass jQuery into it so we can use the "$" shortcut without 
-  // causing potential conflicts with already existing functions.
-  (function($) {
-
-      var validation = function() {
-
-          var rules = {  // Private object
-
-              email : {
-                 check: function(value) {
-
-                     if(value) {
-                         return testPattern(value,"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])");
-                     }
-                     return true;
-                 },
-                 msg : "Enter a valid e-mail address."
-              },
-              required : {
-
-                 check: function(value) {
-
-                     if(value) {
-                         return true;
-                     }
-                     else {
-                         return false;
-                     }
-                 },
-                 msg : "This field is required."
-              }
-          }
-          var testPattern = function(value, pattern) {   // Private Method
-
-              var regExp = new RegExp(pattern,"");
-              return regExp.test(value);
-          }
-          return { // Public methods
-
-              addRule : function(name, rule) {
-
-                  rules[name] = rule;
-              },
-              getRule : function(name) {
-
-                  return rules[name];
-              }
-          }
-      }
-      //A new instance of our object in the jQuery namespace.
-      $.validation = new validation();
-  })(jQuery); 
-  // Again, we're passing jQuery into the function 
-  // so we can use $ without potential conflicts.
-  </script>
 </body>
 </html>
 <?php
