@@ -20,11 +20,12 @@
   #home .hero-unit {
     padding-bottom:30px;
     border-radius:0px;
+    overflow: hidden;
   }
   #home .hero-unit h1 {
     text-align:center;
     font-size:125px;
-    text-shadow:0px 1px 7px rgba(0, 0, 0, .25);
+    text-shadow:0px 1px 7px rgba(0, 0, 0, .5);
   }
   #home .hero-unit h1 small {
     font-size:75px;
