@@ -8,6 +8,37 @@
 <html>
 <head>
   <?php include('./assets/inc/head.inc.php'); ?>
+  <style>
+  #about .work .btn {
+    width:89.5%;
+    border-radius:0px;
+  }
+  #about .work {
+    margin-bottom:25px;
+  }
+  #about .work img {
+    padding:5px;
+    border-left:1px solid #ccc;
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    background-color:#fff;
+    -webkit-transition: all .20s ease-in-out;
+    -moz-transition: all .20s ease-in-out;
+    -ms-transition: all .20s ease-in-out;
+    -o-transition: all .20s ease-in-out;
+    transition: all .20s ease-in-out;
+  }
+  #about .work:hover img {
+    border-left:1px solid #3CF;
+    border-top:1px solid #3CF;
+    border-right:1px solid #3CF;
+    background-color:#fff;
+    box-shadow:0px 0px 3px 1px rgba(33, 175, 255, .75);
+  }
+  #about .well.work {
+    margin-top:25px;
+  }
+  </style>
 </head>
 <body id="about">
 
@@ -29,7 +60,6 @@
       </div><!-- .hero-unit -->
     </div><!-- .span12 -->
   </div><!-- .row -->
-  <hr />
   <div class="row">
     <div class="span6">
       <div class="well">
@@ -44,36 +74,68 @@
       </div><!-- .well -->
     </div><!-- .span6 -->
   </div><!-- .row -->
+  <br />
+  <h3>Work I have done</h3>
   <hr />
-  <div class="row">
-    <div class="span12">
-      <h3>Why use this boilerplate?</h3>
-      <p>If you are like me, then you like to go from concept to production quickly.  Nothing is more demotivating to me to get a concept built, then have to style and position elements.  It's so much work!  I love to rapidly develop my concepts in a custom environment that not only looks good, but has everything I need to get to work quickly and easily.  Well with this boilerplate, I have enabled anyone familiar with the code-base to do just that.</p>
-      <hr />
-      <h3>What does it have?</h3>
-      <p>Given the nature of what I enjoy working with, this boilerplate is a bit more advanced than your average HTML/CSS boilerplate.  I started with <a href="#" title="">HTML5 Boilerplate</a>, and converted the standard style.css to a reset.css.  From there I added in <a href="#" title="">Twitter Bootstrap</a>,  offering me all of the rapid development tools I may want to draft quick concepts.  As well as a CSS grid framework and JavaScript plugins. A quick inspection of the files will show you that I have turned as many portions of the code into PHP includes as I could, thus reducing the amount of code-bloat present in the HTML documents and making them simpler and easier to navigate.</p>
+  <div class="row">  
 
-      <p>I have also added in my own custom style.css which I use to overwrite some of the standard styles apparent in Bootstrap, and giving the site a more custom look and feel than the overworked Bootstrap theme.  From there I added in a nice selection of custom fonts. You can view a full list of what is available over on <a href="#" title="">GitHub</a>, as well as form the respository for yourself.</p>
-      <!--
-      <hr />
-      <h3>What's in the Box</h3>
-      <dl>
-        <dt>Frameworks</dt>
-          <dd><a href="#" title="">HTML5 Boilerplate</a></dd>
-          <dd><a href="#" title="">Twitter Bootstrap</a></dd>
-        <dt class="fonts">Fonts</dt>
-          <dd class="bebasNeue">Bebas Neue</dd>
-          <dd class="bigNoodle">Big Noodle</dd>
-          <dd class="code">Code</dd>
-          <dd class="quicksand">Quicksand</dd>
-          <dd class="sansation">Sansation</dd>
-          <dd class="swiss">Swiss</dd>
-          <dd class="tradegothic">Trade Gothic</dd>
-      </dl>
-      -->
-    </div><!-- .span12 -->
+    <div class="span4">
+      <div class="work">
+        <h3><a href="#" title="">Management Meeting Consultants</a></h3>
+        <a href="#" title="">
+          <img src="http://placehold.it/286x175" />
+        </a>
+        <a class="btn btn-inverse btn-large" href="#" title="">View Project</a>
+      </div><!-- .work -->
+    </div><!-- span -->
+
+    <div class="span4">
+      <div class="work">
+        <h3><a href="#" title="">Imagin This</a></h3>
+        <a href="#" title="">
+          <img src="http://placehold.it/286x175" />
+        </a>
+        <a class="btn btn-inverse btn-large" href="#" title="">View Project</a>
+      </div><!-- .work -->
+    </div><!-- span -->
+
+    <div class="span4">
+      <div class="work">
+        <h3><a href="#" title="">545 North</a></h3>
+        <a href="#" title="">
+          <img src="http://placehold.it/286x175" />
+        </a>
+        <a class="btn btn-inverse btn-large" href="#" title="">View Project</a>
+      </div><!-- .work -->
+    </div><!-- span -->
+
+    <div class="span4">
+      <div class="work">
+        <h3><a href="#" title="">Acoustic Soul</a></h3>
+        <a href="#" title="">
+          <img src="http://placehold.it/286x175" />
+        </a>
+        <a class="btn btn-inverse btn-large" href="#" title="">View Project</a>
+      </div><!-- .work -->
+    </div><!-- span -->
+
+    <div class="span4">
+      <div class="work">
+        <h3><a href="#" title="">Shakou Sushi</a></h3>
+        <a href="#" title="">
+          <img src="http://placehold.it/286x175" />
+        </a>
+        <a class="btn btn-inverse btn-large" href="#" title="">View Project</a>
+      </div><!-- .work -->
+    </div><!-- span -->
+
+    <div class="span4">
+      <div class="well work">
+        
+      </div><!-- .well -->
+    </div><!-- span -->
+    
   </div><!-- .row -->
-  <hr />
 </div><!-- #container -->
 
 <!-- #### MAIN CONTENT GOES HERE #### -->
