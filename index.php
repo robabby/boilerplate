@@ -32,11 +32,12 @@
     font-size:75px;
     text-shadow:0px 1px 1px rgba(75, 75, 75, 1);
   }
-  #home .well {
+  #home .main .well {
     border-radius:0px;
     background-image:url('/images/fabric_plaid.png');
+    min-height:310px;
   }
-  #home .post .btn {
+  #home .well .btn {
     width:89%;
     border-radius:0px;
   }
@@ -82,15 +83,18 @@
       <h1>RawDesigns<small>.net</small></h1>
     </div><!-- .hero-unit -->
   </div><!-- .row -->
-  <div class="row">
+  <div class="row main">
     <div class="span4">
       <div class="well">
-        <h2>Hello</h2>
+        <h2>Welcome</h2>
+        <p>I am Rob, and I am Raw Designs.  Few people know that 'Raw Designs' is actually an acronym for Rob Abby Web Designs.  I have been happily building products for the web for almost 5 years now.</p>
+        <p>I have a deep passion for what I do, and enjoy the challenges that come with designing for multiple browsers and platforms.</p>
+        <p>I have a lot to offer as a developer/designer, so kick off your shoes, grab a cup of coffee, and hang out for a while.</p>
+        <a class="btn btn-info btn-large" href="/about.php" title="Learn More">Learn More</a>
       </div><!-- .well -->
     </div><!-- .span -->
     <div class="span4">
       <div class="well">
-        <h2>What's on your mind?</h2>
       </div><!-- .well -->
     </div><!-- .span -->
     <div class="span4">
@@ -105,7 +109,7 @@
           <p>
             <a class="btn btn-large btn-info" href="post.php?article_id=<?php echo $list['article_id']; ?>">Read Article &raquo;</a>
             <br />
-            <a class="btn btn-large btn-inverse" href="blog.php">Read Blog &raquo;</a>
+            <a class="btn btn-large btn-inverse" href="blog.php">Go to Blog &raquo;</a>
           </p>
         </div>
       <?php } // end while  ?>

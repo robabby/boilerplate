@@ -77,12 +77,12 @@
   </div><!-- .row -->
   
   <br />
-  <h3>Where I work now</h3>
+  <h2>Where I work now</h2>
   <hr />
 
   <div class="row">
     <div class="span12">
-      <h2><a href="#" title="">Web2Carz.com</a></h2>
+      <h3><a href="http://web2carz.com" title="Web2Carz.com">Web2Carz.com</a></h3>
       <a class="thumbnail" href="http://web2carz.com" title="Web2Carz.com">
         <img src="/images/work/web2carz.png" />
       </a>
@@ -90,7 +90,7 @@
   </div>
   <br />
   <br />
-  <h3>Work I have done</h3>
+  <h2>Work I have done</h2>
   <hr />
   <div class="row">  
 
