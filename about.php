@@ -33,7 +33,7 @@
     border-top:1px solid #3CF;
     border-right:1px solid #3CF;
     background-color:#fff;
-    box-shadow:0px 0px 3px 1px rgba(33, 175, 255, .75);
+    box-shadow:0px 0px 2px 0px rgba(33, 175, 255, .75);
   }
   #about .well.work {
     margin-top:25px;
