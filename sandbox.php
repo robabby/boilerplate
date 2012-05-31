@@ -83,6 +83,11 @@
           <a href="/outer_space.php" title="">Outer Space Concept</a>
         </div><!-- span -->
       </div><!-- .well -->
+      <div class="span3">
+        <div class="well">
+          <a href="/stars.php" title="">Moving Stars</a>
+        </div><!-- span -->
+      </div><!-- .well -->
 
       <div class="span12">
         <h2>Mobile <small>Featuring both responsive CSS or JavaScript frameworks</small></h2>

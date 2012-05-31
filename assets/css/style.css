@@ -38,6 +38,9 @@
 
 /* ==|== Misc Styles ================================================================================================================= */
 
+* {
+  -webkit-font-smoothing: antialiased;
+}
 html, body {
   display:block;
   min-width:980px;
@@ -47,7 +50,10 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'BigNoodleTitlingRegular';
+  font-family: 'TradeGothicLTStdBdCnNo.20';
+  font-variant:small-caps;
+  text-transform:uppercase;
+  letter-spacing:-1px;
 }
 p {
   font-family: 'Swiss721Light';
