@@ -85,6 +85,11 @@ body {
   padding: 5px;
   margin-bottom: 20px;
 }
+
+.element * {
+  position: absolute;
+  margin: 0;
+}
 .element {
   width: 110px;
   height: 110px;
@@ -102,11 +107,6 @@ body {
 }
 .element:hover {
   background-color: rgba(100, 100, 100, 1);
-}
-
-.element * {
-  position: absolute;
-  margin: 0;
 }
 .element .symbol {
   left: 0.2em;
