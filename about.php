@@ -31,13 +31,13 @@
   </div><!-- .row -->
   <hr />
   <div class="row">
-    <div class="span5">
+    <div class="span6">
       <div class="well">
         <h3>The Problem</h3>
         <p>You have an idea for an App, Widget, Slider, Website, whatever! You sit down to start coding it up, and you realize all of the things you need are in different places.  Not to mention you may have to compleetly draft a whole other website just to get your idea off the ground. By the time you compile your folder system and start coding your next big thing, your exhausted, or worse te idea is lost!</p>
       </div><!-- .well -->
     </div><!-- .span6 -->
-    <div class="span5 offset2 textalign-right">
+    <div class="span6 textalign-right">
       <div class="well">
         <h3>The Solution</h3>
         <p>Obviously, I needed a way to more quickly build the ideas I was nurturing.  A place where folders were organized, and everything I could possibly want or need when starting a new idea would be right at my fingertips.  Thus, 'BoilerStrap' was born.  Built on a solid foundation, and customized to remove all distractiopn from the document, but give you access to every resource you would ever want or need.</p>

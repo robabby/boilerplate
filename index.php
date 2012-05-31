@@ -21,6 +21,7 @@
     padding-bottom:30px;
     border-radius:0px;
     overflow: hidden;
+    box-shadow:inset 0px 0px 7px 1px rgba(0, 0, 0, .5);
   }
   #home .hero-unit h1 {
     text-align:center;
