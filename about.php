@@ -57,6 +57,7 @@
       <div class="hero-unit">
         <h1>Development + Design</h1>
         <h2>And everything in between</h2>
+        <p>But mosty Develpment</p>
       </div><!-- .hero-unit -->
     </div><!-- .span12 -->
   </div><!-- .row -->
@@ -74,6 +75,20 @@
       </div><!-- .well -->
     </div><!-- .span6 -->
   </div><!-- .row -->
+  
+  <br />
+  <h3>Where I work now</h3>
+  <hr />
+
+  <div class="row">
+    <div class="span12">
+      <h2><a href="#" title="">Web2Carz.com</a></h2>
+      <a class="thumbnail" href="http://web2carz.com" title="Web2Carz.com">
+        <img src="/images/work/web2carz.png" />
+      </a>
+    </div>
+  </div>
+  <br />
   <br />
   <h3>Work I have done</h3>
   <hr />
@@ -81,51 +96,61 @@
 
     <div class="span4">
       <div class="work">
-        <h3><a href="#" title="">Management Meeting Consultants</a></h3>
-        <a href="#" title="">
+        <h3><a href="http://mmconsultants-inc.com/" title="MMC Inc.">Management Meeting Consultants</a></h3>
+        <a href="http://mmconsultants-inc.com/" title="MMC Inc.">
           <img src="/images/work/mmc.png" width="286" />
         </a>
-        <a class="btn btn-inverse btn-large" href="#" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="http://mmconsultants-inc.com/" title="MMC Inc.">View Project</a>
       </div><!-- .work -->
     </div><!-- span -->
 
     <div class="span4">
       <div class="work">
-        <h3><a href="#" title="">Imagine This</a></h3>
-        <a href="#" title="">
+        <h3><a href="http://imaginethis.ws" title="Imagine This">Imagine This</a></h3>
+        <a href="http://imaginethis.ws" title="Imagine This">
           <img src="/images/work/imaginethis.png" width="286" />
         </a>
-        <a class="btn btn-inverse btn-large" href="#" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="http://imaginethis.ws" title="Imagine This">View Project</a>
       </div><!-- .work -->
     </div><!-- span -->
 
     <div class="span4">
       <div class="work">
-        <h3><a href="#" title="">545 North</a></h3>
-        <a href="#" title="">
+        <h3><a href="http://545north.com/" title="545 North Bar &amp; Grill">545 North</a></h3>
+        <a href="http://545north.com/" title="545 North Bar &amp; Grill">
           <img src="/images/work/545.png" width="286" />
         </a>
-        <a class="btn btn-inverse btn-large" href="#" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="http://545north.com/" title="545 North Bar &amp; Grill">View Project</a>
       </div><!-- .work -->
     </div><!-- span -->
 
     <div class="span4">
       <div class="work">
-        <h3><a href="#" title="">Acoustic Soul</a></h3>
-        <a href="#" title="">
+        <h3><a href="http://danielasloan.com/" title="Daniela Sloan Acoustic Soul">Acoustic Soul</a></h3>
+        <a href="http://danielasloan.com/" title="Daniela Sloan Acoustic Soul">
           <img src="/images/work/daniela.png" width="286" />
         </a>
-        <a class="btn btn-inverse btn-large" href="#" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="http://danielasloan.com/" title="Daniela Sloan Acoustic Soul">View Project</a>
       </div><!-- .work -->
     </div><!-- span -->
 
     <div class="span4">
       <div class="work">
-        <h3><a href="#" title="">Shakou Sushi</a></h3>
-        <a href="#" title="">
+        <h3><a href="http://shakousushi.com/" title="Shakou Sushi">Shakou Sushi</a></h3>
+        <a href="http://shakousushi.com/" title="Shakou Sushi">
           <img src="/images/work/shakou.png" width="286" />
         </a>
-        <a class="btn btn-inverse btn-large" href="#" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="http://shakousushi.com/" title="Shakou Sushi">View Project</a>
+      </div><!-- .work -->
+    </div><!-- span -->
+
+    <div class="span4">
+      <div class="work">
+        <h3><a href="http://www.chicagobooth.edu/bfeo/2012/index.aspx" title="Business Forecast 2012">Business Forecast 2012</a></h3>
+        <a href="http://www.chicagobooth.edu/bfeo/2012/index.aspx" title="Business Forecast 2012">
+          <img src="/images/work/businessforecast.png" width="286" />
+        </a>
+        <a class="btn btn-inverse btn-large" href="http://www.chicagobooth.edu/bfeo/2012/index.aspx" title="Business Forecast 2012">View Project</a>
       </div><!-- .work -->
     </div><!-- span -->
 
