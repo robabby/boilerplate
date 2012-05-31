@@ -21,7 +21,7 @@
     padding-bottom:30px;
     border-radius:0px;
     overflow: hidden;
-    box-shadow:inset 0px 0px 7px 1px rgba(0, 0, 0, .5);
+    box-shadow:inset 0px 0px 7px 1px rgba(0, 0, 0, .25);
   }
   #home .hero-unit h1 {
     text-align:center;
@@ -30,12 +30,15 @@
   }
   #home .hero-unit h1 small {
     font-size:75px;
-    text-shadow:0px 1px 1px rgba(75, 75, 75, 1);
+    text-shadow:0px 1px 2px #fff;
   }
   #home .main .well {
     border-radius:0px;
     background-image:url('/images/fabric_plaid.png');
     min-height:310px;
+  }
+  #home .main .well h2 {
+    text-shadow:0px 0px 3px rgba(0, 0, 0, .25);
   }
   #home .well .btn {
     width:89%;
@@ -93,12 +96,27 @@
         <a class="btn btn-info btn-large" href="/about.php" title="Learn More">Learn More</a>
       </div><!-- .well -->
     </div><!-- .span -->
+    
     <div class="span4">
       <div class="well">
+        <h2>Recent Project</h2>
+        <div class="row-fluid">
+          <h2><a href="post.php">Outer Space Concept</a></h2>
+          <a class="thumbnail pull-left" href="post.php">
+            <img src="http://placehold.it/100x100" alt="" />
+          </a>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <p>
+            <a class="btn btn-large btn-info" href="post.php?article_id=<?php echo $list['article_id']; ?>">Read Article &raquo;</a>
+            <br />
+            <a class="btn btn-large btn-inverse" href="blog.php">Go to Blog &raquo;</a>
+          </p>
+        </div>
       </div><!-- .well -->
     </div><!-- .span -->
+
     <div class="span4">
-      <div class="well post">
+      <div class="well">
       <?php while ($list = mysql_fetch_assoc($result)) { ?>
         <div class="row-fluid">
           <h2><a href="post.php?article_id=<?php echo $list['article_id']; ?>"><?php echo $list['title']; ?></a></h2>
@@ -107,9 +125,9 @@
           </a>
           <p><?php echo substr($list['article'], 0, 275); ?>...</p>
           <p>
-            <a class="btn btn-large btn-info" href="post.php?article_id=<?php echo $list['article_id']; ?>">Read Article &raquo;</a>
+            <a class="btn btn-large btn-info" href="post.php">View Project &raquo;</a>
             <br />
-            <a class="btn btn-large btn-inverse" href="blog.php">Go to Blog &raquo;</a>
+            <a class="btn btn-large btn-inverse" href="blog.php">Sandbox &raquo;</a>
           </p>
         </div>
       <?php } // end while  ?>
@@ -148,7 +166,7 @@
 <script src="/assets/js/realshadow.js" type="text/javascript"></script>
   <script>
   $(function(){
-    $('h1').realshadow({
+    //$('h1').realshadow({
       //pageY: 190
     });
   });

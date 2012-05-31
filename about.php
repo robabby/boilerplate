@@ -9,6 +9,20 @@
 <head>
   <?php include('./assets/inc/head.inc.php'); ?>
   <style>
+  #about .hero-unit h1 {
+    font-size:125px;
+    text-shadow:0px 1px 7px rgba(0, 0, 0, .5);
+  }
+  #about .hero-unit h1 small {
+    font-size:100px;
+    color:#ccc;
+    text-shadow:0px 1px 2px #fff;
+  }
+  #about .hero-unit h2 {
+    font-size:50px;
+    color:#ccc;
+    text-shadow:0px 1px 2px #fff;
+  }
   #about .work .btn {
     width:89.5%;
     border-radius:0px;
@@ -22,6 +36,7 @@
     border-top:1px solid #ccc;
     border-right:1px solid #ccc;
     background-color:#fff;
+    opacity:.5;
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     -ms-transition: all .25s ease-in-out;
@@ -33,11 +48,12 @@
     border-top:1px solid #3CF;
     border-right:1px solid #3CF;
     background-color:#fff;
+    opacity:1;
   }
   #about .well.work {
     margin-top:25px;
   }
-  .thumbnail, img {
+  .thumbnail {
     opacity:.8;
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
@@ -45,8 +61,12 @@
     -o-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
   }
-  .thumbnail:hover, .work:hover img {
+  .thumbnail:hover {
     opacity:1;
+  }
+  #about .contact .btn {
+    width:96.5%;
+    border-radius:0px;
   }
   </style>
 </head>
@@ -65,9 +85,8 @@
   <div class="row">
     <div class="span12">
       <div class="hero-unit">
-        <h1>Development + Design</h1>
+        <h1>Development<small>+</small>Design</h1>
         <h2>And everything in between</h2>
-        <p>But mosty Develpment</p>
       </div><!-- .hero-unit -->
     </div><!-- .span12 -->
   </div><!-- .row -->
@@ -164,11 +183,13 @@
       </div><!-- .work -->
     </div><!-- span -->
 
-    <div class="span4">
-      <div class="well work">
+    <div class="span12">
+      <br />
+      <br />
+      <div class="contact">
         <h3>Like what you see?</h3>
         <p>Don't be shy, let me know what you think!  I am available for certain requests, and am more than willing to answer any quesions you may have.</p>
-        <a href="#" class="btn btn-info btn-large" title="">Contact</a>
+        <a href="/contact.php" class="btn btn-info btn-large" title="">Contact Me</a>
       </div><!-- .well -->
     </div><!-- span -->
     
