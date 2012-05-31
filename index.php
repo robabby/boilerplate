@@ -37,6 +37,7 @@
   }
   #home .post .btn {
     width:89%;
+    border-radius:0px;
   }
   #background {
     background: url(/images/cloud.png) repeat 5% 5%;
@@ -102,7 +103,6 @@
           <p><?php echo substr($list['article'], 0, 275); ?>...</p>
           <p>
             <a class="btn btn-large btn-info" href="post.php?article_id=<?php echo $list['article_id']; ?>">Read Article &raquo;</a>
-            <br />
             <br />
             <a class="btn btn-large btn-inverse" href="blog.php">Read Blog &raquo;</a>
           </p>

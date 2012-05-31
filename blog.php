@@ -69,6 +69,7 @@
   }
   #blog .post .btn {
     width:93.5%;
+    border-radius:0px;
   }
   </style>
 </head>
@@ -102,7 +103,7 @@
             <p><?php echo substr($list['article'], 0, 275); ?>...</p>
             <br />
             <p>
-              <a class="btn btn-large pull-right" href="post.php?article_id=<?php echo $list['article_id']; ?>">Read Article &raquo;</a>
+              <a class="btn btn-info btn-large pull-right" href="post.php?article_id=<?php echo $list['article_id']; ?>">Read Article &raquo;</a>
             </p>
           </div><!--/row-->
         </div><!-- #well -->
