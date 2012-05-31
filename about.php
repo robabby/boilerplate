@@ -83,7 +83,7 @@
       <div class="work">
         <h3><a href="#" title="">Management Meeting Consultants</a></h3>
         <a href="#" title="">
-          <img src="http://placehold.it/286x175" />
+          <img src="/images/work/mmc.png" width="286" />
         </a>
         <a class="btn btn-inverse btn-large" href="#" title="">View Project</a>
       </div><!-- .work -->
@@ -91,9 +91,9 @@
 
     <div class="span4">
       <div class="work">
-        <h3><a href="#" title="">Imagin This</a></h3>
+        <h3><a href="#" title="">Imagine This</a></h3>
         <a href="#" title="">
-          <img src="http://placehold.it/286x175" />
+          <img src="/images/work/imaginethis.png" width="286" />
         </a>
         <a class="btn btn-inverse btn-large" href="#" title="">View Project</a>
       </div><!-- .work -->
@@ -103,7 +103,7 @@
       <div class="work">
         <h3><a href="#" title="">545 North</a></h3>
         <a href="#" title="">
-          <img src="http://placehold.it/286x175" />
+          <img src="/images/work/545.png" width="286" />
         </a>
         <a class="btn btn-inverse btn-large" href="#" title="">View Project</a>
       </div><!-- .work -->
@@ -113,7 +113,7 @@
       <div class="work">
         <h3><a href="#" title="">Acoustic Soul</a></h3>
         <a href="#" title="">
-          <img src="http://placehold.it/286x175" />
+          <img src="/images/work/daniela.png" width="286" />
         </a>
         <a class="btn btn-inverse btn-large" href="#" title="">View Project</a>
       </div><!-- .work -->
@@ -123,7 +123,7 @@
       <div class="work">
         <h3><a href="#" title="">Shakou Sushi</a></h3>
         <a href="#" title="">
-          <img src="http://placehold.it/286x175" />
+          <img src="/images/work/shakou.png" width="286" />
         </a>
         <a class="btn btn-inverse btn-large" href="#" title="">View Project</a>
       </div><!-- .work -->
@@ -131,7 +131,9 @@
 
     <div class="span4">
       <div class="well work">
-        
+        <h3>Like what you see?</h3>
+        <p>Don't be shy, let me know what you think!  I am available for certain requests, and am more than willing to answer any quesions you may have.</p>
+        <a href="#" class="btn btn-info btn-large" title="">Contact</a>
       </div><!-- .well -->
     </div><!-- span -->
     
