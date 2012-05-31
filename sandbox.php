@@ -13,7 +13,16 @@
     margin:0 0 0 15px;
     box-shadow:0px 0px 10px rgba(0, 0, 0, .6);
   }
-  hr {margin:5px 0 18px;}
+  hr {
+    margin:5px 0 18px;
+  }
+  #sandbox .well {
+    border-radius:0px;
+  }
+  #sandbox .well .btn {
+    width:84%;
+    border-radius:0px;
+  }
   </style>
 </head>
 <body id="sandbox">
@@ -48,22 +57,30 @@
 
       <div class="span3">
         <div class="well">
-          <a href="/map.php" title="">Google Map</a>
+          <h3><a href="/map.php" title="">Google Map</a></h3>
+          <p>A basic implementation of the Google Maps API v3 with street view.</p>
+          <a class="btn btn-info btn-large" href="/map.php" title="">View Project</a>
         </div><!-- span -->
       </div><!-- .well -->
       <div class="span3">
         <div class="well">
-          <a href="/geolocate.php" title="">Geolocate</a>
+          <h3><a href="/geolocate.php" title="">Geolocate</a></h3>
+          <p>A more advanced map with Geolocation, and a form to email your location.</p>
+          <a class="btn btn-info btn-large" href="/map.php" title="">View Project</a>
         </div><!-- span -->
       </div><!-- .well -->
       <div class="span3">
         <div class="well">
-          <a href="/youtube.php" title="">YouTube API</a>
+          <h3><a href="/youtube.php" title="">YouTube API</a></h3>
+          <p>Introductory implementation of the YouTube video player and search API.</p>
+          <a class="btn btn-info btn-large" href="/map.php" title="">View Project</a>
         </div><!-- span -->
       </div><!-- .well -->
       <div class="span3">
         <div class="well">
-          <a href="/get_tweets.php" title="">Twitter API</a>
+          <h3><a href="/get_tweets.php" title="">Twitter API</a></h3>
+          <p>Log in to Twitter with oAuth and the Twitter API to post or read tweets.</p>
+          <a class="btn btn-info btn-large" href="/map.php" title="">View Project</a>
         </div><!-- span -->
       </div><!-- .well -->
 
@@ -75,17 +92,23 @@
 
       <div class="span3">
         <div class="well" rel="rgb">
-          <a href="/isotope.php" title="">Isotope Site</a>
+          <h3><a href="/isotope.php" title="">Isotope Site</a></h3>
+          <p>Fun with the isotope jQuery plugin.  Fluid layout excitement for the whole family!</p>
+          <a class="btn btn-info btn-large" href="/map.php" title="">View Project</a>
         </div><!-- span -->
       </div><!-- .well -->
       <div class="span3">
         <div class="well">
-          <a href="/outer_space.php" title="">Outer Space Concept</a>
+          <h3><a href="/outer_space.php" title="">Outer Space Concept</a></h3>
+          <p>Spinning planets and flickering stars achieved entirely through CSS3.</p>
+          <a class="btn btn-info btn-large" href="/map.php" title="">View Project</a>
         </div><!-- span -->
       </div><!-- .well -->
       <div class="span3">
         <div class="well">
-          <a href="/stars.php" title="">Moving Stars</a>
+          <h3><a href="/stars.php" title="">Moving Stars</a></h3>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          <a class="btn btn-info btn-large" href="/map.php" title="">View Project</a>
         </div><!-- span -->
       </div><!-- .well -->
 
@@ -96,7 +119,9 @@
 
       <div class="span3">
         <div class="well">
-          <a href="/mobile/" title="">Sencha Touch App</a>
+          <h3><a href="/mobile/" title="">Sencha Touch App</a></h3>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          <a class="btn btn-info btn-large" href="/map.php" title="">View Project</a>
         </div><!-- span -->
       </div><!-- .well -->
 
@@ -107,12 +132,16 @@
 
       <div class="span3">
         <div class="well">
-          <a href="drag_drop.php" title="">HTML5 Drag &amp; Drop</a>
+          <h3><a href="drag_drop.php" title="">HTML5 Drag &amp; Drop</a></h3>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          <a class="btn btn-info btn-large" href="/map.php" title="">View Project</a>
         </div><!-- span -->
       </div><!-- .well -->
       <div class="span3">
         <div class="well">
-          <a href="scan_dir.php" title="">View Folder</a>
+          <h3><a href="scan_dir.php" title="">View Folder</a></h3>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          <a class="btn btn-info btn-large" href="/map.php" title="">View Project</a>
         </div><!-- span -->
       </div><!-- .well -->
 
@@ -123,12 +152,16 @@
 
       <div class="span3">
         <div class="well">
-          <a href="/blog/blog_list.php" title="">Article Manager</a>
+          <h3><a href="/blog/blog_list.php" title="">Article Manager</a></h3>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          <a class="btn btn-info btn-large" href="/map.php" title="">View Project</a>
         </div><!-- span -->
       </div><!-- .well -->
       <div class="span3">
         <div class="well">
-          <a href="/blog/new_post.php" title="">New Post</a>
+          <h3><a href="/blog/new_post.php" title="">New Post</a></h3>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          <a class="btn btn-info btn-large" href="/map.php" title="">View Project</a>
         </div><!-- span -->
       </div><!-- .well -->
 
