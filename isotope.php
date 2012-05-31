@@ -92,23 +92,17 @@ body {
   float: left;
   overflow: hidden;
   position: relative;
-  background: #888;
+  background-color: rgba(100, 100, 100, .85);
   color: #222;
-  -webkit-border-top-right-radius: 1.2em;
-      -moz-border-radius-topright: 1.2em;
-          border-top-right-radius: 1.2em;
+  -webkit-transition: all .20s ease-in-out;
+  -moz-transition: all .20s ease-in-out;
+  -ms-transition: all .20s ease-in-out;
+  -o-transition: all .20s ease-in-out;
+  transition: all .20s ease-in-out;
 }
-
-.element.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
-.element.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
-.element.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
-.element.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
-.element.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
-.element.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
-.element.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
-.element.other.nonmetal  { background: #00F; background: hsl( 252, 100%, 50%); }
-.element.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
-.element.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+.element:hover {
+  background-color: rgba(100, 100, 100, 1);
+}
 
 .element * {
   position: absolute;
