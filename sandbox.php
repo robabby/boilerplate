@@ -79,7 +79,7 @@
       <div class="span3">
         <div class="well">
           <h3><a href="/get_tweets.php" title="">Twitter API</a></h3>
-          <p>Log in to Twitter with oAuth and the Twitter API to post or read tweets.</p>
+          <p>Tapping into my Twitter RSS feed with PHP. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
           <a class="btn btn-info btn-large" href="/get_tweets.php" title="">View Project</a>
         </div><!-- span -->
       </div><!-- .well -->

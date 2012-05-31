@@ -22,21 +22,31 @@
     border-top:1px solid #ccc;
     border-right:1px solid #ccc;
     background-color:#fff;
-    -webkit-transition: all .20s ease-in-out;
-    -moz-transition: all .20s ease-in-out;
-    -ms-transition: all .20s ease-in-out;
-    -o-transition: all .20s ease-in-out;
-    transition: all .20s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
   }
   #about .work:hover img {
     border-left:1px solid #3CF;
     border-top:1px solid #3CF;
     border-right:1px solid #3CF;
     background-color:#fff;
-    box-shadow:0px 0px 2px 0px rgba(33, 175, 255, .75);
   }
   #about .well.work {
     margin-top:25px;
+  }
+  .thumbnail, img {
+    opacity:.8;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+  }
+  .thumbnail:hover, .work:hover img {
+    opacity:1;
   }
   </style>
 </head>
@@ -170,7 +180,6 @@
 <!-- ## FOOTER ## -->
 <?php include('./assets/inc/footer.inc.php'); ?>
 <!-- ## FOOTER ## -->
-
 </body>
 </html>
 <?php
