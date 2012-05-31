@@ -18,7 +18,7 @@
     color:#ccc;
     text-shadow:0px 1px 2px #fff;
   }
-  #about .hero-unit h2 {
+  #about h2 {
     font-size:50px;
     color:#ccc;
     text-shadow:0px 1px 2px #fff;
@@ -66,7 +66,11 @@
   }
   #about .contact .btn {
     width:96.5%;
+    height:50px;
+    line-height:50px;
+    font-size:35px;
     border-radius:0px;
+    font-family: 'Swiss721Light';
   }
   </style>
 </head>
@@ -106,8 +110,8 @@
   </div><!-- .row -->
   
   <br />
-  <h2>Where I work now</h2>
-  <hr />
+  <h2>Where I work now <span>&darr;</span></h2>
+  <br />
 
   <div class="row">
     <div class="span12">
@@ -119,8 +123,8 @@
   </div>
   <br />
   <br />
-  <h2>Work I have done</h2>
-  <hr />
+  <h2>Work I have done <span>&darr;</span></h2>
+  <br />
   <div class="row">  
 
     <div class="span4">
@@ -187,8 +191,8 @@
       <br />
       <br />
       <div class="contact">
-        <h3>Like what you see?</h3>
-        <p>Don't be shy, let me know what you think!  I am available for certain requests, and am more than willing to answer any quesions you may have.</p>
+        <h2>Like what you see? <span>&darr;</span></h2>
+        <br />
         <a href="/contact.php" class="btn btn-info btn-large" title="">Contact Me</a>
       </div><!-- .well -->
     </div><!-- span -->

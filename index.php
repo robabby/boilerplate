@@ -50,7 +50,18 @@
     top: 0; left: 0; right: 0; bottom: 0;
     z-index: -3;
   }
-
+  .sandbox .thumbnail {
+    margin:0 auto 10px;
+    opacity:.6;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+  }
+  .sandbox .thumbnail:hover {
+    opacity:1;
+  }
   #midground {
     background: url(/images/cloud.png) repeat 20% 20%;
     position: absolute;
@@ -92,31 +103,32 @@
         <h2>Welcome</h2>
         <p>I am Rob, and I am Raw Designs.  Few people know that 'Raw Designs' is actually an acronym for Rob Abby Web Designs.  I have been happily building products for the web for almost 5 years now.</p>
         <p>I have a deep passion for what I do, and enjoy the challenges that come with designing for multiple browsers and platforms.</p>
-        <p>I have a lot to offer as a developer/designer, so kick off your shoes, grab a cup of coffee, and hang out for a while.</p>
-        <a class="btn btn-info btn-large" href="/about.php" title="Learn More">Learn More</a>
+        <p>Grab a cup of coffee, and hang out for a while.</p>
+        <br />
+        <p>
+          <a class="btn btn-info btn-large" data-toggle="modal" href="#contact" title="Quick Contact">Contact &raquo;</a>
+          <a class="btn btn-inverse btn-large" href="/about.php" title="Learn More">Learn More &raquo;</a>
+        </p>
       </div><!-- .well -->
     </div><!-- .span -->
     
     <div class="span4">
-      <div class="well">
-        <h2>Recent Project</h2>
-        <div class="row-fluid">
-          <h2><a href="post.php">Outer Space Concept</a></h2>
-          <a class="thumbnail pull-left" href="post.php">
-            <img src="http://placehold.it/100x100" alt="" />
-          </a>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-          <p>
-            <a class="btn btn-large btn-info" href="post.php?article_id=<?php echo $list['article_id']; ?>">Read Article &raquo;</a>
-            <br />
-            <a class="btn btn-large btn-inverse" href="blog.php">Go to Blog &raquo;</a>
-          </p>
-        </div>
+      <div class="well sandbox">
+        <h2><a href="post.php">Outer Space Concept</a></h2>
+        <a class="thumbnail pull-left" href="post.php" title="Outer Space Concept">
+          <img src="/images/thumbs/outer_space.png" alt="" />
+        </a>
+        <div class="clearfix"></div>
+        <br />
+        <p>
+          <a class="btn btn-large btn-info" href="outer_space.php">View Project &raquo;</a>
+          <a class="btn btn-large btn-inverse" href="sandbox.php">Go to Sandbox &raquo;</a>
+        </p>
       </div><!-- .well -->
     </div><!-- .span -->
 
     <div class="span4">
-      <div class="well">
+      <div class="well blog">
       <?php while ($list = mysql_fetch_assoc($result)) { ?>
         <div class="row-fluid">
           <h2><a href="post.php?article_id=<?php echo $list['article_id']; ?>"><?php echo $list['title']; ?></a></h2>
@@ -124,10 +136,10 @@
             <img src="http://placehold.it/100x100" alt="" />
           </a>
           <p><?php echo substr($list['article'], 0, 275); ?>...</p>
+        <br />
           <p>
-            <a class="btn btn-large btn-info" href="post.php">View Project &raquo;</a>
-            <br />
-            <a class="btn btn-large btn-inverse" href="blog.php">Sandbox &raquo;</a>
+            <a class="btn btn-large btn-info" href="post.php?article_id=<?php echo $list['article_id']; ?>">Read Article &raquo;</a>
+            <a class="btn btn-large btn-inverse" href="blog.php">Go to Blog &raquo;</a>
           </p>
         </div>
       <?php } // end while  ?>
