@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'HelveticaNeueLTPro-Bd';
+    src: url('helveticaneueltpro-bd.eot');
+    src: url('helveticaneueltpro-bd.eot?#iefix') format('embedded-opentype'),
+         url('helveticaneueltpro-bd.woff') format('woff'),
+         url('helveticaneueltpro-bd.ttf') format('truetype'),
+         url('helveticaneueltpro-bd.svg#helveticaneueltpro-bd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTPro-Roman';
+    src: url('helveticaneueltpro-roman.eot');
+    src: url('helveticaneueltpro-roman.eot?#iefix') format('embedded-opentype'),
+         url('helveticaneueltpro-roman.woff') format('woff'),
+         url('helveticaneueltpro-roman.ttf') format('truetype'),
+         url('helveticaneueltpro-roman.svg#helveticaneueltpro-roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
