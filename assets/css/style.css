@@ -463,7 +463,7 @@ footer #drawer ul li a {
   display:block;
   position:relative;
 }
-footer #drawer ul li a img {
+footer #drawer ul li a {
   opacity:0.4;
   filter:alpha(opacity=40);
   -webkit-transition: all .25s ease-in-out;
@@ -472,7 +472,8 @@ footer #drawer ul li a img {
   -o-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
 }
-footer #drawer ul li a:hover img {
+footer #drawer ul li a:hover {
+  top:-5px;
   opacity:1;
   filter:alpha(opacity=100);
 }
