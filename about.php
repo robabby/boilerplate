@@ -23,6 +23,14 @@
     color:#ccc;
     text-shadow:0px 1px 2px #fff;
   }
+  #about .span6 .well p {
+    font-size:14px;
+  }
+  #about .span6 .well h3 {
+    font-size:25px;
+    text-shadow:0px 0px 3px rgba(0, 0, 0, .25);
+    margin-bottom:7px;
+  }
   #about h2 {
     font-size:50px;
     color:#ccc;
@@ -34,26 +42,6 @@
   }
   #about .work {
     margin-bottom:25px;
-  }
-  #about .work img {
-    padding:5px;
-    border-left:1px solid #ccc;
-    border-top:1px solid #ccc;
-    border-right:1px solid #ccc;
-    background-color:#fff;
-    opacity:.5;
-    -webkit-transition: all .25s ease-in-out;
-    -moz-transition: all .25s ease-in-out;
-    -ms-transition: all .25s ease-in-out;
-    -o-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out;
-  }
-  #about .work:hover img {
-    border-left:1px solid #3CF;
-    border-top:1px solid #3CF;
-    border-right:1px solid #3CF;
-    background-color:#fff;
-    opacity:1;
   }
   #about .well.work {
     margin-top:25px;
@@ -111,8 +99,8 @@
     </div><!-- .span6 -->
     <div class="span6 textalign-right">
       <div class="well">
-        <h3>The Solution</h3>
-        <p>Obviously, I needed a way to more quickly build the ideas I was nurturing.  A place where folders were organized, and everything I could possibly want or need when starting a new idea would be right at my fingertips.  Thus, 'BoilerStrap' was born.  Built on a solid foundation, and customized to remove all distractiopn from the document, but give you access to every resource you would ever want or need.</p>
+        <h3>A Preamble of Sorts</h3>
+        <p>As an avid internet enthusiast and web development artist for almost a decade, I offer a variety of web and technical services to a versatile client base. Working as a Freelancer in the Chicagoland area, I have formed a robust network of clientele with various businesses and individuals. From web development to graphic design, I can offer a comprehensive image for my clients to attract customers, enthusiasts or marketplaces.</p>
       </div><!-- .well -->
     </div><!-- .span6 -->
   </div><!-- .row -->
@@ -162,60 +150,54 @@
     <div class="span4">
       <div class="work">
         <h3><a href="http://mmconsultants-inc.com/" title="MMC Inc.">Management Meeting Consultants</a></h3>
-        <a href="http://mmconsultants-inc.com/" title="MMC Inc.">
+        <a class="thumbnail" href="http://mmconsultants-inc.com/" title="MMC Inc.">
           <img src="/images/work/mmc.png" width="286" />
         </a>
-        <a class="btn btn-inverse btn-large" href="http://mmconsultants-inc.com/" title="MMC Inc.">View Project</a>
       </div><!-- .work -->
     </div><!-- span -->
 
     <div class="span4">
       <div class="work">
         <h3><a href="http://imaginethis.ws" title="Imagine This">Imagine This</a></h3>
-        <a href="http://imaginethis.ws" title="Imagine This">
+        <a class="thumbnail" href="http://imaginethis.ws" title="Imagine This">
           <img src="/images/work/imaginethis.png" width="286" />
         </a>
-        <a class="btn btn-inverse btn-large" href="http://imaginethis.ws" title="Imagine This">View Project</a>
       </div><!-- .work -->
     </div><!-- span -->
 
     <div class="span4">
       <div class="work">
         <h3><a href="http://545north.com/" title="545 North Bar &amp; Grill">545 North</a></h3>
-        <a href="http://545north.com/" title="545 North Bar &amp; Grill">
+        <a class="thumbnail" href="http://545north.com/" title="545 North Bar &amp; Grill">
           <img src="/images/work/545.png" width="286" />
         </a>
-        <a class="btn btn-inverse btn-large" href="http://545north.com/" title="545 North Bar &amp; Grill">View Project</a>
       </div><!-- .work -->
     </div><!-- span -->
 
     <div class="span4">
       <div class="work">
         <h3><a href="http://danielasloan.com/" title="Daniela Sloan Acoustic Soul">Acoustic Soul</a></h3>
-        <a href="http://danielasloan.com/" title="Daniela Sloan Acoustic Soul">
+        <a class="thumbnail" href="http://danielasloan.com/" title="Daniela Sloan Acoustic Soul">
           <img src="/images/work/daniela.png" width="286" />
         </a>
-        <a class="btn btn-inverse btn-large" href="http://danielasloan.com/" title="Daniela Sloan Acoustic Soul">View Project</a>
       </div><!-- .work -->
     </div><!-- span -->
 
     <div class="span4">
       <div class="work">
         <h3><a href="http://shakousushi.com/" title="Shakou Sushi">Shakou Sushi</a></h3>
-        <a href="http://shakousushi.com/" title="Shakou Sushi">
+        <a class="thumbnail" href="http://shakousushi.com/" title="Shakou Sushi">
           <img src="/images/work/shakou.png" width="286" />
         </a>
-        <a class="btn btn-inverse btn-large" href="http://shakousushi.com/" title="Shakou Sushi">View Project</a>
       </div><!-- .work -->
     </div><!-- span -->
 
     <div class="span4">
       <div class="work">
         <h3><a href="http://www.chicagobooth.edu/bfeo/2012/index.aspx" title="Business Forecast 2012">Business Forecast 2012</a></h3>
-        <a href="http://www.chicagobooth.edu/bfeo/2012/index.aspx" title="Business Forecast 2012">
+        <a class="thumbnail" href="http://www.chicagobooth.edu/bfeo/2012/index.aspx" title="Business Forecast 2012">
           <img src="/images/work/businessforecast.png" width="286" />
         </a>
-        <a class="btn btn-inverse btn-large" href="http://www.chicagobooth.edu/bfeo/2012/index.aspx" title="Business Forecast 2012">View Project</a>
       </div><!-- .work -->
     </div><!-- span -->
 
@@ -225,7 +207,7 @@
       <div class="contact">
         <h2>Like what you see? <span>&darr;</span></h2>
         <br />
-        <a href="/contact.php" class="btn btn-success btn-large" title="">Contact Me</a>
+        <a href="/contact.php" class="btn btn-info btn-large" title="">Contact Me</a>
       </div><!-- .well -->
     </div><!-- span -->
     
