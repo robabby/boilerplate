@@ -9,6 +9,11 @@
 <head>
   <?php include('./assets/inc/head.inc.php'); ?>
   <style>
+  #sandbox .hero-unit {
+    border-radius:0px;
+    overflow: hidden;
+    box-shadow:inset 0px 0px 7px 1px rgba(0, 0, 0, .25);
+  }
   #sandbox .hero-unit img {
     margin:0 0 0 15px;
     box-shadow:0px 0px 10px rgba(0, 0, 0, .6);

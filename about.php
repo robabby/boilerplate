@@ -67,7 +67,7 @@
     line-height:50px;
     font-size:35px;
     border-radius:0px;
-    font-family: 'Swiss721Light';
+    font-family: 'TradeGothicLTStdLight';
   }
   </style>
 </head>
