@@ -39,7 +39,7 @@
   #home .main .well h2 {
     text-shadow:0px 0px 3px rgba(0, 0, 0, .25);
   }
-  #home .well .btn {
+  #home .main .well .btn {
     width:89%;
     border-radius:0px;
   }
@@ -52,6 +52,7 @@
   .sandbox .thumbnail {
     margin:0 auto 10px;
     opacity:.6;
+    filter:alpha(opacity=60);
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     -ms-transition: all .25s ease-in-out;
@@ -60,23 +61,15 @@
   }
   .sandbox .thumbnail:hover {
     opacity:1;
-  }
-  #midground {
-    background: url(/images/cloud.png) repeat 20% 20%;
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    z-index: -2;
-  }
-
-  #foreground {
-    background: url(/images/cloud.png) repeat 90% 110%;
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    z-index: -1;
+    filter:alpha(opacity=100);
   }
   </style>
 </head>
 <body id="home">
+<!-- ## IE CHECK ## -->
+<?php include("$path2root/assets/inc/iecheck.inc.php"); ?>
+<!-- ## IE CHECK ## -->
+
 <!-- ## CONTACT MODAL ## -->
 <?php include("$path2root/assets/inc/contactModal.inc.php"); ?>
 <!-- ## CONTACT MODAL ## -->
@@ -102,7 +95,7 @@
         <h2>Welcome</h2>
         <p>I am Rob, and I am Raw Designs.  Few people know that 'Raw Designs' is actually an acronym for Rob Abby Web Designs.  I have been happily building products for the web for almost 5 years now.</p>
         <p>I have a deep passion for what I do, and enjoy the challenges that come with designing for multiple browsers and platforms.</p>
-        <p>Grab a cup of coffee, and hang out for a while.</p>
+        <p>Grab a cup of coffee, and hang out!</p>
         <br />
         <p>
           <a class="btn btn-info btn-large" data-toggle="modal" href="#contact" title="Quick Contact">Contact &raquo;</a>

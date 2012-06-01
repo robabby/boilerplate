@@ -31,7 +31,7 @@
     text-shadow:0px 0px 3px rgba(0, 0, 0, .25);
     margin-bottom:7px;
   }
-  #about h2 {
+  #about .main h2 {
     font-size:50px;
     color:#ccc;
     text-shadow:0px 1px 2px #fff;
@@ -50,6 +50,7 @@
     margin-left:auto;
     margin-right:auto;
     opacity:.5;
+    filter:alpha(opacity=50);
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     -ms-transition: all .25s ease-in-out;
@@ -57,6 +58,7 @@
     transition: all .25s ease-in-out;
   }
   .thumbnail:hover {
+    filter:alpha(opacity=100);
     opacity:1;
   }
   #about .contact .btn {
@@ -71,6 +73,10 @@
 </head>
 <body id="about">
 
+<!-- ## IE CHECK ## -->
+<?php include("$path2root/assets/inc/iecheck.inc.php"); ?>
+<!-- ## IE CHECK ## -->
+
 <!-- ## CONTACT MODAL ## -->
 <?php include('./assets/inc/contactModal.inc.php'); ?>
 <!-- ## CONTACT MODAL ## -->
@@ -80,7 +86,7 @@
 
 <!-- #### MAIN CONTENT GOES HERE #### -->
 
-<div role="main" id="container" class="container">
+<div role="main" id="container" class="container main">
   <div class="row">
     <div class="span12">
       <div class="hero-unit">

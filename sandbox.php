@@ -19,13 +19,17 @@
   #sandbox .well {
     border-radius:0px;
   }
-  #sandbox .well .btn {
+  #sandbox .main .well .btn {
     width:84%;
     border-radius:0px;
   }
   </style>
 </head>
 <body id="sandbox">
+
+<!-- ## IE CHECK ## -->
+<?php include("$path2root/assets/inc/iecheck.inc.php"); ?>
+<!-- ## IE CHECK ## -->
 
 <!-- ## HEADER & NAV ## -->
 <?php include('./assets/inc/nav.inc.php'); ?>
@@ -35,7 +39,7 @@
 <?php include('./assets/inc/contactModal.inc.php'); ?>
 <!-- ## CONTACT MODAL ## -->
 
-  <div role="main" id="container" class="container">
+  <div role="main" id="container" class="container main">
     <div class="row">
       <div class="span12">
         <div class="hero-unit">
