@@ -12,45 +12,37 @@
     </div>
     <div class="clearfix"></div>
     <div id="drawer" class="drawer">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row-fluid">
-          <div class="span3">
+          <div class="span12">
             <br />
-            <div class="well">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-          </div>
-          <div class="span3">
+            <ul>
+              <li><a href="http://www.behance.net/robabby" title="Béhance.net"><img src="/images/social/behance.png" /></a></li>
+              <li><a href="http://dribbble.com/stat30fbliss" title="Dribbble"><img src="/images/social/dribbble.png" /></a></li>
+              <li><a href="http://forrst.com/people/stat30fbliss" title="Forrst"><img src="/images/social/forrst.png" /></a></li>
+              <li><a href="http://github.com/stat30fbliss" title="GitHub"><img src="/images/social/github.png" /></a></li>
+              <li><a href="http://plus.google.com/110039793553907601610" title="Google+"><img src="/images/social/google.png" /></a></li>
+              <li><a href="http://www.linkedin.com/in/robabby" title="Linkedin"><img src="/images/social/linkedin.png" /></a></li>
+              <li><a href="http://twitter.com/stat30fbliss" title="Twitter"><img src="/images/social/twitter.png" /></a></li>
+              <li><a href="http://www.facebook.com/rawdesigns.net" title="Facebook"><img src="/images/social/facebook.png" /></a></li>
+              <li><a data-toggle="modal" href="#contact" title="Email"><img src="/images/social/email.png" /></a></li>
+            </ul>
             <br />
-            <div class="well">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-          </div>
-          <div class="span3">
             <br />
-            <div class="well">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-          </div>
-          <div class="span3">
             <br />
-            <div class="well">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
+            <p class="copy">&copy; Raw Designs 
+            <?php 
+            
+            $startYear = 2010;
+            $thisYear = date('Y');
+            if ($startYear == $thisYear) {
+              echo $startYear;
+            } else {
+              echo "{$startYear} &#8211; {$thisYear}";
+            }
+            
+            ?></p>
           </div>
-          <br />
-          <p class="copy">&copy; Raw Designs 
-          <?php 
-          
-          $startYear = 2010;
-          $thisYear = date('Y');
-          if ($startYear == $thisYear) {
-            echo $startYear;
-          } else {
-            echo "{$startYear} &#8211; {$thisYear}";
-          }
-          
-          ?></p>
           </div><!-- .row-fluid -->
         </div><!-- .container-fluid -->
       </div><!-- #drawer -->
@@ -61,7 +53,7 @@
   <script>
     $('#contact').modal('hide');
     $(".alert").alert();
-    $('#tool').tooltip('hide');
+    $('#drawer ul li a').tooltip('show');
     $("#toggle").click(function () {
       $("#drawer").slideToggle(1000, 'easeInOutCubic', function() {
         // Animation complete.
