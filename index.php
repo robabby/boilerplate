@@ -34,7 +34,6 @@
   }
   #home .main .well {
     border-radius:0px;
-    background-image:url('/images/fabric_plaid.png');
     min-height:310px;
   }
   #home .main .well h2 {

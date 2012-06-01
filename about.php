@@ -9,6 +9,11 @@
 <head>
   <?php include('./assets/inc/head.inc.php'); ?>
   <style>
+  #about .hero-unit {
+    border-radius:0px;
+    overflow: hidden;
+    box-shadow:inset 0px 0px 7px 1px rgba(0, 0, 0, .25);
+  }
   #about .hero-unit h1 {
     font-size:125px;
     text-shadow:0px 1px 7px rgba(0, 0, 0, .5);
@@ -54,7 +59,9 @@
     margin-top:25px;
   }
   .thumbnail {
-    opacity:.8;
+    margin-left:auto;
+    margin-right:auto;
+    opacity:.5;
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     -ms-transition: all .25s ease-in-out;
@@ -94,11 +101,12 @@
       </div><!-- .hero-unit -->
     </div><!-- .span12 -->
   </div><!-- .row -->
+
   <div class="row">
     <div class="span6">
       <div class="well">
-        <h3>The Problem</h3>
-        <p>You have an idea for an App, Widget, Slider, Website, whatever! You sit down to start coding it up, and you realize all of the things you need are in different places.  Not to mention you may have to compleetly draft a whole other website just to get your idea off the ground. By the time you compile your folder system and start coding your next big thing, your exhausted, or worse te idea is lost!</p>
+        <h3>A Brief History</h3>
+        <p>My transition into web development was both swift &amp; profound.  Discovering HTML in order to customize the MySpace page of my band in 2005, I quickly fell in love with all things web.  Before long I was working with CSS, and then quickly thereafter JavaScript, PHP, and MySQL.  My first freelance jobs were naturally for musicians and dabbling artists, but my appetite took me to bigger and better places on &amp; off the web.</p>
       </div><!-- .well -->
     </div><!-- .span6 -->
     <div class="span6 textalign-right">
@@ -110,6 +118,7 @@
   </div><!-- .row -->
   
   <br />
+  <br />
   <h2>Where I work now <span>&darr;</span></h2>
   <br />
 
@@ -119,11 +128,34 @@
       <a class="thumbnail" href="http://web2carz.com" title="Web2Carz.com">
         <img src="/images/work/web2carz.png" />
       </a>
-    </div>
-  </div>
+    </div><!-- .span -->
+  </div><!-- .row -->
+
   <br />
   <br />
-  <h2>Work I have done <span>&darr;</span></h2>
+  <br />
+  <h2>Where I have worked <span>&darr;</span></h2>
+  <br />
+
+  <div class="row">
+    <div class="span6">
+      <h3><a href="http://chicagobooth.edu" title="University of Chicago Booth">University of Chicago Booth</a></h3>
+      <a class="thumbnail" href="http://chicagobooth.edu" title="University of Chicago Booth">
+        <img src="/images/work/booth.png" />
+      </a>
+    </div><!-- .span -->
+    <div class="span6">
+      <h3><a href="http://www.artversion.com/" title="ArtVersion Interactive Agency">ArtVersion Interactive Agency</a></h3>
+      <a class="thumbnail" href="http://www.artversion.com/" title="ArtVersion Interactive Agency">
+        <img src="/images/work/artversion.png" />
+      </a>
+    </div><!-- .span -->
+  </div><!-- .row -->
+
+  <br />
+  <br />
+  <br />
+  <h2>Other work I have done <span>&darr;</span></h2>
   <br />
   <div class="row">  
 
@@ -193,7 +225,7 @@
       <div class="contact">
         <h2>Like what you see? <span>&darr;</span></h2>
         <br />
-        <a href="/contact.php" class="btn btn-info btn-large" title="">Contact Me</a>
+        <a href="/contact.php" class="btn btn-success btn-large" title="">Contact Me</a>
       </div><!-- .well -->
     </div><!-- span -->
     

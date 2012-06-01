@@ -5,7 +5,7 @@
       <button class="btn primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
       <ul class="dropdown-menu">
         <li><a data-toggle="modal" href="#contact">Feedback</a></li>
-        <li><a href="/mobile/">Mobile</a></li>
+        <li><a href="/mobile/sencha/">Mobile</a></li>
         <li><a href="sandbox.php">Sandbox</a></li>
         <li><a href="index.php">Home</a></li>
       </ul>
