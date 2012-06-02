@@ -56,8 +56,8 @@
   .thumbnail {
     margin-left:auto;
     margin-right:auto;
-    opacity:.5;
-    filter:alpha(opacity=50);
+    opacity:.8;
+    filter:alpha(opacity=80);
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     -ms-transition: all .25s ease-in-out;
@@ -65,8 +65,8 @@
     transition: all .25s ease-in-out;
   }
   .thumbnail:hover {
-    filter:alpha(opacity=100);
-    opacity:1;
+    filter:alpha(opacity=60);
+    opacity:.6;
   }
   #about .contact .btn {
     width:96.5%;

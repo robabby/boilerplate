@@ -218,7 +218,7 @@
     <div class="step" data-color="color-1">
       <div class="jms-content">
         <h3>Welcome</h3>
-        <p>My name is Rob. I build interactive, web-based experiences that are out of this world.</p>
+        <p>To my CSS3 powered solar system</p>
         <!--<a class="jms-link" href="#">Read more</a>-->
       </div>
       <!--<img class="inset" src="images/rd_logo.png" width="300" height="300" />-->
@@ -226,33 +226,31 @@
     </div>
     <div class="step" data-color="color-2" data-y="500" data-scale="0.4" data-rotate-x="30">
       <div class="jms-content">
-        <h3>Standards are everything</h3>
-        <p>All of the websites I build are standards compliant, ensured to work on all modern web browsers <br /> (and devices).</p>
-        <a class="jms-link" href="#">Read more</a>
+        <h3>Notice</h3>
+        <p>The flickering stars in the background</p>
       </div>
       <img src="/images/captain_icon.png" />
     </div>
     <div class="step" data-color="color-3" data-x="2000" data-z="3000" data-rotate="170">
       <div class="jms-content">
-        <h3>Think Mobile</h3>
-        <p>My products work on iPhone, iPad, Android, Windows Phone, Blackberry, Nokia, WebOS, and more...</p>
-        <a class="jms-link" href="#">Read more</a>
+        <h3>Codrops</h3>
+        <p>Is where I got this slider from</p>
+        <a class="jms-link" href="http://tympanus.net/codrops/2012/04/05/slideshow-with-jmpress-js/">Read more</a>
       </div>
       <img src="images/ipad_happy.png" />
     </div>
     <div class="step" data-color="color-4" data-x="3000">
       <div class="jms-content">
-        <h3>Think Modern</h3>
-        <p>Now, more than ever, it is crucial for web-goers <br /> to embrace more advanced (and secure) ways <br /> of browsing the web.</p>
-        <a class="jms-link" href="#">Read more</a>
+        <h3>WebKit Only</h3>
+        <p>This demo only works in Chrome or Safari</p>
       </div>
       <img src="images/browsers.png" />
     </div>
     <div class="step" data-color="color-5" data-x="4500" data-z="1000" data-rotate-y="45">
       <div class="jms-content">
-        <h3>Portfolio</h3>
-        <p>Take a look at some of the selected projects I have recently completed</p>
-        <a class="jms-link" href="#">Read more</a>
+        <h3>Sandbox</h3>
+        <p>Head back to my website</p>
+        <a class="jms-link" href="sandbox.php">Warp Speed</a>
       </div>
       <img class="inset2" src="images/calvin_sandbox.jpg" />
     </div>

@@ -28,7 +28,7 @@
   <script src="http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js"></script>
   <script>
   $(document).ready(function() {
-    $('.container').hide().fadeIn(2500);
+    $('.container, .hero-unit').hide().fadeIn(2500);
   });
   </script>
   

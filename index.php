@@ -50,13 +50,7 @@
     width:89%;
     border-radius:0px;
   }
-  #background {
-    background: url(/images/cloud.png) repeat 5% 5%;
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    z-index: -3;
-  }
-  .sandbox .thumbnail {
+  #home .sandbox .thumbnail {
     margin:0 auto 10px;
     opacity:.6;
     filter:alpha(opacity=60);
@@ -66,9 +60,15 @@
     -o-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
   }
-  .sandbox .thumbnail:hover {
+  #home .sandbox .thumbnail:hover {
     opacity:1;
     filter:alpha(opacity=100);
+  }
+  #home .connect {
+    font-size:61px;
+    margin-top:100px;
+    color:#ccc;
+    font-family: 'TradeGothicLTStdLight';
   }
   </style>
 </head>
@@ -147,6 +147,13 @@
       </div><!-- .well -->
     </div><!-- .span -->
   </div><!-- .row -->
+
+  <div class="row">
+    <div class="span12">
+      <p class="connect">Connect with me <span>&darr;</span></p>
+    </div>
+  </div>
+
 </div><!-- .container -->
 
 <!-- #### MAIN CONTENT GOES HERE #### -->

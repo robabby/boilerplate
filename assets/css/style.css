@@ -46,7 +46,7 @@ html, body {
   min-width:980px;
 }
 body {
-  padding:75px 0;
+  padding:50px 0 75px;
 }
 #home h1, #about h1, footer h1 {
   font-family: 'BigNoodleTitlingRegular';
@@ -362,7 +362,6 @@ footer h1 a {
   margin:0 auto;
   border-left:1px solid #CCC;
   border-right:1px solid #CCC;
-  border-bottom:1px solid #CCC;
   text-align:center;
   line-height:65px;
   text-indent:-1px;
