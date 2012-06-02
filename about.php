@@ -106,7 +106,7 @@
     <div class="span6 textalign-right">
       <div class="well">
         <h3>A Preamble of Sorts</h3>
-        <p>As an avid internet enthusiast and web development artist for almost a decade, I offer a variety of web and technical services to a versatile client base. Working as a Freelancer in the Chicagoland area, I have formed a robust network of clientele with various businesses and individuals. From web development to graphic design, I can offer a comprehensive image for my clients to attract customers, enthusiasts or marketplaces.</p>
+        <p>As an avid internet enthusiast and web development artist for almost a decade, I offer a variety of web and technical services to a versatile client base. Working as a Freelancer in the Chicagoland area, I have formed a robust network of clientele with various businesses and individuals. From web development to graphic design, I can offer a comprehensive image for my clients to attract new customers, enthusiasts or marketplaces.</p>
       </div><!-- .well -->
     </div><!-- .span6 -->
   </div><!-- .row -->

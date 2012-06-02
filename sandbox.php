@@ -28,6 +28,11 @@
     width:84%;
     border-radius:0px;
   }
+  #sandbox .calvin {
+    padding:10px;
+    border-radius:3px;
+    background: rgba(25, 175, 255, .5);
+  }
   </style>
 </head>
 <body id="sandbox">
@@ -49,7 +54,7 @@
       <div class="span12">
         <div class="hero-unit">
           <div class="row-fluid">
-            <img class="pull-right" src="/images/calvin_sandbox.jpg" />
+            <img class="calvin pull-right" src="/images/calvin_sandbox.jpg" />
             <h1>The Sandbox</h1>
             <p>Remember how much fun we all used to have playing in the sandbox as a kid?  No? Well I do, and I had a blast!  This page is herby dedicated to all of the fun, new interesting Sand Castles that I love to build from time to time.</p>
             <p>Please keep in mind that these are experiments only.  Do not expect anything to be completely finished, or perfect.  Once a project is finished, I will publish it to GitHub for you to grab a copy of the .zip file.</p>

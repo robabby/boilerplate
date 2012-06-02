@@ -362,6 +362,7 @@ footer h1 a {
   margin:0 auto;
   border-left:1px solid #CCC;
   border-right:1px solid #CCC;
+  border-bottom:1px solid #CCC;
   text-align:center;
   line-height:65px;
   text-indent:-1px;
@@ -445,6 +446,7 @@ footer #drawer {
   width:100%;
   height:auto;
   box-shadow:inset 0px 5px 10px 1px rgba(0, 0, 0, .5);
+  border-top:1px solid #CCC;
 }
 footer #drawer .tooltip.top {
   margin-top: 2px;

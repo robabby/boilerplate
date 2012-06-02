@@ -81,9 +81,6 @@
 <!-- #### MAIN CONTENT GOES HERE #### -->
 
 <div class="container">
-<div id="background"></div>
-<div id="midground"></div>
-<div id="foreground"></div>
   <div class="row-fluid">
     <div class="hero-unit">
       <h1>RawDesigns<small>.net</small></h1>
@@ -93,7 +90,7 @@
     <div class="span4">
       <div class="well">
         <h2>Welcome</h2>
-        <p>I am Rob, and I am Raw Designs.  Few people know that 'Raw Designs' is actually an acronym for Rob Abby Web Designs.  I have been happily building products for the web for almost 5 years now.</p>
+        <p>My name is Rob, and I am Raw Designs.  Few people know that 'Raw Designs' is actually an acronym for Rob Abby Web Designs.  I have been happily building products for the web for almost 5 years now.</p>
         <p>I have a deep passion for what I do, and enjoy the challenges that come with designing for multiple browsers and platforms.</p>
         <p>Grab a cup of coffee, and hang out!</p>
         <br />
@@ -145,36 +142,6 @@
 <!-- ## FOOTER ## -->
 <?php include("$path2root/assets/inc/footer.inc.php"); ?>
 <!-- ## FOOTER ## -->
-<script src="/assets/js/jquery.backgroundPosition.js" type="text/javascript"></script>
-<script type="text/javascript">
-  $(function(){
-
-    $('#midground').css({backgroundPosition: '0px 0px'});
-    $('#foreground').css({backgroundPosition: '0px 0px'});
-    $('#background').css({backgroundPosition: '0px 0px'});
-
-    $('#midground').animate({
-      backgroundPosition:"(-10000px 1000px)"
-    }, 240000, 'linear');
-
-    $('#foreground').animate({
-      backgroundPosition:"(-10000px 0px)"
-    }, 120000, 'linear');
-
-    $('#background').animate({
-      backgroundPosition:"(-10000px 3000px)"
-    }, 480000, 'linear');
-
-  });
-</script>
-<script src="/assets/js/realshadow.js" type="text/javascript"></script>
-  <script>
-  $(function(){
-    //$('h1').realshadow({
-      //pageY: 190
-    });
-  });
-  </script>
 </body>
 </html>
 <?php
