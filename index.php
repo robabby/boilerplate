@@ -18,23 +18,30 @@
   <?php include("$path2root/assets/inc/head.inc.php"); ?>
   <style>
   #home .hero-unit {
-    padding-bottom:30px;
     border-radius:0px;
     overflow: hidden;
     box-shadow:inset 0px 0px 7px 1px rgba(0, 0, 0, .25);
+    text-align:center;
   }
   #home .hero-unit h1 {
     text-align:center;
-    font-size:125px;
+    font-size:175px;
     text-shadow:0px 1px 7px rgba(0, 0, 0, .5);
   }
   #home .hero-unit h1 small {
-    font-size:75px;
+    font-size:100px;
+    text-shadow:0px 1px 2px #fff;
+    color:#cacaca;
+  }
+  #home .hero-unit h2 {
+    font-size:65px;
+    color:#cacaca;
     text-shadow:0px 1px 2px #fff;
   }
   #home .main .well {
     border-radius:0px;
     min-height:310px;
+    background-image:url('/images/grey2.jpg');
   }
   #home .main .well h2 {
     text-shadow:0px 0px 3px rgba(0, 0, 0, .25);
@@ -80,12 +87,17 @@
 
 <!-- #### MAIN CONTENT GOES HERE #### -->
 
-<div class="container">
-  <div class="row-fluid">
-    <div class="hero-unit">
+
+<div class="hero-unit">
+  <div class="container">
+    <div class="row-fluid">
       <h1>RawDesigns<small>.net</small></h1>
-    </div><!-- .hero-unit -->
-  </div><!-- .row -->
+      <h2>Web Development</h2>
+    </div>
+  </div>
+</div>
+
+<div class="container">
   <div class="row main">
     <div class="span4">
       <div class="well">

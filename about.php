@@ -13,6 +13,7 @@
     border-radius:0px;
     overflow: hidden;
     box-shadow:inset 0px 0px 7px 1px rgba(0, 0, 0, .25);
+    text-align:center;
   }
   #about .hero-unit h1 {
     font-size:125px;
@@ -22,6 +23,12 @@
     font-size:100px;
     color:#ccc;
     text-shadow:0px 1px 2px #fff;
+  }
+  #about .hero-unit h2 {
+    font-size:50px;
+    color:#ccc;
+    text-shadow:0px 1px 2px #fff;
+    text-transform: none;
   }
   #about .span6 .well p {
     font-size:14px;
@@ -86,15 +93,18 @@
 
 <!-- #### MAIN CONTENT GOES HERE #### -->
 
-<div role="main" id="container" class="container main">
-  <div class="row">
-    <div class="span12">
-      <div class="hero-unit">
-        <h1>Development<small>+</small>Design</h1>
-        <h2>And everything in between</h2>
+<div class="hero-unit">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h1>Development <small>+</small> Design</h1>
+        <h2>Expression through &lt;/code&gt;</h2>
       </div><!-- .hero-unit -->
     </div><!-- .span12 -->
-  </div><!-- .row -->
+  </div>
+</div><!-- .row -->
+
+<div role="main" id="container" class="container main">
 
   <div class="row">
     <div class="span6">
