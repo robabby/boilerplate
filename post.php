@@ -25,8 +25,13 @@
 <html>
 <head>
   <?php include("$path2root/assets/inc/head.inc.php"); ?>
+  <style>
+  #post {
+    padding-top:75px;
+  }
+  </style>
 </head>
-<body id="blank">
+<body id="post">
 
 <!-- ## IE CHECK ## -->
 <?php include("$path2root/assets/inc/iecheck.inc.php"); ?>

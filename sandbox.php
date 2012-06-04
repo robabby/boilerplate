@@ -147,23 +147,23 @@
         <h3><a href="/mobile/sencha/" title="">Sencha Touch</a></h3>
         <p>An introductory application using Sencha Touch with an MVC architecture.</p>
         <a class="btn btn-info btn-large" href="/mobile/sencha/" title="">View Project</a>
-      </div><!-- span --
-    </div><!-- .well --
+      </div><!-- span -->
+    </div><!-- .well -->
 
     <div class="span3">
       <div class="well">
         <h3><a href="/mobile/sencha/" title="">jQuery Touch</a></h3>
         <p>An introductory application using Sencha Touch with an MVC architecture.</p>
         <a class="btn btn-info btn-large" href="/mobile/jquery/" title="">View Project</a>
-      </div><!-- span --
-    </div><!-- .well --
+      </div><!-- span -->
+    </div><!-- .well -->
 
     <div class="span3">
       <div class="well">
         <h3><a href="/mobile/sencha/" title="">Bootstrap</a></h3>
         <p>An introductory application using Sencha Touch with an MVC architecture.</p>
         <a class="btn btn-info btn-large" href="/mobile/bootstrap/" title="">View Project</a>
-      </div><!-- span --
+      </div><!-- span -->
     </div><!-- .well -->
 
     <div class="span12">
