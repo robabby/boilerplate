@@ -84,28 +84,28 @@
       <div class="well">
         <h3><a href="/map.php" title="">Google Map</a></h3>
         <p>A basic implementation of the Google Maps API v3 with street view.</p>
-        <a class="btn btn-info btn-large" href="/map.php" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="/map.php" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
     <div class="span3">
       <div class="well">
         <h3><a href="/geolocate.php" title="">Geolocate</a></h3>
         <p>A more advanced map with Geolocation, and a form to email your location.</p>
-        <a class="btn btn-info btn-large" href="/geolocate.php" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="/geolocate.php" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
     <div class="span3">
       <div class="well">
         <h3><a href="/youtube.php" title="">YouTube API</a></h3>
         <p>Introductory implementation of the YouTube video player and search API.</p>
-        <a class="btn btn-info btn-large" href="/youtube.php" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="/youtube.php" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
     <div class="span3">
       <div class="well">
         <h3><a href="/get_tweets.php" title="">Twitter API</a></h3>
         <p>Tapping into my Twitter RSS feed with PHP. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-        <a class="btn btn-info btn-large" href="/get_tweets.php" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="/get_tweets.php" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
 
@@ -119,21 +119,21 @@
       <div class="well" rel="rgb">
         <h3><a href="/isotope.php" title="">Isotope Site</a></h3>
         <p>Fun with the isotope jQuery plugin.  Fluid layout excitement for the whole family!</p>
-        <a class="btn btn-info btn-large" href="/isotope.php" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="/isotope.php" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
     <div class="span3">
       <div class="well">
         <h3><a href="/outer_space.php" title="">Outer Space Concept</a></h3>
         <p>Spinning planets and flickering stars achieved entirely through CSS3.</p>
-        <a class="btn btn-info btn-large" href="/outer_space.php" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="/outer_space.php" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
     <div class="span3">
       <div class="well">
         <h3><a href="/stars.php" title="">Moving Stars</a></h3>
         <p>A stab at the parallax effect with three backgrounds moving simultaneously.</p>
-        <a class="btn btn-info btn-large" href="/stars.php" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="/stars.php" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
 
@@ -146,7 +146,7 @@
       <div class="well">
         <h3><a href="/mobile/sencha/" title="">Sencha Touch</a></h3>
         <p>An introductory application using Sencha Touch with an MVC architecture.</p>
-        <a class="btn btn-info btn-large" href="/mobile/sencha/" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="/mobile/sencha/" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
 
@@ -154,7 +154,7 @@
       <div class="well">
         <h3><a href="/mobile/sencha/" title="">jQuery Touch</a></h3>
         <p>An introductory application using Sencha Touch with an MVC architecture.</p>
-        <a class="btn btn-info btn-large" href="/mobile/jquery/" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="/mobile/jquery/" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
 
@@ -162,7 +162,7 @@
       <div class="well">
         <h3><a href="/mobile/sencha/" title="">Bootstrap</a></h3>
         <p>An introductory application using Sencha Touch with an MVC architecture.</p>
-        <a class="btn btn-info btn-large" href="/mobile/bootstrap/" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="/mobile/bootstrap/" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
 
@@ -175,14 +175,14 @@
       <div class="well">
         <h3><a href="drag_drop.php" title="">HTML5 Drag &amp; Drop</a></h3>
         <p>Drag a JPEG or PNG image file over the dashed area, and it will upload to the file.</p>
-        <a class="btn btn-info btn-large" href="/drag_drop.php" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="/drag_drop.php" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
     <div class="span3">
       <div class="well">
         <h3><a href="scan_dir.php" title="">View Folder</a></h3>
         <p>Scan and represent the contents of the uploads folder with PHP.</p>
-        <a class="btn btn-info btn-large" href="/scan_dir.php" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="/scan_dir.php" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
 
@@ -195,14 +195,14 @@
       <div class="well">
         <h3><a href="/blog/blog_list.php" title="">Article Manager</a></h3>
         <br />
-        <a class="btn btn-info btn-large" href="/blog/blog_list.php" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="/blog/blog_list.php" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
     <div class="span3">
       <div class="well">
         <h3><a href="/blog/new_post.php" title="">New Post</a></h3>
         <br />
-        <a class="btn btn-info btn-large" href="/blog/new_post.php" title="">View Project</a>
+        <a class="btn btn-inverse btn-large" href="/blog/new_post.php" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
 
