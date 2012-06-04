@@ -13,7 +13,7 @@
 <body id="about">
 
 <!-- ## IE CHECK ## -->
-<?php include("$path2root/assets/inc/iecheck.inc.php"); ?>
+<?php include("./assets/inc/iecheck.inc.php"); ?>
 <!-- ## IE CHECK ## -->
 
 <!-- ## CONTACT MODAL ## -->
