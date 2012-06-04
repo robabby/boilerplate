@@ -152,7 +152,7 @@
 
     <div class="span3">
       <div class="well">
-        <h3><a href="/mobile/sencha/" title="">jQuery Touch</a></h3>
+        <h3><a href="/mobile/jquery/" title="">jQuery Touch</a></h3>
         <p>An introductory application using Sencha Touch with an MVC architecture.</p>
         <a class="btn btn-inverse btn-large" href="/mobile/jquery/" title="">View Project</a>
       </div><!-- span -->
@@ -160,9 +160,17 @@
 
     <div class="span3">
       <div class="well">
-        <h3><a href="/mobile/sencha/" title="">Bootstrap</a></h3>
+        <h3><a href="/mobile/bootstrap/" title="">Bootstrap</a></h3>
         <p>An introductory application using Sencha Touch with an MVC architecture.</p>
         <a class="btn btn-inverse btn-large" href="/mobile/bootstrap/" title="">View Project</a>
+      </div><!-- span -->
+    </div><!-- .well -->
+
+    <div class="span3">
+      <div class="well">
+        <h3><a href="/mobile/lungo/" title="">Lungo</a></h3>
+        <p>An introductory application using Sencha Touch with an MVC architecture.</p>
+        <a class="btn btn-inverse btn-large" href="/mobile/lungo/" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
 
