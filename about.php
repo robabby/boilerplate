@@ -56,8 +56,8 @@
   .thumbnail {
     margin-left:auto;
     margin-right:auto;
-    opacity:.8;
-    filter:alpha(opacity=80);
+    opacity: .6;
+    filter:alpha(opacity=60);
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     -ms-transition: all .25s ease-in-out;
@@ -65,8 +65,8 @@
     transition: all .25s ease-in-out;
   }
   .thumbnail:hover {
-    filter:alpha(opacity=60);
-    opacity:.6;
+    opacity: 1;
+    filter:alpha(opacity=100);
   }
   #about .contact .btn {
     width:96.5%;
@@ -127,10 +127,10 @@
   <br />
 
   <div class="row">
-    <div class="span12">
+    <div class="span12 work">
       <h3><a href="http://web2carz.com" title="Web2Carz.com">Web2Carz.com</a></h3>
       <a class="thumbnail" href="http://web2carz.com" title="Web2Carz.com">
-        <img src="/images/work/web2carz.png" />
+        <img src="/images/work/web2carz.jpg" />
       </a>
     </div><!-- .span -->
   </div><!-- .row -->
@@ -142,16 +142,16 @@
   <br />
 
   <div class="row">
-    <div class="span6">
+    <div class="span6 work">
       <h3><a href="http://chicagobooth.edu" title="University of Chicago Booth">University of Chicago Booth</a></h3>
       <a class="thumbnail" href="http://chicagobooth.edu" title="University of Chicago Booth">
-        <img src="/images/work/booth.png" />
+        <img src="/images/work/booth.jpg" />
       </a>
     </div><!-- .span -->
-    <div class="span6">
+    <div class="span6 work">
       <h3><a href="http://www.artversion.com/" title="ArtVersion Interactive Agency">ArtVersion Interactive Agency</a></h3>
       <a class="thumbnail" href="http://www.artversion.com/" title="ArtVersion Interactive Agency">
-        <img src="/images/work/artversion.png" />
+        <img src="/images/work/artversion.jpg" />
       </a>
     </div><!-- .span -->
   </div><!-- .row -->
@@ -167,7 +167,7 @@
       <div class="work">
         <h3><a href="http://mmconsultants-inc.com/" title="MMC Inc.">Management Meeting Consultants</a></h3>
         <a class="thumbnail" href="http://mmconsultants-inc.com/" title="MMC Inc.">
-          <img src="/images/work/mmc.png" width="286" />
+          <img src="/images/work/mmc.jpg" width="286" />
         </a>
       </div><!-- .work -->
     </div><!-- span -->
@@ -176,7 +176,7 @@
       <div class="work">
         <h3><a href="http://imaginethis.ws" title="Imagine This">Imagine This</a></h3>
         <a class="thumbnail" href="http://imaginethis.ws" title="Imagine This">
-          <img src="/images/work/imaginethis.png" width="286" />
+          <img src="/images/work/imaginethis.jpg" width="286" />
         </a>
       </div><!-- .work -->
     </div><!-- span -->
@@ -185,7 +185,7 @@
       <div class="work">
         <h3><a href="http://545north.com/" title="545 North Bar &amp; Grill">545 North</a></h3>
         <a class="thumbnail" href="http://545north.com/" title="545 North Bar &amp; Grill">
-          <img src="/images/work/545.png" width="286" />
+          <img src="/images/work/545.jpg" width="286" />
         </a>
       </div><!-- .work -->
     </div><!-- span -->
@@ -194,7 +194,7 @@
       <div class="work">
         <h3><a href="http://danielasloan.com/" title="Daniela Sloan Acoustic Soul">Acoustic Soul</a></h3>
         <a class="thumbnail" href="http://danielasloan.com/" title="Daniela Sloan Acoustic Soul">
-          <img src="/images/work/daniela.png" width="286" />
+          <img src="/images/work/daniela.jpg" width="286" />
         </a>
       </div><!-- .work -->
     </div><!-- span -->
@@ -203,7 +203,7 @@
       <div class="work">
         <h3><a href="http://shakousushi.com/" title="Shakou Sushi">Shakou Sushi</a></h3>
         <a class="thumbnail" href="http://shakousushi.com/" title="Shakou Sushi">
-          <img src="/images/work/shakou.png" width="286" />
+          <img src="/images/work/shakou.jpg" width="286" />
         </a>
       </div><!-- .work -->
     </div><!-- span -->
@@ -212,7 +212,7 @@
       <div class="work">
         <h3><a href="http://www.chicagobooth.edu/bfeo/2012/index.aspx" title="Business Forecast 2012">Business Forecast 2012</a></h3>
         <a class="thumbnail" href="http://www.chicagobooth.edu/bfeo/2012/index.aspx" title="Business Forecast 2012">
-          <img src="/images/work/businessforecast.png" width="286" />
+          <img src="/images/work/businessforecast.jpg" width="286" />
         </a>
       </div><!-- .work -->
     </div><!-- span -->
@@ -235,6 +235,58 @@
 <!-- ## FOOTER ## -->
 <?php include('./assets/inc/footer.inc.php'); ?>
 <!-- ## FOOTER ## -->
+<script type="text/javascript">
+  
+  // On window load. This waits until images have loaded which is essential
+  $(window).load(function(){
+    
+    // Fade in images so there isn't a color "pop" document load and then on window load
+    $(".work img").fadeIn(500);
+    
+    // clone image
+    $('.work img').each(function(){
+      var el = $(this);
+      el.css({"position":"absolute"}).wrap("<div class='img_wrapper' style='display: inline-block'>").clone().addClass('img_grayscale').css({"position":"absolute","z-index":"998","opacity":"0"}).insertBefore(el).queue(function(){
+        var el = $(this);
+        el.parent().css({"width":this.width,"height":this.height});
+        el.dequeue();
+      });
+      this.src = grayscale(this.src);
+    });
+    
+    // Fade image 
+    $('.work img').mouseover(function(){
+      $(this).parent().find('img:first').stop().animate({opacity:1}, 1000);
+    })
+    $('.img_grayscale').mouseout(function(){
+      $(this).stop().animate({opacity:0}, 1000);
+    });   
+  });
+  
+  // Grayscale w canvas method
+  function grayscale(src){
+    var canvas = document.createElement('canvas');
+    var ctx = canvas.getContext('2d');
+    var imgObj = new Image();
+    imgObj.src = src;
+    canvas.width = imgObj.width;
+    canvas.height = imgObj.height; 
+    ctx.drawImage(imgObj, 0, 0); 
+    var imgPixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    for(var y = 0; y < imgPixels.height; y++){
+      for(var x = 0; x < imgPixels.width; x++){
+        var i = (y * 4) * imgPixels.width + x * 4;
+        var avg = (imgPixels.data[i] + imgPixels.data[i + 1] + imgPixels.data[i + 2]) / 3;
+        imgPixels.data[i] = avg; 
+        imgPixels.data[i + 1] = avg; 
+        imgPixels.data[i + 2] = avg;
+      }
+    }
+    ctx.putImageData(imgPixels, 0, 0, 0, 0, imgPixels.width, imgPixels.height);
+    return canvas.toDataURL();
+    }
+      
+</script>
 </body>
 </html>
 <?php
