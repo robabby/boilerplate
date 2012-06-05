@@ -26,7 +26,7 @@
     //$required = array ('name', 'email', 'comments', 'subscribe', 'interests');
 
     // set default values for variables that might not exist
-    if (!isset($_POST['sbscribe'])) {
+    if (!isset($_POST['subscribe'])) {
       $_POST['subscribe'] = '';
     }
     if (!isset($_POST['interests'])) {
@@ -53,6 +53,11 @@
     }
   }
 
+  // Twitter API Code
+  $url = 'http://twitter.com/statuses/user_timeline/stat30fbliss.xml';
+  $feed = simplexml_load_file($url, 'SimpleXMLIterator');
+  $filtered = new LimitIterator($feed->status);
+
 ?>
 <!doctype html>
 <html>
@@ -61,6 +66,12 @@
   <style>
   .hero-unit {
     border-radius:0px;
+    box-shadow:inset 0px 0px 10px 1px rgba(0, 0, 0, .5);
+    -webkit-border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .hero-unit h1 {
+    text-shadow:0px 0px 15px rgba(0, 0, 0, .25);
   }
   label, textarea {
     font-family: 'TradeGothicLTStdLight';
@@ -93,6 +104,53 @@
     width:318px;
     height:50px;
   }
+  .tweet, .query {
+    font-family: 'Swiss721Light';
+    color: #085258;
+    font-size:18px;
+  }
+  .tweet_list {
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+    overflow-y: hidden;
+    background-color: #efefef;
+    box-shadow:0px 1px 2px 1px rgba(255, 255, 255, .75);
+    border-top:1px solid #aaa;
+    border-right:1px solid #aaa;
+    border-left:1px solid #aaa;
+  }
+  .tweet_list li {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0.5em;
+    list-style-type: none;
+    border-bottom:1px solid #aaa;
+    border-top:1px solid #fff;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+  }
+  .tweet_list li:hover {
+    background-color:rgba(0, 0, 0, .05);
+  }
+  .tweet_list li a {
+    color: #09F;
+  }
+  .tweet_list li a:hover {
+    color:#3AF;
+  }
+  .tweet_list .tweet_even {
+    z-index:-1;
+  }
+  .tweet_list .tweet_avatar {
+    padding-right: .5em; float: left;
+  }
+  .tweet_list .tweet_avatar img {
+    vertical-align: middle;
+  }
   </style>
 </head>
 <body id="about">
@@ -112,98 +170,122 @@
     <div class="row">
       <div class="span12">
         <div class="hero-unit">
-          <?php if (($_POST && $suspect) || ($_POST && isset($errors['mailfail']))) { ?>
-          <div class="alert alert-info">
-            Are you human?
-          </div>
-        <?php } elseif ($missing || $errors) { ?>
-          <div class="alert alert-info">
-            <a class="close" data-dismiss="alert" href="#">&times;</a>
-          There was an error
-        </div>
-        <?php } ?>
-          <form id="feedback" method="post" action="">
-
-            <label for="name">Name:
-            <?php if ($missing && in_array('name', $missing)) { ?>
-              <span class="label label-info">&nbsp;&nbsp;Required&nbsp;&nbsp;</span>
-            <?php } ?>
-            </label>
-            <input name="name" id="name" type="text" class="formbox span10"
-            <?php if ($missing || $errors) { 
-             echo 'value="' . htmlentities($name, ENT_COMPAT, 'UTF-8') . '"';
-            } ?>>
-
-            <label for="email">Email:
-            <?php if ($missing && in_array('email', $missing)) { ?>
-              <span class="label label-info">&nbsp;&nbsp;Required&nbsp;&nbsp;</span>
-            <?php } elseif (isset($errors['email'])) { ?>
-              <span class="label label-info">&nbsp;&nbsp;Invalid Email&nbsp;&nbsp;</span>
-            <?php } ?>
-            </label>
-            <input name="email" id="email" type="text" class="formbox span10"
-            <?php if ($missing || $errors) { 
-             echo 'value="' . htmlentities($email, ENT_COMPAT, 'UTF-8') . '"';
-            } ?>>
-
-            <label for="website">Website:
-            <?php if ($missing && in_array('website', $missing)) { ?>
-              <span class="label label-info">&nbsp;&nbsp;Required&nbsp;&nbsp;</span>
-            <?php } elseif (isset($errors['website'])) { ?>
-              <span class="label label-info">&nbsp;&nbsp;Invalid Email&nbsp;&nbsp;</span>
-            <?php } ?>
-            </label>
-            <input name="website" id="website" type="text" class="formbox span10"
-            <?php if ($missing || $errors) { 
-             echo 'value="' . htmlentities($website, ENT_COMPAT, 'UTF-8') . '"';
-            } ?>>
-
-            <label for="twitter">Twitter Handle:
-            <?php if ($missing && in_array('twitter', $missing)) { ?>
-              <span class="label label-info">&nbsp;&nbsp;Required&nbsp;&nbsp;</span>
-            <?php } elseif (isset($errors['twitter'])) { ?>
-              <span class="label label-info">&nbsp;&nbsp;Invalid Email&nbsp;&nbsp;</span>
-            <?php } ?>
-            </label>
-            <div class="input-prepend">
-              <span class="add-on">@</span>
-              <input name="twitter" id="twitter" type="text" class="formbox span5"
-              <?php if ($missing || $errors) { 
-               echo 'value="' . htmlentities($twitter, ENT_COMPAT, 'UTF-8') . '"';
-              } ?>>
+          <h1>Contact Me</h1>
+          <div class="row-fluid">
+            <div class="span6">
+              <?php if (($_POST && $suspect) || ($_POST && isset($errors['mailfail']))) { ?>
+              <div class="alert alert-info">
+                Are you human?
+              </div>
+            <?php } elseif ($missing || $errors) { ?>
+              <div class="alert alert-info">
+                <a class="close" data-dismiss="alert" href="#">&times;</a>
+              There was an error
             </div>
-
-            <label for="comments">Comments:
-            <?php if ($missing && in_array('comments', $missing)) { ?>
-              <span class="label label-info">&nbsp;&nbsp;Required&nbsp;&nbsp;</span>
             <?php } ?>
-            </label>
-            <textarea name="comments" id="comments" rows="7" class="span7"><?php
-              if ($missing || $errors) {
-                echo htmlentities($comments, ENT_COMPAT, 'UTF-8');
-              } ?></textarea>
+              <form id="feedback" method="post" action="">
 
-            <?php if (isset($errors['recaptcha'])) { ?>
-              <div class="alert alert-info captcha">
-                    <a class="close" data-dismiss="alert" href="#">&times;</a>
-                  Are you sure you're human?
+                <label for="name">Name:
+                <?php if ($missing && in_array('name', $missing)) { ?>
+                  <span class="label label-info">&nbsp;&nbsp;Required&nbsp;&nbsp;</span>
+                <?php } ?>
+                </label>
+                <input name="name" id="name" type="text" class="formbox span4"
+                <?php if ($missing || $errors) { 
+                 echo 'value="' . htmlentities($name, ENT_COMPAT, 'UTF-8') . '"';
+                } ?>>
+
+                <label for="email">Email:
+                <?php if ($missing && in_array('email', $missing)) { ?>
+                  <span class="label label-info">&nbsp;&nbsp;Required&nbsp;&nbsp;</span>
+                <?php } elseif (isset($errors['email'])) { ?>
+                  <span class="label label-info">&nbsp;&nbsp;Invalid Email&nbsp;&nbsp;</span>
+                <?php } ?>
+                </label>
+                <input name="email" id="email" type="text" class="formbox span4"
+                <?php if ($missing || $errors) { 
+                 echo 'value="' . htmlentities($email, ENT_COMPAT, 'UTF-8') . '"';
+                } ?>>
+
+                <label for="website">Website:
+                <?php if ($missing && in_array('website', $missing)) { ?>
+                  <span class="label label-info">&nbsp;&nbsp;Required&nbsp;&nbsp;</span>
+                <?php } elseif (isset($errors['website'])) { ?>
+                  <span class="label label-info">&nbsp;&nbsp;Invalid Email&nbsp;&nbsp;</span>
+                <?php } ?>
+                </label>
+                <input name="website" id="website" type="text" class="formbox span4"
+                <?php if ($missing || $errors) { 
+                 echo 'value="' . htmlentities($website, ENT_COMPAT, 'UTF-8') . '"';
+                } ?>>
+
+                <label for="twitter">Twitter Handle:
+                <?php if ($missing && in_array('twitter', $missing)) { ?>
+                  <span class="label label-info">&nbsp;&nbsp;Required&nbsp;&nbsp;</span>
+                <?php } elseif (isset($errors['twitter'])) { ?>
+                  <span class="label label-info">&nbsp;&nbsp;Invalid Email&nbsp;&nbsp;</span>
+                <?php } ?>
+                </label>
+                <div class="input-prepend">
+                  <span class="add-on">@</span>
+                  <input name="twitter" id="twitter" type="text" class="formbox span3"
+                  <?php if ($missing || $errors) { 
+                   echo 'value="' . htmlentities($twitter, ENT_COMPAT, 'UTF-8') . '"';
+                  } ?>>
                 </div>
-            <?php }
-            echo recaptcha_get_html($public_key); 
-            ?>
 
-            <br />
-
-            <button name="send" class="btn btn-inverse btn-large" id="send" type="submit">Send Message</button>
-            
+                <label for="comments">Comments:
+                <?php if ($missing && in_array('comments', $missing)) { ?>
+                  <span class="label label-info">&nbsp;&nbsp;Required&nbsp;&nbsp;</span>
+                <?php } ?>
+                </label>
                 
-            </form>
+                <textarea name="comments" id="comments" rows="7" class="span4"><?php
+                  if ($missing || $errors) {
+                    echo htmlentities($comments, ENT_COMPAT, 'UTF-8');
+                  } ?></textarea>
+                
+                <br />
+                
+                <?php if (isset($errors['recaptcha'])) { ?>
+                  <div class="alert alert-info captcha">
+                    <a class="close" data-dismiss="alert" href="#">&times;</a>
+                    Are you sure you're human?
+                  </div>
+                <?php }
+                echo recaptcha_get_html($public_key); 
+                ?>
+                <br />
+                <button name="send" class="btn btn-inverse btn-large" id="send" type="submit">Send Message</button>
+              </form>
+            </div><!-- .span6 -->
+            <div class="span6">
+              <div class="tweet"></div>              
+            </div>
+          </div><!-- .row-fluid -->
         </div><!-- .hero-unit -->
       </div><!-- .span12 -->
     </div><!-- .row -->
   </div><!-- #container -->
 
   <?php include('./assets/inc/footer.inc.php'); ?>
+  <script src="/assets/js/jquery.tweet.js"></script>
+  <script type='text/javascript'>
+    jQuery(function($){
+      $(".tweet").tweet({
+        username: "stat30fbliss",
+        join_text: "auto",
+        avatar_size: 50,
+        count: 8,
+        auto_join_text_default: "I said,", 
+        auto_join_text_ed: "I",
+        auto_join_text_ing: "I was",
+        auto_join_text_reply: "I replied to",
+        auto_join_text_url: "I was checking out",
+        loading_text: "loading tweets..."
+      });
+    });
+</script>
 
 </body>
 </html>

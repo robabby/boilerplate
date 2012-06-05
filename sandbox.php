@@ -101,13 +101,6 @@
         <a class="btn btn-inverse btn-large" href="/youtube.php" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
-    <div class="span3">
-      <div class="well">
-        <h3><a href="/get_tweets.php" title="">Twitter API</a></h3>
-        <p>Tapping into my Twitter RSS feed with PHP. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-        <a class="btn btn-inverse btn-large" href="/get_tweets.php" title="">View Project</a>
-      </div><!-- span -->
-    </div><!-- .well -->
 
 
     <div class="span12">

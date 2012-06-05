@@ -31,7 +31,7 @@
       <!-- Example row of columns -->
       <div class="row">
         <?php 
-          foreach ($filtered as $item) { ?>
+          foreach (new LimitIterator($filtered, 0, 3) as $item) { ?>
             <div class="span12">
               <div class="well">
                 <span class="label pull-right"><?php echo $item->category; ?></span>
