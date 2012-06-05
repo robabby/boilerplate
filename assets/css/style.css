@@ -43,7 +43,7 @@
 }
 html, body {
   display:block;
-  min-width:980px;
+  min-width:960px;
 }
 body {
   padding:50px 0 75px;
