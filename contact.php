@@ -72,6 +72,27 @@
     line-height:35px;
     font-family: 'TradeGothicLTStdLight';
   }
+  .input-prepend .add-on {
+    padding: 4px 10px;
+    margin-right: -5px;
+    margin-top:-9px;
+    height:35px;
+    line-height:35px;
+    font-family: 'Swiss721Light';
+    font-size:24px;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+    background: linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+  }
+  #send {
+    width:318px;
+    height:50px;
+  }
   </style>
 </head>
 <body id="about">
@@ -146,7 +167,7 @@
             </label>
             <div class="input-prepend">
               <span class="add-on">@</span>
-              <input name="twitter" id="twitter" type="text" class="formbox span10"
+              <input name="twitter" id="twitter" type="text" class="formbox span5"
               <?php if ($missing || $errors) { 
                echo 'value="' . htmlentities($twitter, ENT_COMPAT, 'UTF-8') . '"';
               } ?>>
@@ -157,7 +178,7 @@
               <span class="label label-info">&nbsp;&nbsp;Required&nbsp;&nbsp;</span>
             <?php } ?>
             </label>
-            <textarea name="comments" id="comments" cols="60" rows="7" class="span10"><?php
+            <textarea name="comments" id="comments" rows="7" class="span7"><?php
               if ($missing || $errors) {
                 echo htmlentities($comments, ENT_COMPAT, 'UTF-8');
               } ?></textarea>
