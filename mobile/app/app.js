@@ -2,7 +2,7 @@ var App = (function(lng, undefined) {
 
 
     lng.App.init({
-        name: 'Kitchen Sink',
+        name: 'Raw Designs',
         version: '1.2',
         resources: {
             sections: [

@@ -66,7 +66,7 @@
   }
   #home .connect {
     font-size:61px;
-    margin-top:100px;
+    margin-top:80px;
     color:#ccc;
     font-family: 'TradeGothicLTStdLight';
   }
@@ -102,7 +102,7 @@
     <div class="span4">
       <div class="well">
         <h2>Welcome</h2>
-        <p>My name is Rob, and I am Raw Designs.  Few people know that 'Raw Designs' is actually an acronym for Rob Abby Web Designs.  I have been happily building products for the web for almost 5 years now.</p>
+        <p>My name is Rob, a Web Developer and Designer from the Chicagoland Area.  'Raw Designs' is an acronym for Rob Abby Web Designs.  I have been happily building products for the web for almost 5 years now.</p>
         <p>I have a deep passion for what I do, and enjoy the challenges that come with designing for multiple browsers and platforms.</p>
         <p>Grab a cup of coffee, and hang out!</p>
         <br />
