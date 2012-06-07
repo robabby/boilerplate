@@ -45,7 +45,7 @@
   // redirect the page if deletion is successful, 
   // cancel button clicked, or $_GET['article_id'] not defined
   if ($deleted || isset($_POST['cancel_delete']) || !isset($_GET['article_id']))  {
-    header('Location: http://bp.localhost/blog/blog_list.php');
+    header('Location: /blog/');
     exit;
     }
   // if any SQL query fails, display error message

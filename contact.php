@@ -64,6 +64,9 @@
 <head>
   <?php include('./assets/inc/head.inc.php'); ?>
   <style>
+  body {
+    padding-top:10px;
+  }
   .hero-unit {
     border-radius:0px;
     box-shadow:inset 0px 0px 10px 1px rgba(0, 0, 0, .5);
@@ -71,13 +74,24 @@
     border-radius: 0px 0px 10px 10px;
   }
   .hero-unit h1 {
-    text-shadow:0px 0px 15px rgba(0, 0, 0, .25);
+    color:#ccc;
+    text-shadow:0px 1px 2px #fff;
+    margin:0 0 15px 0;
+  }
+  #contact .hero-unit form input[type="text"], textarea {
+    width:90%;
+  }
+  #contact .hero-unit form #twitter {
+    width:79%;
   }
   label, textarea {
     font-family: 'TradeGothicLTStdLight';
     font-size:18px;
   }
-  #name, #email, #website, #twitter {
+  textarea {
+    margin-bottom:20px;
+  }
+  .hero-unit #name, .hero-unit #email, .hero-unit #website, .hero-unit #twitter {
     height:35px;
     font-size:24px;
     line-height:35px;
@@ -104,6 +118,12 @@
     width:318px;
     height:50px;
   }
+  #follow {
+    display: block;
+    position:relative;
+    top:-35px;
+    right:-235px;
+  }
   .tweet, .query {
     font-family: 'Swiss721Light';
     color: #085258;
@@ -111,22 +131,16 @@
   }
   .tweet_list {
     list-style: none;
-    margin: 15px 0 0 0;
+    margin: -15px 0 0 0;
     padding: 0;
-    overflow-y: hidden;
-    background-color: #efefef;
-    box-shadow:0px 1px 2px 1px rgba(255, 255, 255, .75);
-    border-top:1px solid #aaa;
-    border-right:1px solid #aaa;
-    border-left:1px solid #aaa;
   }
   .tweet_list li {
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 0.5em;
+    padding: 20px;
+    margin:0 auto 20px;
     list-style-type: none;
-    border-bottom:1px solid #aaa;
-    border-top:1px solid #fff;
+    background-color:#fff;
+    box-shadow:0px 0px 10px 1px rgba(0, 0, 0, .25);
+    border-radius:10px;
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     -ms-transition: all .25s ease-in-out;
@@ -134,7 +148,13 @@
     transition: all .25s ease-in-out;
   }
   .tweet_list li:hover {
-    background-color:rgba(0, 0, 0, .05);
+    background-color:rgba(100, 200, 255, .5);
+    box-shadow:0px 3px 10px 1px rgba(0, 0, 0, .15);
+    -moz-transform: scale(1.25) rotate(5deg) translate(0px, 0px) skew(0deg, 0deg);
+    -webkit-transform: scale(1.25) rotate(5deg) translate(0px, 0px) skew(0deg, 0deg);
+    -o-transform: scale(1.25) rotate(5deg) translate(0px, 0px) skew(0deg, 0deg);
+    -ms-transform: scale(1.25) rotate(5deg) translate(0px, 0px) skew(0deg, 0deg);
+    transform: scale(1.25) rotate(5deg) translate(0px, 0px) skew(0deg, 0deg);
   }
   .tweet_list li a {
     color: #09F;
@@ -153,7 +173,7 @@
   }
   </style>
 </head>
-<body id="about">
+<body id="contact">
 
 <!-- ## IE CHECK ## -->
 <?php include("./assets/inc/iecheck.inc.php"); ?>
@@ -190,7 +210,7 @@
                   <span class="label label-info">&nbsp;&nbsp;Required&nbsp;&nbsp;</span>
                 <?php } ?>
                 </label>
-                <input name="name" id="name" type="text" class="formbox span4"
+                <input name="name" id="name" type="text" class="formbox"
                 <?php if ($missing || $errors) { 
                  echo 'value="' . htmlentities($name, ENT_COMPAT, 'UTF-8') . '"';
                 } ?>>
@@ -202,7 +222,7 @@
                   <span class="label label-info">&nbsp;&nbsp;Invalid Email&nbsp;&nbsp;</span>
                 <?php } ?>
                 </label>
-                <input name="email" id="email" type="text" class="formbox span4"
+                <input name="email" id="email" type="text" class="formbox"
                 <?php if ($missing || $errors) { 
                  echo 'value="' . htmlentities($email, ENT_COMPAT, 'UTF-8') . '"';
                 } ?>>
@@ -214,7 +234,7 @@
                   <span class="label label-info">&nbsp;&nbsp;Invalid Email&nbsp;&nbsp;</span>
                 <?php } ?>
                 </label>
-                <input name="website" id="website" type="text" class="formbox span4"
+                <input name="website" id="website" type="text" class="formbox"
                 <?php if ($missing || $errors) { 
                  echo 'value="' . htmlentities($website, ENT_COMPAT, 'UTF-8') . '"';
                 } ?>>
@@ -228,7 +248,7 @@
                 </label>
                 <div class="input-prepend">
                   <span class="add-on">@</span>
-                  <input name="twitter" id="twitter" type="text" class="formbox span3"
+                  <input name="twitter" id="twitter" type="text" class="formbox"
                   <?php if ($missing || $errors) { 
                    echo 'value="' . htmlentities($twitter, ENT_COMPAT, 'UTF-8') . '"';
                   } ?>>
@@ -240,7 +260,7 @@
                 <?php } ?>
                 </label>
                 
-                <textarea name="comments" id="comments" rows="7" class="span4"><?php
+                <textarea name="comments" id="comments" rows="7" class=""><?php
                   if ($missing || $errors) {
                     echo htmlentities($comments, ENT_COMPAT, 'UTF-8');
                   } ?></textarea>
@@ -260,6 +280,10 @@
               </form>
             </div><!-- .span6 -->
             <div class="span6">
+              <div  id="follow">
+                <a href="https://twitter.com/stat30fbliss" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @stat30fbliss</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              </div>
               <div class="tweet"></div>              
             </div>
           </div><!-- .row-fluid -->
@@ -275,13 +299,13 @@
       $(".tweet").tweet({
         username: "stat30fbliss",
         join_text: "auto",
-        avatar_size: 50,
-        count: 8,
-        auto_join_text_default: "I said,", 
-        auto_join_text_ed: "I",
-        auto_join_text_ing: "I was",
-        auto_join_text_reply: "I replied to",
-        auto_join_text_url: "I was checking out",
+        avatar_size: 35,
+        count: 6,
+        auto_join_text_default: "", 
+        auto_join_text_ed: "",
+        auto_join_text_ing: "",
+        auto_join_text_reply: "",
+        auto_join_text_url: "",
         loading_text: "loading tweets..."
       });
     });

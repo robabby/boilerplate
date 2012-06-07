@@ -29,7 +29,7 @@
   }
   // redirect if successful or display error
   if ($OK) {
-    header("Location: $path2root/blog/blog_list.php");
+    header("Location: $path2root/blog/");
     exit;
     } else {
     $error = $stmt->error;

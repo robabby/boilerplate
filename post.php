@@ -8,7 +8,7 @@
   require_once("$path2root/assets/inc/utility_funcs.inc.php");
 
   // create database connection
-  $conn = dbConnect('read');
+  $conn = dbConnect('write');
   // check for article_id in query string
   if (isset($_GET['article_id']) && is_numeric($_GET['article_id'])) {
     $article_id = (int) $_GET['article_id'];

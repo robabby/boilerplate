@@ -49,7 +49,7 @@
   }
   // redirect if $_GET['article_id'] not defined
   if ($done || !isset($_GET['article_id'])) {
-    header("Location: $path2root/blog/blog_list.php");
+    header("Location: $path2root/blog/");
     exit;
   }
   // store error message if query fails
@@ -120,7 +120,7 @@
       <p>
         <button class="btn btn-large btn-inverse" type="submit" name="update" id="update">Update Entry</button>
         <input name="article_id" type="hidden" value="<?php echo $article_id; ?>">
-        <a href="blog_list.php" class="btn btn-large btn-danger">Cancel</a>
+        <a href="/blog/" class="btn btn-large btn-danger">Cancel</a>
       </p>
     </form>
     <?php } ?>

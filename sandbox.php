@@ -9,6 +9,9 @@
 <head>
   <?php include('./assets/inc/head.inc.php'); ?>
   <style>
+  body {
+    padding-top:20px;
+  }
   #sandbox .hero-unit {
     border-radius:0px;
     overflow: hidden;
@@ -17,13 +20,23 @@
   #sandbox .hero-unit h1 {
     color:#ccc;
     text-shadow:0px 1px 2px #fff;
+    margin-bottom:15px;
   }
   #sandbox .hero-unit img {
-    margin:0 0 0 15px;
+    margin:0 0 0 25px;
     box-shadow:0px 0px 10px rgba(0, 0, 0, .6);
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
   }
-  hr {
-    margin:5px 0 18px;
+  #sandbox .hero-unit img:hover {
+    -moz-transform: scale(1.1) rotate(5deg) translate(0px, 0px) skew(0deg, 0deg);
+    -webkit-transform: scale(1.1) rotate(5deg) translate(0px, 0px) skew(0deg, 0deg);
+    -o-transform: scale(1.1) rotate(5deg) translate(0px, 0px) skew(0deg, 0deg);
+    -ms-transform: scale(1.1) rotate(5deg) translate(0px, 0px) skew(0deg, 0deg);
+    transform: scale(1.1) rotate(5deg) translate(0px, 0px) skew(0deg, 0deg);
   }
   #sandbox .well {
     border-radius:0px;
@@ -75,6 +88,7 @@
 
 <div role="main" id="container" class="container main">
   <div class="row">
+    <!--
     <div class="span12">
       <h2>APIs <small>Google, YouTube, Twitter, &amp; etc.</small></h2>
       <hr />
@@ -102,7 +116,7 @@
       </div><!-- span -->
     </div><!-- .well -->
 
-
+    <!--
     <div class="span12">
       <h2>Websites <small>Layouts and concepts</small></h2>
       <hr />
@@ -130,42 +144,43 @@
       </div><!-- span -->
     </div><!-- .well -->
 
+    <!--
     <div class="span12">
       <h2>Mobile <small>Featuring both responsive CSS or JavaScript frameworks</small></h2>
       <hr />
-    </div><!-- .span -->
+    </div><!-- .span --
 
     <div class="span3">
       <div class="well">
         <h3><a href="/mobile/sencha/" title="">Sencha Touch</a></h3>
         <p>An introductory application using Sencha Touch with an MVC architecture.</p>
         <a class="btn btn-inverse btn-large" href="/mobile/sencha/" title="">View Project</a>
-      </div><!-- span -->
-    </div><!-- .well -->
+      </div><!-- span --
+    </div><!-- .well --
 
     <div class="span3">
       <div class="well">
         <h3><a href="/mobile/jquery/" title="">jQuery Touch</a></h3>
         <p>An introductory application using Sencha Touch with an MVC architecture.</p>
         <a class="btn btn-inverse btn-large" href="/mobile/jquery/" title="">View Project</a>
-      </div><!-- span -->
-    </div><!-- .well -->
+      </div><!-- span --
+    </div><!-- .well --
 
     <div class="span3">
       <div class="well">
         <h3><a href="/mobile/bootstrap/" title="">Bootstrap</a></h3>
         <p>An introductory application using Sencha Touch with an MVC architecture.</p>
         <a class="btn btn-inverse btn-large" href="/mobile/bootstrap/" title="">View Project</a>
-      </div><!-- span -->
-    </div><!-- .well -->
+      </div><!-- span --
+    </div><!-- .well --
 
     <div class="span3">
       <div class="well">
         <h3><a href="/mobile/lungo/" title="">Lungo</a></h3>
         <p>An introductory application using Sencha Touch with an MVC architecture.</p>
         <a class="btn btn-inverse btn-large" href="/mobile/lungo/" title="">View Project</a>
-      </div><!-- span -->
-    </div><!-- .well -->
+      </div><!-- span --
+    </div><!-- .well --
 
     <div class="span12">
       <h2>File Handling <small>Demos that utilize the power of PHP, AJAX or MySQL</small></h2>
@@ -187,24 +202,25 @@
       </div><!-- span -->
     </div><!-- .well -->
 
+    <!--
     <div class="span12">
       <h2>Blog &amp; CMS <small>A lightweight CMS I am working on for small Blogs</small></h2>
       <hr />
-    </div><!-- .span -->
+    </div><!-- .span --
 
     <div class="span3">
       <div class="well">
         <h3><a href="/blog/blog_list.php" title="">Article Manager</a></h3>
         <br />
         <a class="btn btn-inverse btn-large" href="/blog/blog_list.php" title="">View Project</a>
-      </div><!-- span -->
-    </div><!-- .well -->
+      </div><!-- span --
+    </div><!-- .well --
     <div class="span3">
       <div class="well">
         <h3><a href="/blog/new_post.php" title="">New Post</a></h3>
         <br />
         <a class="btn btn-inverse btn-large" href="/blog/new_post.php" title="">View Project</a>
-      </div><!-- span -->
+      </div><!-- span --
     </div><!-- .well -->
 
   </div><!-- .row -->

@@ -1,11 +1,11 @@
   <footer>
-    <h1><a id="toggle" href="#" onClick="return false">&lt;RD&gt;</a></h1>
+    <h1><a class="toggle" id="toggle" href="#" onClick="return false"><img src="/images/social/share_mod.png" width="30" /></a></h1>
     <div class="btn-group dropup">
       <button id="toggle" class="btn primary">&nbsp;&nbsp;&nbsp;&nbsp;Menu&nbsp;&nbsp;&nbsp;&nbsp;</button>
       <button class="btn primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
       <ul class="dropdown-menu">
         <li><a data-toggle="modal" href="#contact">Feedback</a></li>
-        <li><a href="/mobile/sencha/">Mobile</a></li>
+        <li><a href="/mobile/">Mobile</a></li>
         <li><a href="sandbox.php">Sandbox</a></li>
         <li><a href="index.php">Home</a></li>
       </ul>
@@ -17,13 +17,13 @@
           <div class="span12">
             <br />
             <ul>
-              <li><a href="http://www.behance.net/robabby" title="Béhance.net"><img src="/images/social/behance.png" /></a></li>
-              <li><a href="http://dribbble.com/stat30fbliss" title="Dribbble"><img src="/images/social/dribbble.png" /></a></li>
+              <li><a href="http://twitter.com/stat30fbliss" title="Twitter"><img src="/images/social/twitter.png" /></a></li>
               <li><a href="http://forrst.com/people/stat30fbliss" title="Forrst"><img src="/images/social/forrst.png" /></a></li>
               <li><a href="http://github.com/stat30fbliss" title="GitHub"><img src="/images/social/github.png" /></a></li>
-              <li><a href="http://plus.google.com/110039793553907601610" title="Google+"><img src="/images/social/google.png" /></a></li>
+              <li><a href="http://dribbble.com/stat30fbliss" title="Dribbble"><img src="/images/social/dribbble.png" /></a></li>
+              <li><a href="http://www.behance.net/robabby" title="Béhance.net"><img src="/images/social/behance.png" /></a></li>
               <li><a href="http://www.linkedin.com/in/robabby" title="Linkedin"><img src="/images/social/linkedin.png" /></a></li>
-              <li><a href="http://twitter.com/stat30fbliss" title="Twitter"><img src="/images/social/twitter.png" /></a></li>
+              <li><a href="http://plus.google.com/110039793553907601610" title="Google+"><img src="/images/social/google.png" /></a></li>
               <li><a href="http://www.facebook.com/rawdesigns.net" title="Facebook"><img src="/images/social/facebook.png" /></a></li>
               <li><a data-toggle="modal" href="#contact" title="Email"><img src="/images/social/email.png" /></a></li>
             </ul>

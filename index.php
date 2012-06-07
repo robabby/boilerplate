@@ -41,8 +41,9 @@
   #home .main .well {
     border-radius:0px;
     min-height:310px;
-    background-image:url('/images/grey2.jpg');
-  }
+    background:#efefef;
+    box-shadow: inset 0 0 7px 1px rgba(0, 0, 0, 0.25);
+}
   #home .main .well h2 {
     text-shadow:0px 0px 3px rgba(0, 0, 0, .25);
   }
@@ -66,7 +67,7 @@
   }
   #home .connect {
     font-size:61px;
-    margin-top:100px;
+    margin-top:80px;
     color:#ccc;
     font-family: 'TradeGothicLTStdLight';
   }
@@ -115,8 +116,8 @@
     
     <div class="span4">
       <div class="well sandbox">
-        <h2><a href="post.php">Outer Space Concept</a></h2>
-        <a class="thumbnail pull-left" href="post.php" title="Outer Space Concept">
+        <h2><a href="outer_space.php">Outer Space Concept</a></h2>
+        <a class="thumbnail pull-left" href="outer_space.php" title="Outer Space Concept">
           <img src="/images/thumbs/outer_space.png" alt="" />
         </a>
         <div class="clearfix"></div>
