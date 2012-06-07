@@ -1,8 +1,7 @@
   <footer>
-    <h1><a class="toggle" id="toggle" href="#" onClick="return false"><img src="/images/social/share_mod.png" width="30" /></a></h1>
+    <h1><a class="toggle" id="toggle" href="#" onClick="return false"><img src="/images/social/share.png" width="30" /></a></h1>
     <div class="btn-group dropup">
-      <button id="toggle" class="btn primary">&nbsp;&nbsp;&nbsp;&nbsp;Menu&nbsp;&nbsp;&nbsp;&nbsp;</button>
-      <button class="btn primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+      <button class="btn primary dropdown-toggle" data-toggle="dropdown"><img src="/images/ui/gear2.png" /></button>
       <ul class="dropdown-menu">
         <li><a data-toggle="modal" href="#contact">Feedback</a></li>
         <li><a href="/mobile/">Mobile</a></li>
@@ -51,8 +50,6 @@
   <script src="/assets/js/bootstrap.js"></script>
   <script src="/assets/js/jquery.easing.js"></script>
   <script>
-    $('#contact').modal('hide');
-    $(".alert").alert();
     $('#drawer ul li a').tooltip('show');
     $("#toggle").click(function () {
       $("#drawer").slideToggle(1000, 'easeInOutCubic', function() {
