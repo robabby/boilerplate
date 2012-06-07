@@ -18,15 +18,16 @@
   padding: 1em 0;
   margin: 1em 0;
   color: #555;
-  border: 2px dashed #555;
+  border: 2px solid #09F;
   border-radius: 7px;
   cursor: default;
+  box-shadow: inset 0 0px 15px 0px rgba(0, 0, 0, .25);
 }
 #filedrag.hover {
   color: #f00;
   border-color: #f00;
   border-style: solid;
-  box-shadow: inset 0 3px 4px #888;
+  box-shadow: inset 0 3px 7px 0px rgba(0, 0, 0, .75);
 }
 img {
   max-width: 100%;
@@ -48,8 +49,8 @@ pre {
   border: 1px solid #999;
   color:#fff;
   font-size:13px;
-  line-height:120%;
-  background-image:url('/images/grey3.jpg');
+  line-height:120%; 
+  background-color:#777;
   box-shadow:inset 0px 0px 10px 1px rgba(0, 0, 0, .75);
 }
 #progress p {

@@ -1,7 +1,6 @@
 <?php 
   // Path to ROOT Directory
   $path2root = ".";
-  //require_once("./user/lib/userauth.class.php");
   ob_start();
   try {
   include('./assets/inc/title.inc.php');
@@ -74,7 +73,7 @@
     border-radius: 0px 0px 10px 10px;
   }
   .hero-unit h1 {
-    color:#ccc;
+    color:#aaa;
     text-shadow:0px 1px 2px #fff;
     margin:0 0 15px 0;
   }

@@ -12,15 +12,30 @@
   body {
     padding-top:20px;
   }
+  #sandbox {
+    background-image:url(/images/textures/500/19.jpg);
+  }
   #sandbox .hero-unit {
     border-radius:0px;
     overflow: hidden;
     box-shadow:inset 0px 0px 7px 1px rgba(0, 0, 0, .25);
+    border-bottom:8px solid #555;
+    background: #e0e0e0; /* Old browsers */
+    background: -moz-linear-gradient(top, #e0e0e0 0%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0e0e0), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
   }
   #sandbox .hero-unit h1 {
-    color:#ccc;
+    color:#aaa;
     text-shadow:0px 1px 2px #fff;
     margin-bottom:15px;
+  }
+  #sandbox .hero-unit a {
+    text-decoration:underline;
   }
   #sandbox .hero-unit img {
     margin:0 0 0 25px;
@@ -40,7 +55,7 @@
   }
   #sandbox .well {
     border-radius:0px;
-    background-image:url('/images/grey2.jpg');
+    box-shadow:inset 0px 0px 5px 0px rgba(0, 0, 0, .75);
   }
   #sandbox .main .well .btn {
     position:relative;
@@ -78,7 +93,7 @@
           <img class="calvin pull-right" src="/images/calvin_sandbox.jpg" />
           <h1>The Sandbox</h1>
           <p>Remember how much fun we all used to have playing in the sandbox as a kid?  No? Well I do, and I had a blast!  This page is herby dedicated to all of the fun, new interesting Sand Castles that I love to build from time to time.</p>
-          <p>Please keep in mind that these are experiments only.  Do not expect anything to be completely finished, or perfect.  Once a project is finished, I will publish it to GitHub for you to grab a copy of the .zip file.</p>
+          <p>Please keep in mind that these are experiments only.  Do not expect anything to be completely finished, or perfect.  Once a project is finished, I will publish it to <a href="http://github.com/stat30fbliss" title="My GitHub Page">GitHub</a> for you to grab a copy of the .zip file.</p>
           <p>Cheers!</p>
         </div>
       </div><!-- .hero-unit -->
@@ -132,7 +147,7 @@
     <div class="span3">
       <div class="well">
         <h3><a href="/outer_space.php" title="">Outer Space Concept</a></h3>
-        <p>Spinning planets and flickering stars achieved entirely through CSS3.</p>
+        <p>Spinning planets and flickering stars achieved entirely through CSS3. WebKit only.</p>
         <a class="btn btn-inverse btn-large" href="/outer_space.php" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->

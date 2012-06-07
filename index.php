@@ -17,11 +17,23 @@
 <head>
   <?php include("$path2root/assets/inc/head.inc.php"); ?>
   <style>
+  #home {
+    background-image:url(/images/textures/500/19.jpg);
+  }
   #home .hero-unit {
     border-radius:0px;
     overflow: hidden;
-    box-shadow:inset 0px 0px 7px 1px rgba(0, 0, 0, .25);
+    box-shadow:inset 0px 0px 10px 1px rgba(0, 0, 0, .5);
     text-align:center;
+    border-bottom:8px solid #555;
+    background: #e0e0e0; /* Old browsers */
+    background: -moz-linear-gradient(top, #e0e0e0 0%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0e0e0), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
   }
   #home .hero-unit h1 {
     text-align:center;
@@ -42,7 +54,7 @@
     border-radius:0px;
     min-height:310px;
     background:#efefef;
-    box-shadow: inset 0 0 7px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 0 7px 1px rgba(0, 0, 0, 0.55);
 }
   #home .main .well h2 {
     text-shadow:0px 0px 3px rgba(0, 0, 0, .25);
@@ -64,12 +76,6 @@
   #home .sandbox .thumbnail:hover {
     opacity:1;
     filter:alpha(opacity=100);
-  }
-  #home .connect {
-    font-size:61px;
-    margin-top:80px;
-    color:#ccc;
-    font-family: 'TradeGothicLTStdLight';
   }
   </style>
 </head>
@@ -130,6 +136,24 @@
     </div><!-- .span -->
 
     <div class="span4">
+      <div class="well sandbox">
+        <h2><a href="http://imaginethis.ws" title="Recent Project">Recent Project</a></h2>
+        <a class="thumbnail" href="http://imaginethis.ws" title="Imagin This">
+          <img src="/images/work/imaginethis.jpg" alt="Imagine This" />
+        </a>
+        <div class="clearfix"></div>
+        <br />
+        <br />
+        <br />
+        <p>
+          <a class="btn btn-large btn-info" href="http://imaginethis.ws">View Project &raquo;</a>
+          <a class="btn btn-large btn-inverse" href="about.php#work">View Portfolio &raquo;</a>
+        </p>
+      </div><!-- .well -->
+    </div><!-- .span -->
+
+    <!--
+    <div class="span4">
       <div class="well blog">
       <?php while ($list = mysql_fetch_assoc($result)) { ?>
         <div class="row-fluid">
@@ -145,15 +169,9 @@
           </p>
         </div>
       <?php } // end while  ?>
-      </div><!-- .well -->
+      </div><!-- .well --
     </div><!-- .span -->
   </div><!-- .row -->
-
-  <div class="row">
-    <div class="span12">
-      <p class="connect">Connect with me <span>&darr;</span></p>
-    </div>
-  </div>
 
 </div><!-- .container -->
 
