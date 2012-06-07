@@ -677,7 +677,7 @@ a.jms-link:hover {
   text-align: center;
   left: 0px;
   bottom: 42px;
-  z-index: 2000;
+  z-index: 1000;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
