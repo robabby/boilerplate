@@ -95,7 +95,7 @@
 
     #welcome .tweet {
         display: block;
-        height:100%;
+        height:auto;
         font-family: 'TradeGothicLTStdLight';
         color: #085258;
         font-size:18px;
@@ -192,7 +192,7 @@
                 <h2>Web Development</h2>
                 <br />
                 <p class="text">
-                    My name is Rob, a Web Developer and Designer from the Chicagoland Area. 'Raw Designs' is an acronym for Rob Abby Web Designs. I have been happily building products for the web for almost 5 years now.
+                    My name is Rob, a Web Developer and Designer from Chicago, IL. 'Raw Designs' is an acronym for Rob Abby Web Designs. I have been happily building products for the web for almost 5 years now.
                 </p>
                 <p class="text">
                     I have a deep passion for what I do, and enjoy the challenges that come with designing for multiple browsers and platforms.
