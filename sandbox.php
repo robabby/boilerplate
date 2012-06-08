@@ -57,11 +57,20 @@
     border-radius:0px;
     box-shadow:inset 0px 0px 5px 0px rgba(0, 0, 0, .75);
   }
+  #sandbox .well h3 {
+    font-size:25px;
+    line-height:120%;
+    margin-bottom:10px;
+  }
+  #sandbox .well p {
+    font-size:16px;
+    line-height:120%;
+  }
   #sandbox .main .well .btn {
     position:relative;
-    left:-20px;
-    bottom:-20px;
-    width:106%;
+    left:-19px;
+    bottom:-19px;
+    width:102%;
     border-radius:0px;
   }
   #sandbox .calvin {
@@ -109,26 +118,29 @@
       <hr />
     </div><!-- .span -->
 
-    <div class="span3">
+    <div class="span6">
       <div class="well">
         <h3><a href="/map.php" title="">Google Map</a></h3>
         <p>A basic implementation of the Google Maps API v3 with street view.</p>
         <a class="btn btn-inverse btn-large" href="/map.php" title="">View Project</a>
-      </div><!-- span -->
-    </div><!-- .well -->
-    <div class="span3">
+      </div><!-- .well -->
+    </div><!-- .span -->
+
+    <div class="span6">
       <div class="well">
         <h3><a href="/geolocate.php" title="">Geolocate</a></h3>
         <p>A more advanced map with Geolocation, and a form to email your location.</p>
         <a class="btn btn-inverse btn-large" href="/geolocate.php" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
+
+    <!--
     <div class="span3">
       <div class="well">
         <h3><a href="/youtube.php" title="">YouTube API</a></h3>
         <p>Introductory implementation of the YouTube video player and search API.</p>
         <a class="btn btn-inverse btn-large" href="/youtube.php" title="">View Project</a>
-      </div><!-- span -->
+      </div><!-- span --
     </div><!-- .well -->
 
     <!--
@@ -137,26 +149,30 @@
       <hr />
     </div><!-- .span -->
 
-    <div class="span3">
-      <div class="well" rel="rgb">
+    <!--
+    <div class="span4">
+      <div class="well">
         <h3><a href="/isotope.php" title="">Isotope Site</a></h3>
         <p>Fun with the isotope jQuery plugin.  Fluid layout excitement for the whole family!</p>
         <a class="btn btn-inverse btn-large" href="/isotope.php" title="">View Project</a>
-      </div><!-- span -->
+      </div><!-- span --
     </div><!-- .well -->
-    <div class="span3">
+
+    <div class="span6">
       <div class="well">
         <h3><a href="/outer_space.php" title="">Outer Space Concept</a></h3>
         <p>Spinning planets and flickering stars achieved entirely through CSS3. WebKit only.</p>
         <a class="btn btn-inverse btn-large" href="/outer_space.php" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
-    <div class="span3">
+
+    <!--
+    <div class="span4">
       <div class="well">
         <h3><a href="/stars.php" title="">Moving Stars</a></h3>
         <p>A stab at the parallax effect with three backgrounds moving simultaneously.</p>
         <a class="btn btn-inverse btn-large" href="/stars.php" title="">View Project</a>
-      </div><!-- span -->
+      </div><!-- span --
     </div><!-- .well -->
 
     <!--
@@ -202,19 +218,21 @@
       <hr />
     </div><!-- .span -->
 
-    <div class="span3">
+    <div class="span6">
       <div class="well">
         <h3><a href="drag_drop.php" title="">HTML5 Drag &amp; Drop</a></h3>
         <p>Drag a JPEG or PNG image file over the dashed area, and it will upload to the file.</p>
         <a class="btn btn-inverse btn-large" href="/drag_drop.php" title="">View Project</a>
       </div><!-- span -->
     </div><!-- .well -->
+
+    <!--
     <div class="span3">
       <div class="well">
         <h3><a href="scan_dir.php" title="">View Folder</a></h3>
         <p>Scan and represent the contents of the uploads folder with PHP.</p>
         <a class="btn btn-inverse btn-large" href="/scan_dir.php" title="">View Project</a>
-      </div><!-- span -->
+      </div><!-- span --
     </div><!-- .well -->
 
     <!--

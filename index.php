@@ -3,14 +3,14 @@
   ob_start();
   try {
   include("$path2root/assets/inc/title.inc.php"); 
-  include("$path2root/assets/inc/user_agent.php");
-  require_once("$path2root/assets/inc/connection.inc.php");
+  //include("$path2root/assets/inc/user_agent.php");
+  //require_once("$path2root/assets/inc/connection.inc.php");
   // database connection info
   //$conn = mysql_connect('rawdesigns.db.7625389.hostedresource.com','rawdesigns','Forever#23') or trigger_error("SQL", E_USER_ERROR);
-  $conn = mysql_connect('localhost','root','') or trigger_error("SQL", E_USER_ERROR);
-  $db = mysql_select_db('rawdesigns',$conn) or trigger_error("SQL", E_USER_ERROR);
-  $sql = "SELECT title, article, created, article_id FROM blog ORDER BY created DESC LIMIT 1";
-  $result = mysql_query($sql, $conn) or trigger_error("SQL", E_USER_ERROR);
+  //$conn = mysql_connect('localhost','root','') or trigger_error("SQL", E_USER_ERROR);
+  //$db = mysql_select_db('rawdesigns',$conn) or trigger_error("SQL", E_USER_ERROR);
+  //$sql = "SELECT title, article, created, article_id FROM blog ORDER BY created DESC LIMIT 1";
+  //$result = mysql_query($sql, $conn) or trigger_error("SQL", E_USER_ERROR);
 ?>
 <!doctype html>
 <html>
@@ -52,16 +52,22 @@
   }
   #home .main .well {
     border-radius:0px;
-    min-height:310px;
-    background:#efefef;
+    background:#efefef url(/images/textures/500/29.jpg);
     box-shadow: inset 0 0 7px 1px rgba(0, 0, 0, 0.55);
+    padding-bottom:0;
 }
   #home .main .well h2 {
     text-shadow:0px 0px 3px rgba(0, 0, 0, .25);
   }
+  #home .main .well p {
+    margin-bottom:7px;
+  }
   #home .main .well .btn {
-    width:89%;
+    position:relative;
+    width:103.25%;
     border-radius:0px;
+    left:-19px;
+    bottom:-7px;
   }
   #home .sandbox .thumbnail {
     margin:0 auto 10px;
@@ -110,9 +116,7 @@
       <div class="well">
         <h2>Welcome</h2>
         <p>My name is Rob, a Web Developer and Designer from the Chicagoland Area.  'Raw Designs' is an acronym for Rob Abby Web Designs.  I have been happily building products for the web for almost 5 years now.</p>
-        <p>I have a deep passion for what I do, and enjoy the challenges that come with designing for multiple browsers and platforms.</p>
-        <p>Grab a cup of coffee, and hang out!</p>
-        <br />
+        <p>Grab a cup of coffee, and hang out! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
         <p>
           <a class="btn btn-info btn-large" data-toggle="modal" href="#contact" title="Quick Contact">Contact &raquo;</a>
           <a class="btn btn-inverse btn-large" href="/about.php" title="Learn More">Learn More &raquo;</a>
@@ -124,10 +128,9 @@
       <div class="well sandbox">
         <h2><a href="outer_space.php">Outer Space Concept</a></h2>
         <a class="thumbnail pull-left" href="outer_space.php" title="Outer Space Concept">
-          <img src="/images/thumbs/outer_space.png" alt="" />
+          <img src="/images/thumbs/outer_space.jpg" alt="" />
         </a>
         <div class="clearfix"></div>
-        <br />
         <p>
           <a class="btn btn-large btn-info" href="outer_space.php">View Project &raquo;</a>
           <a class="btn btn-large btn-inverse" href="sandbox.php">Go to Sandbox &raquo;</a>
@@ -142,9 +145,6 @@
           <img src="/images/work/imaginethis.jpg" alt="Imagine This" />
         </a>
         <div class="clearfix"></div>
-        <br />
-        <br />
-        <br />
         <p>
           <a class="btn btn-large btn-info" href="http://imaginethis.ws">View Project &raquo;</a>
           <a class="btn btn-large btn-inverse" href="about.php#work">View Portfolio &raquo;</a>
