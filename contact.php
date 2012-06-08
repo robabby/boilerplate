@@ -66,11 +66,14 @@
   body {
     padding-top:10px;
   }
-  .hero-unit {
+  #contact {
+    background-image:url(/images/textures/500/19.jpg);
+  }
+  #contact .hero-unit {
     border-radius:0px;
+    border:5px solid #555;
     box-shadow:inset 0px 0px 10px 1px rgba(0, 0, 0, .5);
-    -webkit-border-radius: 0px 0px 10px 10px;
-    border-radius: 0px 0px 10px 10px;
+    padding-bottom:20px;
   }
   .hero-unit h1 {
     color:#aaa;
@@ -83,11 +86,11 @@
   #contact .hero-unit form #twitter {
     width:79%;
   }
-  label, textarea {
+  .hero-unit label, .hero-unit textarea {
     font-family: 'TradeGothicLTStdLight';
     font-size:18px;
   }
-  textarea {
+  .hero-unit #comments {
     margin-bottom:20px;
   }
   .hero-unit #name, .hero-unit #email, .hero-unit #website, .hero-unit #twitter {
@@ -113,7 +116,7 @@
     background: linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
   }
-  #send {
+  #contact #send {
     width:318px;
     height:50px;
   }
@@ -140,11 +143,11 @@
     background-color:#fff;
     box-shadow:0px 0px 10px 1px rgba(0, 0, 0, .25);
     border-radius:10px;
-    -webkit-transition: all .25s ease-in-out;
-    -moz-transition: all .25s ease-in-out;
-    -ms-transition: all .25s ease-in-out;
-    -o-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -ms-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
   }
   .tweet_list li:hover {
     background-color:rgba(100, 200, 255, .5);

@@ -45,6 +45,7 @@
   #about .span6 .well {
     border-radius:0px;
     box-shadow:inset 0px 0px 7px 1px rgba(0, 0, 0, .55);
+    background-image:url(/images/textures/500/29.jpg);
   }
   #about .span6 .well p {
     font-size:14px;
@@ -72,6 +73,10 @@
   .thumbnail {
     margin-left:auto;
     margin-right:auto;
+  }
+  #about .progress {
+    box-shadow:inset 0px 0px 7px 1px rgba(0, 0, 0, .23);
+    border:2px solid #333;
   }
   #about .contact .btn {
     width:96.5%;
@@ -223,6 +228,52 @@
     </div><!-- span -->
 
     <div class="span12">
+      <br />
+      <br />
+      <h2>Technologies I know <span>&darr;</span></h2>
+      <br />
+      <br />
+    </div>
+    <div class="span6">
+      <h3>HTML5</h3>
+      <div class="progress progress-striped active">
+        <div class="bar" style="width: 90%;"></div>
+      </div>
+      <h3>jQuery</h3>
+      <div class="progress progress-striped active">
+        <div class="bar" style="width: 75%;"></div>
+      </div>
+      <h3>PHP</h3>
+      <div class="progress progress-striped active">
+        <div class="bar" style="width: 45%;"></div>
+      </div>
+      <h3>Ruby on Rails</h3>
+      <div class="progress progress-striped active">
+        <div class="bar" style="width: 15%;"></div>
+      </div>
+    </div>
+    <div class="span6">
+      <h3>CSS3</h3>
+      <div class="progress progress-striped active">
+        <div class="bar" style="width: 92%;"></div>
+      </div>
+      <h3>AJAX</h3>
+      <div class="progress progress-striped active">
+        <div class="bar" style="width: 30%;"></div>
+      </div>
+      <h3>MySQL</h3>
+      <div class="progress progress-striped active">
+        <div class="bar" style="width: 40%;"></div>
+      </div>
+      <h3>XML</h3>
+      <div class="progress progress-striped active">
+        <div class="bar" style="width: 30%;"></div>
+      </div>
+    </div>
+
+    <div class="span12">
+      <br />
+      <br />
       <br />
       <br />
       <div class="contact">
