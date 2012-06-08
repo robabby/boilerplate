@@ -73,6 +73,19 @@
   .thumbnail {
     margin-left:auto;
     margin-right:auto;
+    opacity:.6;
+    filter:alpha(opacity=60);
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+  }
+  .thumbnail:hover {
+    margin-left:auto;
+    margin-right:auto;
+    opacity:1;
+    filter:alpha(opacity=100);
   }
   #about .progress {
     box-shadow:inset 0px 0px 7px 1px rgba(0, 0, 0, .23);
@@ -279,7 +292,7 @@
       <div class="contact">
         <h2>Like what you see? <span>&darr;</span></h2>
         <br />
-        <a href="/contact.php" class="btn btn-info btn-large" title="">Contact Me</a>
+        <a href="/contact.php" class="btn btn-inverse btn-large" title="">Contact Me</a>
       </div><!-- .well -->
     </div><!-- span -->
     

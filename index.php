@@ -34,6 +34,7 @@
     background: -ms-linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* IE10+ */
     background: linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    background-image:url(/images/textures/500/6.jpg);
   }
   #home .hero-unit h1 {
     text-align:center;
@@ -43,11 +44,11 @@
   #home .hero-unit h1 small {
     font-size:100px;
     text-shadow:0px 1px 2px #fff;
-    color:#cacaca;
+    color:#999;
   }
   #home .hero-unit h2 {
     font-size:65px;
-    color:#cacaca;
+    color:#999;
     text-shadow:0px 1px 2px #fff;
   }
   #home .main .well {
