@@ -13,21 +13,12 @@
     padding-top:20px;
   }
   #sandbox {
-    background-image:url(/images/textures/500/19.jpg);
   }
   #sandbox .hero-unit {
     border-radius:0px;
     overflow: hidden;
     box-shadow:inset 0px 0px 7px 1px rgba(0, 0, 0, .25);
     border-bottom:8px solid #555;
-    background: #e0e0e0; /* Old browsers */
-    background: -moz-linear-gradient(top, #e0e0e0 0%, #ffffff 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0e0e0), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* IE10+ */
-    background: linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
   }
   #sandbox .hero-unit h1 {
     color:#aaa;
@@ -96,7 +87,7 @@
 
 <div class="hero-unit">
   <div class="container">
-    <div class="row">
+    <div class="row-fluid">
       <div class="span12">
         <div class="row-fluid">
           <img class="calvin pull-right" src="/images/calvin_sandbox.jpg" />

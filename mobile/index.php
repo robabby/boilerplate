@@ -75,75 +75,10 @@
     }
 
     #welcome {
-        background-color:#efefef;
+        background-image:url(/images/textures/500/1.jpg);
     }
-    #welcome .top {
-        background-color:#999999;
-        background-image:url('assets/images/fabric.png');
-        box-shadow:0px 2px 3px 0px rgba(0, 0, 0, .35);
-    }
-    #welcome .top .profile {
-        display:block;
-        height:100px;
-        border-bottom:1px solid #ccc;
-    }
-    #welcome .top .info {
-        display:block;
-        height:50px;
-        border-top:1px solid #efefef;
-    }
-
-    #welcome .tweet {
-        display: block;
-        height:100%;
-        font-family: 'TradeGothicLTStdLight';
-        color: #085258;
-        font-size:18px;
-    }
-    #welcome .query {
-        display: block;
-        font-family: 'TradeGothicLTStdLight';
-        color: #085258;
-        font-size:18px;
-    }
-    #welcome .tweet_list {
-        display: block;
-        list-style: none;
-        margin: 15px 10px 0;
-        padding: 0;
-        background-color: #efefef;
-    }
-    #welcome .tweet_list li {
-        display: block;
-        padding: 10px;
-        margin:0 0 10px;
-        list-style-type: none;
-        border-radius:7px;
-        box-shadow:0px 0px 5px 0px rgba(0, 0, 0, .75);
-        -webkit-transition: all .25s ease-in-out;
-        -moz-transition: all .25s ease-in-out;
-        -ms-transition: all .25s ease-in-out;
-        -o-transition: all .25s ease-in-out;
-        transition: all .25s ease-in-out;
-    }
-    #welcome .tweet_list li:hover {
-        background-color:rgba(0, 0, 0, .05);
-    }
-    #welcome .tweet_list li a {
+    #welcome h1 small {
         display:inline-block;
-        color: #09F;
-    }
-    #welcome .tweet_list li a:hover {
-        color:#3AF;
-    }
-    #welcome .tweet_list .tweet_even {
-        z-index:-1;
-    }
-    #welcome .tweet_list .tweet_avatar {
-        padding-right: .5em; float: left;
-    }
-    #welcome .tweet_list .tweet_avatar img {
-        vertical-align: middle;
     }
 
     #about div h1.title {
@@ -179,9 +114,20 @@
         </header>
 
         <!-- ============================= welcome ============================= -->
-        <article id="welcome" class="list scrollable">
+        <article id="welcome" class="list scrollable indented">
             <div>
-                <div class="tweet"></div>
+                <h1 class="title">Development <small>+</small> Design</h1>
+                <h2>Web Development</h2>
+                <br />
+                <p class="text">
+                    My name is Rob, a Web Developer and Designer from the Chicagoland Area. 'Raw Designs' is an acronym for Rob Abby Web Designs. I have been happily building products for the web for almost 5 years now.
+                </p>
+                <p class="text">
+                    I have a deep passion for what I do, and enjoy the challenges that come with designing for multiple browsers and platforms.
+                </p>
+                <p class="text">
+                    Grab a cup of coffee, and hang out!
+                </p>
             </div>
         </article>
 

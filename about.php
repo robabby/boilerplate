@@ -10,7 +10,6 @@
   <?php include('./assets/inc/head.inc.php'); ?>
   <style>
   #about {
-    background-image:url(/images/textures/500/19.jpg);
   }
   #about .hero-unit {
     border-radius:0px;
@@ -18,14 +17,6 @@
     box-shadow:inset 0px 0px 7px 1px rgba(0, 0, 0, .25);
     text-align:center;
     border-bottom:8px solid #555;
-    background: #e0e0e0; /* Old browsers */
-    background: -moz-linear-gradient(top, #e0e0e0 0%, #ffffff 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0e0e0), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* IE10+ */
-    background: linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
   }
   #about .hero-unit h1 {
     font-size:125px;
@@ -57,7 +48,7 @@
   }
   #about .main h2 {
     font-size:50px;
-    color:#aaa;
+    color:#888;
     text-shadow:0px 1px 2px #fff;
   }
   #about .work .btn {
@@ -73,7 +64,7 @@
   .thumbnail {
     margin-left:auto;
     margin-right:auto;
-    opacity:.6;
+    opacity:0.6;
     filter:alpha(opacity=60);
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;

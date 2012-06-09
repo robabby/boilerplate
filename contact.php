@@ -67,7 +67,6 @@
     padding-top:10px;
   }
   #contact {
-    background-image:url(/images/textures/500/19.jpg);
   }
   #contact .hero-unit {
     border-radius:0px;

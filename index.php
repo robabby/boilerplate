@@ -3,7 +3,7 @@
   ob_start();
   try {
   include("$path2root/assets/inc/title.inc.php"); 
-  //include("$path2root/assets/inc/user_agent.php");
+  include("$path2root/assets/inc/user_agent.php");
   //require_once("$path2root/assets/inc/connection.inc.php");
   // database connection info
   //$conn = mysql_connect('rawdesigns.db.7625389.hostedresource.com','rawdesigns','Forever#23') or trigger_error("SQL", E_USER_ERROR);
@@ -17,15 +17,12 @@
 <head>
   <?php include("$path2root/assets/inc/head.inc.php"); ?>
   <style>
-  #home {
-    background-image:url(/images/textures/500/19.jpg);
-  }
   #home .hero-unit {
     border-radius:0px;
     overflow: hidden;
-    box-shadow:inset 0px 0px 10px 1px rgba(0, 0, 0, .5);
+    box-shadow:inset 0px -5px 25px 3px rgba(0, 0, 0, .5);
     text-align:center;
-    border-bottom:8px solid #555;
+    border-bottom:15px solid #121212;
     background: #e0e0e0; /* Old browsers */
     background: -moz-linear-gradient(top, #e0e0e0 0%, #ffffff 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0e0e0), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
@@ -52,10 +49,12 @@
     text-shadow:0px 1px 2px #fff;
   }
   #home .main .well {
+    position:relative;
     border-radius:0px;
-    background:#efefef url(/images/textures/500/29.jpg);
     box-shadow: inset 0 0 7px 1px rgba(0, 0, 0, 0.55);
     padding-bottom:0;
+    border:5px solid #3CF;
+    min-height:225px;
 }
   #home .main .well h2 {
     text-shadow:0px 0px 3px rgba(0, 0, 0, .25);
@@ -64,11 +63,11 @@
     margin-bottom:7px;
   }
   #home .main .well .btn {
-    position:relative;
-    width:103.25%;
+    position:absolute;
+    width:90%;
     border-radius:0px;
-    left:-19px;
-    bottom:-7px;
+    left:0px;
+    bottom:0px;
   }
   #home .sandbox .thumbnail {
     margin:0 auto 10px;
@@ -119,8 +118,7 @@
         <p>My name is Rob, a Web Developer and Designer from the Chicagoland Area.  'Raw Designs' is an acronym for Rob Abby Web Designs.  I have been happily building products for the web for almost 5 years now.</p>
         <p>Grab a cup of coffee, and hang out! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
         <p>
-          <a class="btn btn-info btn-large" data-toggle="modal" href="#contact" title="Quick Contact">Contact &raquo;</a>
-          <a class="btn btn-inverse btn-large" href="/about.php" title="Learn More">Learn More &raquo;</a>
+          <a class="btn btn-info btn-large" href="/about.php" title="Learn More">Learn More &raquo;</a>
         </p>
       </div><!-- .well -->
     </div><!-- .span -->
@@ -133,8 +131,7 @@
         </a>
         <div class="clearfix"></div>
         <p>
-          <a class="btn btn-large btn-info" href="outer_space.php">View Project &raquo;</a>
-          <a class="btn btn-large btn-inverse" href="sandbox.php">Go to Sandbox &raquo;</a>
+          <a class="btn btn-large btn-info" href="sandbox.php">Go to Sandbox &raquo;</a>
         </p>
       </div><!-- .well -->
     </div><!-- .span -->
@@ -147,8 +144,7 @@
         </a>
         <div class="clearfix"></div>
         <p>
-          <a class="btn btn-large btn-info" href="http://imaginethis.ws">View Project &raquo;</a>
-          <a class="btn btn-large btn-inverse" href="about.php#work">View Portfolio &raquo;</a>
+          <a class="btn btn-large btn-info" href="about.php#work">View Portfolio &raquo;</a>
         </p>
       </div><!-- .well -->
     </div><!-- .span -->
