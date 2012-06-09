@@ -63,11 +63,6 @@
 <head>
   <?php include('./assets/inc/head.inc.php'); ?>
   <style>
-  body {
-    padding-top:10px;
-  }
-  #contact {
-  }
   #contact .hero-unit {
     border-radius:0px;
     border:5px solid #555;

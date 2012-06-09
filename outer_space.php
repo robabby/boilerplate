@@ -181,11 +181,6 @@
       -webkit-transform: rotate(360deg);
     }
   }
-  #viewport {
-    display:block;
-    position:absolute;
-    z-index:1;  
-  }
   </style>
 </head>
 <body id="outer_space">
@@ -271,7 +266,7 @@
 <script type='text/javascript'>
   $(document).ready(function () {
       $("body").queryLoader2({
-        percentage: true,
+        percentage: false,
         backgroundColor: '#121212',
         barHeight: 5,
         barColor: '#FFF',
