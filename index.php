@@ -51,6 +51,12 @@
     background-color:#fff;
     overflow:hidden;
   }
+  #home .main .well form {
+    margin-bottom:0;
+  }
+  #home .main .well form input, #home .main .well form textarea {
+    width:96%;
+  }
   #home .main .well .title {
     display:block;
     position:relative;
@@ -68,10 +74,21 @@
   }
   #home .main .well .title h3 {
     font-family: 'CodeBoldRegular';
-    color:#000;
-    font-size:70px;
-    line-height:110px;
+    color:#121212;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.35), -1px -1px 1px rgba(0, 0, 0, 0.4);
+    font-size:35px;
+    line-height:75px;
+    text-align:center;
     font-weight:100;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+  }
+  #home .main .well:hover .title h3 {
+    color:#3CF;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.25), 0px 0px 6px rgba(75, 175, 255, 0.5);
   }
   #home .main .well .trim {
     display:block;
@@ -91,12 +108,16 @@
     -moz-background-size: 40px 40px;
     -o-background-size: 40px 40px;
     background-size: 40px 40px;
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -moz-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite;
   }
   #home .main .well .inner {
     display: block;
     position:relative;
     width:auto;
-    padding:10px;
+    padding:20px;
+    min-height:225px;
   }
   #home .main .well .btn {
     position:relative;
@@ -127,10 +148,12 @@
   <div class="container">
     <div class="row-fluid">
       <h1 class="animated fadeInRightBig">RawDesigns<small>.net</small></h1>
-      <h2 class="animated fadeInLeftBig">Web Development</h2>
-    </div>
-  </div>
-</div>
+      <h2 class="animated fadeInLeftBig">Web Design</h2>
+    </div><!-- .row -->
+  </div><!-- .container -->
+</div><!-- .hero-unit -->
+
+<br />
 
 <div class="container">
   <div class="row main">
@@ -145,8 +168,48 @@
           <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
           <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
         </div>
-        <a class="btn btn-info btn-large" href="/about.php" title="Learn More">Learn More &raquo;</a>
+        <a class="btn btn-inverse btn-large" href="/about.php" title="Learn More">Learn More &raquo;</a>
       </div><!-- .well -->
+    </div><!-- .span -->
+
+    <div class="span4">
+      <div class="well">
+        <div class="title">
+          <h3>Blog</h3>
+        </div><!-- .title -->
+        <div class="trim"></div>
+        <div class="inner">
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+        <a class="btn btn-inverse btn-large" href="/about.php" title="Learn More">Read More &raquo;</a>
+      </div><!-- .well -->
+    </div><!-- .span -->
+
+    <div class="span4">
+      <div class="well">
+        <form>
+          <div class="title">
+            <h3>Contact</h3>
+          </div><!-- .title -->
+          <div class="trim"></div>
+          <div class="inner">
+            <p>
+              <label>Name</label>
+              <input type="text" />
+            </p>
+            <p>
+              <label>Email</label>
+              <input type="text" />
+            </p>
+            <p>
+              <label>Comments</label>
+              <textarea rows="2"></textarea>
+            </p>
+          </div>
+          <a class="btn btn-inverse btn-large" href="/about.php" title="Learn More">Submit &raquo;</a>
+        </div><!-- .well -->
+      </form>
     </div><!-- .span --
     
     <div class="span4">
@@ -203,6 +266,9 @@
 <!-- ## FOOTER ## -->
 <?php include("$path2root/assets/inc/footer.inc.php"); ?>
 <!-- ## FOOTER ## -->
+<script>
+$('.main .well').addClass('animated bounceInUp');
+</script>
 </body>
 </html>
 <?php

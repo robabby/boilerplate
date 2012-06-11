@@ -40,6 +40,7 @@
 
 * {
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 html, body {
   display:block;
