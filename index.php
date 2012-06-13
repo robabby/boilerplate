@@ -17,13 +17,16 @@
 <head>
   <?php include("$path2root/assets/inc/head.inc.php"); ?>
   <style>
+  #home {
+  }
   #home .hero-unit {
     margin-bottom:0;
     border-radius:0px;
     overflow: hidden;
+    padding:100px 0;
     box-shadow:inset 0px 0px 15px 3px rgba(0, 0, 0, .5);
     text-align:center;
-    border-bottom:8px solid #39F;
+    border-bottom:8px solid #06e;
     background: #333333; /* Old browsers */
     background: -moz-linear-gradient(top, #333333 0%, #121212 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(100%,#121212)); /* Chrome,Safari4+ */
@@ -48,6 +51,9 @@
     color:#fff;
     font-family: 'CodeLightRegular';
     font-weight:100;
+  }
+  #home .hero-unit h2 a {
+    color: #06e;
   }
   #home .main .well {
     position:relative;
@@ -94,30 +100,15 @@
     transition: all .25s ease-in-out;
   }
   #home .main .well:hover .title h3 {
-    color:#3CF;
-    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.25), 0px 0px 6px rgba(75, 175, 255, 0.5);
+    color:#39F;
   }
   #home .main .well .trim {
     display:block;
     position:relative;
     width:auto;
     height:10px;
-    background-color:#49AFCD;
+    background-color:#06e;
     box-shadow:inset 0px 0px 3px rgba(0, 0, 0, .25);
-    background-color: #149bdf;
-    background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
-    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    -webkit-background-size: 40px 40px;
-    -moz-background-size: 40px 40px;
-    -o-background-size: 40px 40px;
-    background-size: 40px 40px;
-    -webkit-animation: progress-bar-stripes 2s linear infinite;
-    -moz-animation: progress-bar-stripes 2s linear infinite;
-    animation: progress-bar-stripes 2s linear infinite;
   }
   #home .main .well .inner {
     display: block;
@@ -154,7 +145,7 @@
 <div class="hero-unit">
   <div class="container">
     <div class="row-fluid">
-      <h2>Web <span>+</span> Mobile <span>+</span> New Media</h2>
+      <h2><a href="#">Web</a> <span>/</span> <a href="#">Mobile</a> <span>/</span> <a href="#">New Media</a></h2>
     </div><!-- .row -->
   </div><!-- .container -->
 </div><!-- .hero-unit -->
