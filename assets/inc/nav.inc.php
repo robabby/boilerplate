@@ -2,6 +2,9 @@
 
   <header>
     <nav>
+      <h1 class="brand">
+        <a href="<?php echo $path2root ?>/index.php" title="Raw Designs">RawDesigns<small>.net</small></a>
+      </h1>
       <ul>
         <li <?php if ($currentPage == 'index.php') {
           echo 'class="active"';} ?>><a class="first" href="<?php echo $path2root ?>/index.php">Home</a></li>

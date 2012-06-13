@@ -18,27 +18,34 @@
   <?php include("$path2root/assets/inc/head.inc.php"); ?>
   <style>
   #home .hero-unit {
+    margin-bottom:0;
     border-radius:0px;
     overflow: hidden;
     box-shadow:inset 0px 0px 15px 3px rgba(0, 0, 0, .5);
     text-align:center;
-    border-bottom:8px solid #555;
-    background-color:#fff;
+    border-bottom:8px solid #39F;
+    background: #333333; /* Old browsers */
+    background: -moz-linear-gradient(top, #333333 0%, #121212 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(100%,#121212)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #333333 0%,#121212 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #333333 0%,#121212 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #333333 0%,#121212 100%); /* IE10+ */
+    background: linear-gradient(top, #333333 0%,#121212 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#121212',GradientType=0 ); /* IE6-9 */
   }
   #home .hero-unit h1 {
     text-align:center;
-    font-size:175px;
-    text-shadow:0px 1px 7px rgba(0, 0, 0, .5);
+    font-size:75px;
+    color:#555;
+    font-family: 'DeliciousSmallCapsRegular';
+    letter-spacing:-3px;
   }
-  #home .hero-unit h1 small {
-    font-size:100px;
-    text-shadow:0px 1px 2px #fff;
+  #home .hero-unit h1 span {
     color:#999;
   }
   #home .hero-unit h2 {
     font-size:65px;
-    color:#aaa;
-    text-shadow:0px 1px 2px #fff;
+    color:#fff;
     font-family: 'CodeLightRegular';
     font-weight:100;
   }
@@ -137,7 +144,7 @@
 <?php include("$path2root/assets/inc/contactModal.inc.php"); ?>
 <!-- ## CONTACT MODAL ## -->
 
-<!-- ## HEADER & NAV ## --
+<!-- ## HEADER & NAV ## -->
 <?php include("$path2root/assets/inc/nav.inc.php"); ?>
 <!-- ## HEADER & NAV ## -->
 
@@ -147,120 +154,119 @@
 <div class="hero-unit">
   <div class="container">
     <div class="row-fluid">
-      <h1 class="animated fadeInRightBig">RawDesigns<small>.net</small></h1>
-      <h2 class="animated fadeInLeftBig">Web Design</h2>
+      <h2>Web <span>+</span> Mobile <span>+</span> New Media</h2>
     </div><!-- .row -->
   </div><!-- .container -->
 </div><!-- .hero-unit -->
 
-<br />
-
-<div class="container">
-  <div class="row main">
-    
-    <div class="span4">
-      <div class="well">
-        <div class="title">
-          <h3>Welcome</h3>
-        </div><!-- .title -->
-        <div class="trim"></div>
-        <div class="inner">
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-        </div>
-        <a class="btn btn-inverse btn-large" href="/about.php" title="Learn More">Learn More &raquo;</a>
-      </div><!-- .well -->
-    </div><!-- .span -->
-
-    <div class="span4">
-      <div class="well">
-        <div class="title">
-          <h3>Blog</h3>
-        </div><!-- .title -->
-        <div class="trim"></div>
-        <div class="inner">
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-        </div>
-        <a class="btn btn-inverse btn-large" href="/about.php" title="Learn More">Read More &raquo;</a>
-      </div><!-- .well -->
-    </div><!-- .span -->
-
-    <div class="span4">
-      <div class="well">
-        <form>
+<div class="main">
+  <br />
+  <br />
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        <div class="well">
           <div class="title">
-            <h3>Contact</h3>
+            <h3>Welcome</h3>
           </div><!-- .title -->
           <div class="trim"></div>
           <div class="inner">
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          </div>
+          <a class="btn btn-inverse btn-large" href="/about.php" title="Learn More">Learn More &raquo;</a>
+        </div><!-- .well -->
+      </div><!-- .span -->
+
+      <div class="span4">
+        <div class="well">
+          <div class="title">
+            <h3>Blog</h3>
+          </div><!-- .title -->
+          <div class="trim"></div>
+          <div class="inner">
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          </div>
+          <a class="btn btn-inverse btn-large" href="/about.php" title="Learn More">Read More &raquo;</a>
+        </div><!-- .well -->
+      </div><!-- .span -->
+
+      <div class="span4">
+        <div class="well">
+          <form>
+            <div class="title">
+              <h3>Contact</h3>
+            </div><!-- .title -->
+            <div class="trim"></div>
+            <div class="inner">
+              <p>
+                <label>Name</label>
+                <input type="text" />
+              </p>
+              <p>
+                <label>Email</label>
+                <input type="text" />
+              </p>
+              <p>
+                <label>Comments</label>
+                <textarea rows="2"></textarea>
+              </p>
+            </div>
+            <a class="btn btn-inverse btn-large" href="/about.php" title="Learn More">Submit &raquo;</a>
+          </div><!-- .well -->
+        </form>
+      </div><!-- .span --
+      
+      <div class="span4">
+        <div class="well sandbox">
+          <h2><a href="outer_space.php">Outer Space Concept</a></h2>
+          <a class="thumbnail pull-left" href="outer_space.php" title="Outer Space Concept">
+            <img src="/images/thumbs/outer_space.jpg" alt="" />
+          </a>
+          <div class="clearfix"></div>
+          <p>
+            <a class="btn btn-large btn-info" href="sandbox.php">Go to Sandbox &raquo;</a>
+          </p>
+        </div><!-- .well --
+      </div><!-- .span --
+
+      <div class="span4">
+        <div class="well sandbox">
+          <h2><a href="http://imaginethis.ws" title="Recent Project">Recent Project</a></h2>
+          <a class="thumbnail" href="http://imaginethis.ws" title="Imagin This">
+            <img src="/images/work/imaginethis.jpg" alt="Imagine This" />
+          </a>
+          <div class="clearfix"></div>
+          <p>
+            <a class="btn btn-large btn-info" href="about.php#work">View Portfolio &raquo;</a>
+          </p>
+        </div><!-- .well --
+      </div><!-- .span -->
+
+      <!--
+      <div class="span4">
+        <div class="well blog">
+        <?php while ($list = mysql_fetch_assoc($result)) { ?>
+          <div class="row-fluid">
+            <h2><a href="post.php?article_id=<?php echo $list['article_id']; ?>"><?php echo $list['title']; ?></a></h2>
+            <a class="thumbnail pull-left" href="post.php?article_id=<?php echo $list['article_id']; ?>">
+              <img src="http://placehold.it/100x100" alt="" />
+            </a>
+            <p><?php echo substr($list['article'], 0, 275); ?>...</p>
+          <br />
             <p>
-              <label>Name</label>
-              <input type="text" />
-            </p>
-            <p>
-              <label>Email</label>
-              <input type="text" />
-            </p>
-            <p>
-              <label>Comments</label>
-              <textarea rows="2"></textarea>
+              <a class="btn btn-large btn-info" href="post.php?article_id=<?php echo $list['article_id']; ?>">Read Article &raquo;</a>
+              <a class="btn btn-large btn-inverse" href="blog.php">Go to Blog &raquo;</a>
             </p>
           </div>
-          <a class="btn btn-inverse btn-large" href="/about.php" title="Learn More">Submit &raquo;</a>
-        </div><!-- .well -->
-      </form>
-    </div><!-- .span --
-    
-    <div class="span4">
-      <div class="well sandbox">
-        <h2><a href="outer_space.php">Outer Space Concept</a></h2>
-        <a class="thumbnail pull-left" href="outer_space.php" title="Outer Space Concept">
-          <img src="/images/thumbs/outer_space.jpg" alt="" />
-        </a>
-        <div class="clearfix"></div>
-        <p>
-          <a class="btn btn-large btn-info" href="sandbox.php">Go to Sandbox &raquo;</a>
-        </p>
-      </div><!-- .well --
-    </div><!-- .span --
+        <?php } // end while  ?>
+        </div><!-- .well --
+      </div><!-- .span -->
+    </div><!-- .row -->
 
-    <div class="span4">
-      <div class="well sandbox">
-        <h2><a href="http://imaginethis.ws" title="Recent Project">Recent Project</a></h2>
-        <a class="thumbnail" href="http://imaginethis.ws" title="Imagin This">
-          <img src="/images/work/imaginethis.jpg" alt="Imagine This" />
-        </a>
-        <div class="clearfix"></div>
-        <p>
-          <a class="btn btn-large btn-info" href="about.php#work">View Portfolio &raquo;</a>
-        </p>
-      </div><!-- .well --
-    </div><!-- .span -->
-
-    <!--
-    <div class="span4">
-      <div class="well blog">
-      <?php while ($list = mysql_fetch_assoc($result)) { ?>
-        <div class="row-fluid">
-          <h2><a href="post.php?article_id=<?php echo $list['article_id']; ?>"><?php echo $list['title']; ?></a></h2>
-          <a class="thumbnail pull-left" href="post.php?article_id=<?php echo $list['article_id']; ?>">
-            <img src="http://placehold.it/100x100" alt="" />
-          </a>
-          <p><?php echo substr($list['article'], 0, 275); ?>...</p>
-        <br />
-          <p>
-            <a class="btn btn-large btn-info" href="post.php?article_id=<?php echo $list['article_id']; ?>">Read Article &raquo;</a>
-            <a class="btn btn-large btn-inverse" href="blog.php">Go to Blog &raquo;</a>
-          </p>
-        </div>
-      <?php } // end while  ?>
-      </div><!-- .well --
-    </div><!-- .span -->
-  </div><!-- .row -->
-
-</div><!-- .container -->
-
+  </div><!-- .container -->
+</div><!-- .main -->
 <!-- #### MAIN CONTENT GOES HERE #### -->
 
 <!-- ## FOOTER ## -->

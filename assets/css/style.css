@@ -13,6 +13,11 @@
   font-family: 'TradeGothicLTStdBdCnNo.20';
   font-family: 'TradeGothicLTStdLight';
   
+  Delicious:
+  font-family: 'DeliciousBold';
+  font-family: 'DeliciousRoman';
+  font-family: 'DeliciousSmallCapsRegular';
+
   Big Noodle:
   font-family: 'BigNoodleTitlingRegular';
   font-family: 'BigNoodleTitlingOblique';
@@ -196,37 +201,58 @@ p {
 
 header {
   display:block;
-  position:fixed;
+  position:relative;
   top:0px;
   z-index: 1039;
+}
+header .brand a {
+  display:block;
+  height:50px;
+  float:left;
+  margin:0 0 0 10px;
+  color:#eee;
+  line-height:60px;
+  font-family: 'BigNoodleTitlingRegular';
+}
+header .brand a small {
+  color:#eee;
+}
+header .brand:hover a {
+  height:47px;
+  border-bottom:3px solid #39F;
 }
 header nav {
   display:block;
   width:100%;
   height:50px;
-  position:fixed;
+  position:relative;
   box-shadow:0px 0px 5px rgba(0, 0, 0, 1);
-  background-color:rgba(255, 255, 255, .75);
+  background: #45484d; /* Old browsers */
+  background: -moz-linear-gradient(top, #45484d 0%, #191919 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#191919)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #45484d 0%,#191919 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #45484d 0%,#191919 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #45484d 0%,#191919 100%); /* IE10+ */
+  background: linear-gradient(top, #45484d 0%,#191919 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#191919',GradientType=0 ); /* IE6-9 */
 }
 header nav ul {
   display:block;
-  width:940px;
-  margin:0 auto;
+  width:auto;
+  float:right;
 }
 header nav ul li {
   float:left;
 }
 header nav ul li a {
   display:block;
-  width:188px;
+  width:100px;
   height:50px;
-  background-color: #fff;
-  background-color:rgba(255, 255, 255, .75);
   text-align:center;
   line-height:50px;
   font-size:18px;
-  font-family: 'Swiss721Light';
-  color:#797979;
+  font-family: 'TradeGothicLTStdLight';
+  color:#eee;
   -webkit-transition: background .25s ease-in-out;
   -moz-transition: background .25s ease-in-out;
   -ms-transition: background .25s ease-in-out;
@@ -234,8 +260,9 @@ header nav ul li a {
   transition: background .25s ease-in-out;
 }
 header nav ul li a:hover {
-  color:#9FF;
-  background: #39F; 
+  color:#fff;
+  border-bottom:3px solid #39F;
+  height:47px;
 }
 
 

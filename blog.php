@@ -52,9 +52,6 @@
 <head>
   <?php include("$path2root/assets/inc/head.inc.php"); ?>
   <style>
-  #blog {
-    padding-top:75px;
-  }
   #blog .post {
     background-image:url('/images/fabric_plaid.png'); 
     border-radius:0;
