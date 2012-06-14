@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="/assets/fonts/Quicksand/stylesheet.css">
   <link rel="stylesheet" href="/assets/fonts/Sansation/stylesheet.css">
   <link rel="stylesheet" href="/assets/fonts/Delicious/stylesheet.css">
+  <link rel="stylesheet" href="/assets/fonts/Pictograms/stylesheet.css">
 
   <!-- Styles & Frameworks -->
   <link rel="stylesheet" href="/assets/css/reset.css">

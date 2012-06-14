@@ -72,6 +72,7 @@
     position:relative;
     width:100%;
     height:75px;
+    margin-top:-1px;
     border-radius:18px 18px 0px 0px;
     background: #45484d; /* Old browsers */
     background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6+ */
@@ -118,7 +119,7 @@
     position:relative;
     border-radius:0px 0px 7px 7px;
     width:90%;
-    bottom:0px;
+    bottom:-1px;
     padding:15px 14px;
   }
   </style>
