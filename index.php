@@ -17,14 +17,11 @@
 <head>
   <?php include("$path2root/assets/inc/head.inc.php"); ?>
   <style>
-  #home {
-  }
   #home .hero-unit {
     margin-bottom:0;
     border-radius:0px;
     overflow: hidden;
-    padding:100px 0;
-    box-shadow:inset 0px 0px 15px 3px rgba(0, 0, 0, .5);
+    padding:100px 0 80px;
     text-align:center;
     border-bottom:8px solid #06e;
     background: #333333; /* Old browsers */
@@ -36,24 +33,24 @@
     background: linear-gradient(top, #333333 0%,#121212 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#121212',GradientType=0 ); /* IE6-9 */
   }
-  #home .hero-unit h1 {
-    text-align:center;
-    font-size:75px;
-    color:#555;
-    font-family: 'DeliciousSmallCapsRegular';
-    letter-spacing:-3px;
-  }
-  #home .hero-unit h1 span {
-    color:#999;
-  }
   #home .hero-unit h2 {
-    font-size:65px;
+    font-size:75px;
     color:#fff;
     font-family: 'CodeLightRegular';
     font-weight:100;
+    margin-bottom:20px;
   }
   #home .hero-unit h2 a {
     color: #06e;
+  }
+  #home .hero-unit p {
+    color:#fff;
+    font-family: 'DeliciousSmallCapsRegular';
+    font-weight:100;
+    text-align:left;
+  }
+  #home .hero-unit p.web, #home .hero-unit p.mobile, #home .hero-unit p.newMedia {
+    display:none;
   }
   #home .main .well {
     position:relative;
@@ -145,7 +142,17 @@
 <div class="hero-unit">
   <div class="container">
     <div class="row-fluid">
-      <h2><a href="#">Web</a> <span>/</span> <a href="#">Mobile</a> <span>/</span> <a href="#">New Media</a></h2>
+      <h2>
+        <a class="web" href="#">Web</a> 
+        <span>/</span> 
+        <a class="mobile" href="#">Mobile</a> 
+        <span>/</span> 
+        <a class="newMedia" href="#">New Media</a>
+      </h2>
+      <br />
+      <p class="web animated fadeInLeftBig">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+      <p class="mobile animated fadeInRightBig">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+      <p class="newMedia animated fadeInLeftBig">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
     </div><!-- .row -->
   </div><!-- .container -->
 </div><!-- .hero-unit -->
@@ -264,7 +271,22 @@
 <?php include("$path2root/assets/inc/footer.inc.php"); ?>
 <!-- ## FOOTER ## -->
 <script>
-$('.main .well').addClass('animated bounceInUp');
+// Text fadeIn()
+$('.hero-unit a.web').click(function() {
+  $('p.web').fadeToggle('slow', 'easeInOutCubic', function() {
+    // Animation complete
+  });
+});
+$('.hero-unit a.mobile').click(function() {
+  $('p.mobile').fadeToggle('slow', 'easeInOutCubic', function() {
+    // Animation complete
+  });
+});
+$('.hero-unit a.newMedia').click(function() {
+  $('p.newMedia').fadeToggle('slow', 'easeInOutCubic', function() {
+    // Animation complete
+  });
+});
 </script>
 </body>
 </html>
