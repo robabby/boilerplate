@@ -112,6 +112,8 @@ header .brand a {
   color:#eee;
   line-height:60px;
   font-family: 'BigNoodleTitlingRegular';
+  letter-spacing:1px;
+  text-shadow:0px 1px 1px #ccc, -1px 0px 1px #000;
 }
 header .brand a small {
   color:#eee;

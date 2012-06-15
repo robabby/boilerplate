@@ -215,32 +215,6 @@
             <a class="btn btn-inverse btn-large" href="/about.php" title="Learn More">Submit &raquo;</a>
           </div><!-- .well -->
         </form>
-      </div><!-- .span --
-      
-      <div class="span4">
-        <div class="well sandbox">
-          <h2><a href="outer_space.php">Outer Space Concept</a></h2>
-          <a class="thumbnail pull-left" href="outer_space.php" title="Outer Space Concept">
-            <img src="/images/thumbs/outer_space.jpg" alt="" />
-          </a>
-          <div class="clearfix"></div>
-          <p>
-            <a class="btn btn-large btn-info" href="sandbox.php">Go to Sandbox &raquo;</a>
-          </p>
-        </div><!-- .well --
-      </div><!-- .span --
-
-      <div class="span4">
-        <div class="well sandbox">
-          <h2><a href="http://imaginethis.ws" title="Recent Project">Recent Project</a></h2>
-          <a class="thumbnail" href="http://imaginethis.ws" title="Imagin This">
-            <img src="/images/work/imaginethis.jpg" alt="Imagine This" />
-          </a>
-          <div class="clearfix"></div>
-          <p>
-            <a class="btn btn-large btn-info" href="about.php#work">View Portfolio &raquo;</a>
-          </p>
-        </div><!-- .well --
       </div><!-- .span -->
 
       <!--
@@ -274,17 +248,17 @@
 <script>
 // Text fadeIn()
 $('.hero-unit a.web').click(function() {
-  $('p.web').fadeToggle('slow', 'easeInOutCubic', function() {
+  $('p.web').fadeToggle('slow', function() {
     // Animation complete
   });
 });
 $('.hero-unit a.mobile').click(function() {
-  $('p.mobile').fadeToggle('slow', 'easeInOutCubic', function() {
+  $('p.mobile').fadeToggle('slow', function() {
     // Animation complete
   });
 });
 $('.hero-unit a.newMedia').click(function() {
-  $('p.newMedia').fadeToggle('slow', 'easeInOutCubic', function() {
+  $('p.newMedia').fadeToggle('slow', function() {
     // Animation complete
   });
 });

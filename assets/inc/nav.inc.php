@@ -9,7 +9,7 @@
         <li <?php if ($currentPage == 'index.php') {
           echo 'class="active"';} ?>><a class="first" href="<?php echo $path2root ?>/index.php"><b>w</b> Home</a></li>
         <li <?php if ($currentPage == 'about.php') {
-          echo 'class="active"';} ?>><a href="<?php echo $path2root ?>/about.php"><b>?</b> About</a></li>
+          echo 'class="active"';} ?>><a href="<?php echo $path2root ?>/about.php"><b>=</b> About</a></li>
         <li <?php if ($currentPage == 'sandbox.php') {
           echo 'class="active"';} ?>><a href="<?php echo $path2root ?>/sandbox.php"><b>(</b> Sandbox</a></li>
           <li <?php if ($currentPage == 'blog.php') {
